@@ -46,7 +46,7 @@ El cambio de idioma es inmediato, sin recargar la página, actualiza el atributo
 - El contacto se ofrece únicamente a través de LinkedIn y GitHub.
 - La sección Proyectos se describe de forma genérica, sin nombres de clientes ni información interna.
 - La Trayectoria y el mapa pueden nombrar empresas y clientes porque Javier los publica en su perfil de LinkedIn; nunca se añade información que no esté ahí.
-- Automatización de facturas con IA: Javier es el Project Manager (business case y coordinación del proveedor y de los equipos de IT, ciberseguridad y finanzas). El desarrollo lo hace un proveedor externo; ningún texto debe atribuirle el desarrollo.
+- En Holcim, Javier lidera los proyectos de IA en el área de SAP FICO (como Project Manager). No se detallan proyectos concretos ni se le atribuye el desarrollo. Se transmite de forma sutil, sin cargos que no sean oficiales.
 - Javier trabaja por cuenta ajena: los textos invitan a conversar de profesional a profesional, nunca ofrecen servicios ni suenan a venta.
 
 ## Forma de trabajo

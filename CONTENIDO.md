@@ -13,11 +13,11 @@ Textos oficiales de la web en español (idioma por defecto) e inglés. Es la fue
 ### Sobre mí
 SAP S/4HANA Finance Project Leader con más de 10 años liderando grandes programas de transformación financiera y rollouts internacionales en Europa, África, Asia y Latinoamérica. Convierto la estrategia en hojas de ruta, gestiono alcance, plazos y presupuestos, mido el valor con KPIs y lidero equipos multidisciplinares y offshore como Product Owner.
 
-Transformación con IA: actualmente lidero la automatización del procesamiento de facturas de proveedor con IA generativa y machine learning, y creo aplicaciones de IA con Claude Code y OpenAI Codex. Sé priorizar una cartera de casos de uso de IA, llevarlos de la prueba de concepto a producción y gobernarlos de forma responsable para que generen valor medible para el negocio.
+Transformación con IA: hoy lidero los proyectos de IA sobre SAP Finanzas en mi compañía. Además, creo mis propias aplicaciones de IA con Claude Code y OpenAI Codex. Sé priorizar una cartera de casos de uso de IA y gobernarlos de forma responsable para que generen valor medible para el negocio.
 
 ### Trayectoria
 1. Holcim EMEA Digital Center · feb 2021 – actualidad · Consultor SAP FICO Senior
-   - Project Manager de la automatización de facturas con IA
+   - Liderazgo de los proyectos de IA en SAP FICO (IA generativa y machine learning)
    - Proyecto FI completo de Holcim UK
    - Rollout FI de Holcim Argelia
    - Área FICO del programa global de archivado SAP (10+ países)
@@ -51,17 +51,17 @@ Transformación con IA: actualmente lidero la automatización del procesamiento 
 - Integraciones: Coupa, xSuite, Celonis, Signavio, SAP Archiving
 
 ### Proyectos
-1. Automatización de facturas con IA: proyecto que sustituye el OCR tradicional por una solución en la nube basada en LLM y predicciones con machine learning, para contabilizar automáticamente las facturas de proveedor en SAP en toda EMEA. Rol: Project Manager; elaboré el business case y coordino al proveedor y a los equipos de IT, ciberseguridad y finanzas.
-2. Bot de reserva de parking: un bot sin servidor que se apunta solo a la lista de espera del parking de la oficina cada día laborable y envía avisos por email. Construido con IA (Claude), Cloudflare Workers y Google Apps Script, a coste cero.
-3. Cockpit de conciliación para finanzas: un asistente de IA y una pequeña app web que leen datos de SAP y ayudan a los equipos de finanzas a liquidar partidas abiertas de entrada de mercancía/entrada de factura, con análisis guiado y acciones sugeridas. Construido con Gemini.
+1. IA en SAP Finanzas: identifico dónde aporta valor la IA en los procesos financieros, preparo el business case y coordino a proveedores y equipos de IT, ciberseguridad y finanzas. Rol: Project Manager.
+2. Parking en piloto automático: un bot sin servidor que se apunta solo a la lista de espera del parking de la oficina cada día laborable y envía avisos por email. Construido con IA (Claude), Cloudflare Workers y Google Apps Script, a coste cero.
+3. Copiloto GR/IR: un asistente de IA y una pequeña app web que leen datos de SAP y ayudan a los equipos de finanzas a liquidar partidas abiertas de entrada de mercancía/entrada de factura, con análisis guiado y acciones sugeridas. Construido con Gemini.
 4. Esta web: construida dirigiendo a la IA (Claude Code) con HTML, Tailwind CSS, Git y GitHub Pages.
 
 Tarjetas (lectura rápida; el texto completo de arriba va en «Ver más»):
 | Proyecto | Estado | Frase de impacto | Mi rol | Etiquetas |
 |---|---|---|---|---|
-| Automatización de facturas con IA | En curso | El salto del OCR tradicional a la IA para contabilizar facturas de proveedor en toda EMEA. | Project Manager | LLM · Machine learning · SAP · Nube |
-| Bot de reserva de parking | En uso | Se apunta solo a la lista del parking cada día laborable. Coste: cero. | Idea y desarrollo con IA | Claude · Cloudflare Workers · Google Apps Script |
-| Cockpit de conciliación para finanzas | Prototipo | Un asistente de IA que ayuda a finanzas a liquidar partidas abiertas en SAP. | Idea y desarrollo con IA | Gemini · SAP · App web |
+| IA en SAP Finanzas | En curso | Lidero la llegada de la IA a los procesos financieros en SAP. | Project Manager | IA generativa · Machine learning · SAP FICO |
+| Parking en piloto automático | En uso | Se apunta por mí a la lista del parking cada día. Coste: cero. | Idea y desarrollo con IA | Claude · Cloudflare Workers · Google Apps Script |
+| Copiloto GR/IR | Prototipo | Analiza las partidas abiertas en SAP y sugiere cómo liquidarlas. | Idea y desarrollo con IA | Gemini · SAP · App web |
 | Esta web | En construcción | Una web hecha dirigiendo a la IA, de la primera línea de código a la publicación. | Dirigiendo a la IA | Claude Code · HTML · Tailwind CSS · GitHub Pages |
 
 Etiquetas de interfaz: «Mi rol», «Ver más», «✦ Activa el efecto 3D al mover el móvil» (botón solo en iPhone), «Ver el código en GitHub» (enlace de «Esta web» a https://github.com/jplataes/mi-landing).
@@ -69,11 +69,11 @@ Etiquetas de interfaz: «Mi rol», «Ver más», «✦ Activa el efecto 3D al mo
 ### Gemelo IA
 - Saludo: Hola, soy el gemelo IA de Javier. Elige una pregunta.
 - Aviso: Respuestas predefinidas, sin IA en tiempo real.
-- ¿Quién eres? → Soy Javier Plata Escribano. Llevo más de 10 años liderando programas de transformación financiera con SAP S/4HANA y rollouts internacionales en Europa, África, Asia y Latinoamérica. Ahora mi foco está en llevar la IA a las finanzas. (→ Ir a Sobre mí)
-- ¿Qué haces con IA? → Lidero como Project Manager la automatización del procesamiento de facturas de proveedor con IA generativa y machine learning. Y también creo mis propias aplicaciones de IA, como un bot que se apunta solo al parking de la oficina o un cockpit que ayuda a finanzas a conciliar partidas en SAP. (→ Ir a Proyectos)
+- ¿Quién eres? → Soy Javier Plata Escribano. Llevo más de 10 años liderando programas de transformación financiera con SAP S/4HANA y rollouts internacionales en Europa, África, Asia y Latinoamérica. Hoy mi foco es la transformación de negocio con IA. (→ Ir a Sobre mí)
+- ¿Qué haces con IA? → En mi día a día lidero proyectos de IA sobre SAP Finanzas. Y por mi cuenta creo mis propias apps de IA, como un bot que se apunta solo al parking o un copiloto para las partidas GR/IR. (→ Ir a Proyectos)
 - ¿Dónde has trabajado? → Ahora estoy en el Holcim EMEA Digital Center como consultor SAP FICO senior. Antes pasé por Deloitte Consulting y por Mercedes-Benz Group Services Madrid, y empecé en Iberdrola. He trabajado en proyectos en España, Reino Unido, Suecia, Argelia, China, México y Chile. (→ Ir a Trayectoria)
 - ¿Cuáles son tus habilidades? → Combino tres mundos: la gestión de proyectos (programas, SAP Activate, Agile/Scrum, Product Owner), las finanzas en SAP (de GL y AP a Central Finance) y la IA, tanto en estrategia y gobierno como en herramientas: Claude Code, agentes, RAG… (→ Ir a Habilidades)
-- ¿Cómo se hizo esta web? → Dirigiendo a la IA. La construí con Claude Code, usando HTML, Tailwind CSS, Git y GitHub Pages, por fases y revisando cada paso. Y sí, te lo confieso: yo tampoco soy una IA de verdad, mis respuestas están escritas de antemano. (→ Ver el código en GitHub)
+- ¿Cómo se hizo esta web? → Dirigiendo a la IA. La construí con Claude Code, usando HTML, Tailwind CSS, Git y GitHub Pages, por fases y revisando cada paso. Y sí, te lo confieso: yo tampoco soy una IA de verdad, mis respuestas están escritas de antemano 😉 (→ Ver el código en GitHub)
 - Botón final: Empezar de nuevo
 - Sin JavaScript: Activa JavaScript para conversar con mi gemelo IA.
 
@@ -96,11 +96,11 @@ Etiquetas de interfaz: «Mi rol», «Ver más», «✦ Activa el efecto 3D al mo
 ### About me
 SAP S/4HANA Finance Project Leader with more than 10 years leading large finance transformation programmes and international rollouts across Europe, Africa, Asia and Latin America. I turn strategy into roadmaps, manage scope, timelines and budgets, measure value with KPIs and lead multidisciplinary and offshore teams as Product Owner.
 
-AI transformation: I currently lead the automation of supplier invoice processing with generative AI and machine learning, and I build AI applications with Claude Code and OpenAI Codex. I know how to prioritise a portfolio of AI use cases, take them from proof of concept to production and govern them responsibly so they deliver measurable business value.
+AI transformation: Today I lead the AI projects on SAP Finance at my company. I also build my own AI apps with Claude Code and OpenAI Codex. I know how to prioritise a portfolio of AI use cases and govern them responsibly so they deliver measurable business value.
 
 ### Experience
 1. Holcim EMEA Digital Center · Feb 2021 – present · Senior SAP FICO Consultant
-   - Project Manager for AI-powered invoice automation
+   - Leading AI projects in SAP FICO (generative AI and machine learning)
    - Full FI project for Holcim UK
    - FI rollout for Holcim Algeria
    - FICO workstream of the global SAP archiving programme (10+ countries)
@@ -134,17 +134,17 @@ AI transformation: I currently lead the automation of supplier invoice processin
 - Integrations: Coupa, xSuite, Celonis, Signavio, SAP Archiving
 
 ### Projects
-1. AI invoice automation: a project that replaces traditional OCR with a cloud solution based on LLMs and machine-learning predictions to post supplier invoices automatically in SAP across EMEA. Role: Project Manager; I built the business case and coordinate the vendor and the IT, cybersecurity and finance teams.
-2. Parking booking bot: a serverless bot that joins the office parking waitlist automatically every working day and sends email alerts. Built with AI (Claude), Cloudflare Workers and Google Apps Script, at zero cost.
-3. Reconciliation cockpit for finance: an AI assistant and a small web app that read SAP data and help finance teams clear open goods-receipt/invoice-receipt items, with guided analysis and suggested actions. Built with Gemini.
+1. AI in SAP Finance: I spot where AI adds value in finance processes, build the business case and coordinate vendors and IT, cybersecurity and finance teams. Role: Project Manager.
+2. Parking on autopilot: a serverless bot that joins the office parking waitlist automatically every working day and sends email alerts. Built with AI (Claude), Cloudflare Workers and Google Apps Script, at zero cost.
+3. GR/IR Copilot: an AI assistant and a small web app that read SAP data and help finance teams clear open goods-receipt/invoice-receipt items, with guided analysis and suggested actions. Built with Gemini.
 4. This website: built by directing AI (Claude Code) with HTML, Tailwind CSS, Git and GitHub Pages.
 
 Cards (quick read; the full text above goes under "See more"):
 | Project | Status | Impact line | My role | Tags |
 |---|---|---|---|---|
-| AI invoice automation | In progress | Moving from traditional OCR to AI to post supplier invoices across EMEA. | Project Manager | LLM · Machine learning · SAP · Cloud |
-| Parking booking bot | In use | Joins the office parking waitlist by itself every working day. Cost: zero. | Idea and build, with AI | Claude · Cloudflare Workers · Google Apps Script |
-| Reconciliation cockpit for finance | Prototype | An AI assistant that helps finance teams clear open items in SAP. | Idea and build, with AI | Gemini · SAP · Web app |
+| AI in SAP Finance | In progress | Leading the move to AI in SAP finance processes. | Project Manager | Generative AI · Machine learning · SAP FICO |
+| Parking on autopilot | In use | Joins the parking waitlist for me every day. Cost: zero. | Idea and build, with AI | Claude · Cloudflare Workers · Google Apps Script |
+| GR/IR Copilot | Prototype | Analyses open items in SAP and suggests how to clear them. | Idea and build, with AI | Gemini · SAP · Web app |
 | This website | Under construction | A website built by directing AI, from the first line of code to going live. | Directing the AI | Claude Code · HTML · Tailwind CSS · GitHub Pages |
 
 Interface labels: "My role", "See more", "✦ Turn on the 3D motion effect" (iPhone-only button), "View the code on GitHub".
@@ -152,11 +152,11 @@ Interface labels: "My role", "See more", "✦ Turn on the 3D motion effect" (iPh
 ### AI twin
 - Greeting: Hi, I'm Javier's AI twin. Pick a question.
 - Notice: Predefined answers, no live AI.
-- Who are you? → I'm Javier Plata Escribano. I've spent more than 10 years leading SAP S/4HANA finance transformation programmes and international rollouts across Europe, Africa, Asia and Latin America. These days my focus is bringing AI into finance. (→ Go to About me)
-- What do you do with AI? → I lead, as Project Manager, the automation of supplier invoice processing with generative AI and machine learning. I also build my own AI apps, like a bot that books the office parking by itself or a cockpit that helps finance teams reconcile items in SAP. (→ Go to Projects)
+- Who are you? → I'm Javier Plata Escribano. I've spent more than 10 years leading SAP S/4HANA finance transformation programmes and international rollouts across Europe, Africa, Asia and Latin America. These days my focus is business transformation with AI. (→ Go to About me)
+- What do you do with AI? → Day to day, I lead AI projects on SAP Finance. And on my own I build AI apps, like a bot that joins the parking waitlist by itself or a copilot for GR/IR items. (→ Go to Projects)
 - Where have you worked? → I'm currently at the Holcim EMEA Digital Center as a senior SAP FICO consultant. Before that I was at Deloitte Consulting and Mercedes-Benz Group Services Madrid, and I started out at Iberdrola. I've worked on projects in Spain, the UK, Sweden, Algeria, China, Mexico and Chile. (→ Go to Experience)
 - What are your skills? → I bring three worlds together: project delivery (programmes, SAP Activate, Agile/Scrum, Product Owner), SAP finance (from GL and AP to Central Finance) and AI, both strategy and governance and the tools themselves: Claude Code, agents, RAG… (→ Go to Skills)
-- How was this website built? → By directing AI. I built it with Claude Code, using HTML, Tailwind CSS, Git and GitHub Pages, phase by phase and reviewing every step. And yes, I'll admit it: I'm not a real AI either, my answers are written in advance. (→ View the code on GitHub)
+- How was this website built? → By directing AI. I built it with Claude Code, using HTML, Tailwind CSS, Git and GitHub Pages, phase by phase and reviewing every step. And yes, I'll admit it: I'm not a real AI either, my answers are written in advance 😉 (→ View the code on GitHub)
 - Final button: Start over
 
 ### Contact
