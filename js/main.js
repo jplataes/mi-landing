@@ -417,3 +417,42 @@
     });
   }, { passive: true });
 })();
+
+// --- Formación: la señal recorre el circuito y enciende cada estación al hacer scroll ---
+(function () {
+  const wrap = document.querySelector('.circuit-wrap');
+  if (!wrap) return;
+  const stations = Array.from(wrap.querySelectorAll('.station'));
+  const n = stations.length;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function set(p) {
+    wrap.style.setProperty('--p', p.toFixed(3));
+    stations.forEach(function (st, i) {
+      // En horizontal, cada estación está en una fracción del recorrido; en vertical, igual pero de arriba abajo
+      st.classList.toggle('is-on', p > 0 && p >= (n === 1 ? 0 : i / (n - 1)) - 0.02);
+    });
+  }
+  if (reduceMotion) { set(1); return; }
+
+  let pending = false;
+  function update() {
+    pending = false;
+    const r = wrap.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const horizontal = window.matchMedia('(min-width: 900px)').matches;
+    // Horizontal: se completa mientras el circuito sube media pantalla. Vertical: sigue a la lectura.
+    const p = horizontal ? (vh * 0.85 - r.top) / (vh * 0.5) : (vh * 0.7 - r.top) / r.height;
+    set(Math.max(0, Math.min(1, p)));
+  }
+  function schedule() { if (!pending) { pending = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule);
+  update();
+})();
+
+// --- Pie: el año se actualiza solo ---
+(function () {
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+})();

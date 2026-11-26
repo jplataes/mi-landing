@@ -959,3 +959,92 @@ body { background: transparent; }
   .ambient { transform: none; }
   .section::before, .site-footer::before { transform: none; opacity: 1; transition: none; }
 }
+
+/* ---------- Formación: trazado de circuito ---------- */
+.circuit-wrap { position: relative; --p: 1; }          /* sin JavaScript: todo encendido */
+.js .circuit-wrap { --p: 0; }
+.circuit { display: grid; gap: 1.25rem; position: relative; }
+
+/* Pista: base tenue + tramo encendido + señal en la punta */
+.circuit-track { position: absolute; pointer-events: none; }
+.circuit-track::before {
+  content: ""; position: absolute; inset: 0;
+  background: repeating-linear-gradient(var(--track-dir, 90deg), rgb(148 163 184 / 0.28) 0 10px, transparent 10px 16px);
+}
+.circuit-fill {
+  position: absolute;
+  background: linear-gradient(var(--track-dir, 90deg), var(--cyan), var(--violet));
+  box-shadow: 0 0 12px rgb(34 211 238 / 0.6);
+}
+.circuit-signal {
+  position: absolute;
+  width: 14px; height: 14px; margin: -6px 0 0 -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0 25%, var(--cyan) 45%, transparent 70%);
+  box-shadow: 0 0 18px 6px rgb(34 211 238 / 0.55);
+  opacity: calc(var(--p) * (1 - var(--p)) * 6);  /* visible mientras avanza, se apaga al llegar */
+}
+
+/* Estación: nodo tipo "pad" de chip + tarjeta */
+.station { position: relative; }
+.station-node {
+  position: absolute;
+  width: 16px; height: 16px;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  background: var(--navy-950);
+  border: 2px solid rgb(148 163 184 / 0.45);
+  transition: background-color 0.4s, border-color 0.4s, box-shadow 0.4s;
+}
+.station-card {
+  padding: 1rem 1.1rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgb(255 255 255 / 0.08);
+  background: linear-gradient(160deg, rgb(17 29 66 / 0.7), rgb(10 20 48 / 0.6));
+  opacity: 0.45;
+  transition: opacity 0.5s, border-color 0.5s, box-shadow 0.5s;
+}
+.station-years { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.8rem; color: var(--cyan); }
+.station-title { margin-top: 0.25rem; font-size: 1.02rem; font-weight: 700; line-height: 1.3; color: #fff; }
+.station-place { margin-top: 0.25rem; font-size: 0.88rem; color: #c4b5fd; }
+
+/* Estación encendida */
+.station.is-on .station-node { background: var(--cyan); border-color: #fff; box-shadow: 0 0 14px var(--cyan); }
+.station.is-on .station-card { opacity: 1; border-color: rgb(34 211 238 / 0.3); }
+.station-last.is-on .station-node { animation: pad-pulse 2s ease-in-out infinite; }
+.station-last.is-on .station-card { box-shadow: 0 0 30px rgb(34 211 238 / 0.18); border-color: rgb(34 211 238 / 0.55); }
+@keyframes pad-pulse { 50% { box-shadow: 0 0 26px 6px rgb(34 211 238 / 0.7); } }
+
+/* Móvil y tableta: circuito vertical a la izquierda */
+@media (max-width: 899px) {
+  .circuit-wrap { --track-dir: 180deg; padding-left: 2.25rem; }
+  .circuit-track { left: 0.55rem; top: 1.2rem; bottom: 1.2rem; width: 2px; }
+  .circuit-fill { left: 0; top: 0; width: 2px; height: calc(var(--p) * 100%); }
+  .circuit-signal { left: 1px; top: calc(var(--p) * 100%); }
+  .station-node { left: -2.15rem; top: 1.1rem; }
+}
+/* Escritorio: circuito horizontal con las estaciones debajo */
+@media (min-width: 900px) {
+  .circuit { grid-template-columns: repeat(5, 1fr); padding-top: 2.75rem; }
+  .circuit-track { left: 10%; right: 10%; top: 0.95rem; height: 2px; }
+  .circuit-fill { left: 0; top: 0; height: 2px; width: calc(var(--p) * 100%); }
+  .circuit-signal { top: 1px; left: calc(var(--p) * 100%); }
+  .station-node { left: calc(50% - 8px); top: calc(-2.75rem + 0.45rem); }
+  .station::before {                 /* patilla que une la pista con la tarjeta */
+    content: ""; position: absolute; left: 50%; top: -1.3rem; height: 1.3rem; width: 1px;
+    background: rgb(148 163 184 / 0.3);
+  }
+  .station.is-on::before { background: var(--cyan); box-shadow: 0 0 6px var(--cyan); }
+}
+
+/* Idiomas */
+.languages { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; color: #cbd5e1; }
+.languages-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem; color: var(--cyan);
+  padding: 0.15rem 0.6rem; border-radius: 9999px;
+  border: 1px solid rgb(34 211 238 / 0.35);
+}
+@media (prefers-reduced-motion: reduce) {
+  .station-last.is-on .station-node { animation: none; }
+}
