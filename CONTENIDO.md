@@ -1,6 +1,6 @@
-# Contenido de la web (textos definitivos)
+# Contenido del sitio
 
-Usar estos textos tal cual. Español por defecto; inglés con el botón ES/EN.
+Textos oficiales de la web en español (idioma por defecto) e inglés. Deben usarse literalmente.
 
 ## Español
 
