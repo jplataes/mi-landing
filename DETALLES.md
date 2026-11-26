@@ -138,7 +138,7 @@ Todo está hecho con HTML, CSS y JavaScript propio, sin librerías ni backend.
   - **LinkedIn:** pega la URL en el [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) o en un borrador de publicación.
   - **WhatsApp (Android e iPhone):** envía el enlace en un chat (por ejemplo, contigo mismo); la tarjeta aparece antes de enviar.
   - **Cualquier red:** [opengraph.xyz](https://www.opengraph.xyz/) muestra cómo se verá en cada una.
-- **Valor:** primera impresión cuidada incluso antes de entrar. Como la web tiene una única URL para los dos idiomas, la vista previa es **bilingüe** (frase en español e inglés). La imagen pesa 54 KB para que WhatsApp la muestre sin problemas, y la imagen se generó a partir del propio Hero, así que la marca es coherente.
+- **Valor:** primera impresión cuidada incluso antes de entrar. Como la web tiene una única URL para los dos idiomas, la vista previa es **bilingüe** (frase en español e inglés). La imagen pesa 62 KB para que WhatsApp la muestre sin problemas, se generó a partir del propio Hero (marca coherente) y tiene una **composición centrada**: si WhatsApp en móvil la recorta a una miniatura cuadrada, el nombre, el rol y la frase siguen viéndose completos.
 
 ---
 
