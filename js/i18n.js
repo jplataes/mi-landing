@@ -89,7 +89,7 @@
     skill1Title: 'Project management',
     skill1: ['programme and portfolio management', 'SAP Activate', 'Agile/Scrum', 'Product Owner', 'KPIs and value'],
     skill2Title: 'AI strategy',
-    skill2: ['roadmap and use-case prioritisation', 'value KPIs', 'AI governance and responsible AI', 'EU AI Act'],
+    skill2: ['roadmap', 'use-case prioritisation', 'value KPIs', 'AI governance and responsible AI', 'EU AI Act'],
     skill3Title: 'AI tools',
     skill3: ['Claude Code', 'OpenAI Codex', 'AI agents and MCP', 'RAG', 'n8n', 'LLM APIs', 'Microsoft 365 Copilot', 'Gemini'],
     skill4Title: 'SAP Finance',

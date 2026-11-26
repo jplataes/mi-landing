@@ -45,7 +45,7 @@ Transformación con IA: actualmente lidero la automatización del procesamiento 
 
 ### Habilidades
 - Gestión de proyectos: gestión de programas y portfolio, SAP Activate, Agile/Scrum, Product Owner, KPIs y valor
-- Estrategia de IA: hoja de ruta y priorización de casos de uso, KPIs de valor, gobierno de IA e IA responsable, EU AI Act
+- Estrategia de IA: hoja de ruta, priorización de casos de uso, KPIs de valor, gobierno de IA e IA responsable, EU AI Act
 - Herramientas de IA: Claude Code, OpenAI Codex, agentes de IA y MCP, RAG, n8n, APIs de LLM, Microsoft 365 Copilot, Gemini
 - SAP Finanzas: GL, AP, AR, AA, TR, FSCM, REFX, Central Finance, CO
 - Integraciones: Coupa, xSuite, Celonis, Signavio, SAP Archiving
@@ -103,7 +103,7 @@ AI transformation: I currently lead the automation of supplier invoice processin
 
 ### Skills
 - Project management: programme and portfolio management, SAP Activate, Agile/Scrum, Product Owner, KPIs and value
-- AI strategy: roadmap and use-case prioritisation, value KPIs, AI governance and responsible AI, EU AI Act
+- AI strategy: roadmap, use-case prioritisation, value KPIs, AI governance and responsible AI, EU AI Act
 - AI tools: Claude Code, OpenAI Codex, AI agents and MCP, RAG, n8n, LLM APIs, Microsoft 365 Copilot, Gemini
 - SAP Finance: GL, AP, AR, AA, TR, FSCM, REFX, Central Finance, CO
 - Integrations: Coupa, xSuite, Celonis, Signavio, SAP Archiving
