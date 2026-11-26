@@ -10,8 +10,17 @@
     menu.classList.toggle('hidden', !open);
     menu.classList.toggle('flex', open);
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    updateLabel();
   }
+
+  // Etiqueta accesible del botón en el idioma activo
+  function updateLabel() {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    const key = open ? 'menuClose' : 'menuOpen';
+    toggle.setAttribute('aria-label', window.i18n ? window.i18n.t(key) : (open ? 'Cerrar menú' : 'Abrir menú'));
+  }
+  document.addEventListener('langchange', updateLabel);
+  updateLabel();
 
   toggle.addEventListener('click', function () {
     setOpen(toggle.getAttribute('aria-expanded') !== 'true');

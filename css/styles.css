@@ -73,3 +73,60 @@ section { scroll-margin-top: 4rem; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Botones de llamada a la acción */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.btn-primary {
+  background: linear-gradient(90deg, var(--cyan), var(--violet));
+  color: var(--navy-950);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 24px rgb(34 211 238 / 0.45); }
+.btn-secondary {
+  border: 1px solid rgb(167 139 250 / 0.6);
+  color: #e2e8f0;
+}
+.btn-secondary:hover { background: rgb(167 139 250 / 0.12); transform: translateY(-2px); }
+
+/* Tarjetas de habilidades y proyectos */
+.card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(255 255 255 / 0.08);
+  background: linear-gradient(160deg, rgb(17 29 66 / 0.7), rgb(10 20 48 / 0.7));
+}
+.card-title { font-size: 1.2rem; font-weight: 600; color: #fff; }
+
+/* Etiquetas (chips) dentro de las tarjetas de habilidades */
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.chips li {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #cffafe;
+  background: rgb(34 211 238 / 0.08);
+  border: 1px solid rgb(34 211 238 / 0.25);
+}
+
+/* Selector de idioma ES/EN */
+.lang-switch {
+  display: flex;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 9999px;
+  padding: 2px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+}
+.lang-switch button {
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  color: #94a3b8;
+  transition: color 0.2s, background-color 0.2s;
+}
+.lang-switch button:hover { color: #fff; }
+.lang-switch button[aria-pressed="true"] { background: var(--cyan); color: var(--navy-950); font-weight: 700; }
