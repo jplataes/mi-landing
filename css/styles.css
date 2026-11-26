@@ -720,3 +720,152 @@ section { scroll-margin-top: 4rem; }
 .twin-restart { border-color: rgb(167 139 250 / 0.5); background: rgb(167 139 250 / 0.08); }
 .twin-noscript { padding: 1rem; color: #94a3b8; }
 @media (max-width: 380px) { .twin-q, .twin-restart { font-size: 0.82rem; padding: 0.4rem 0.75rem; } }
+
+/* ---------- Certificaciones: credenciales holográficas ---------- */
+.certs-title { font-size: 1.25rem; font-weight: 600; color: #fff; }
+.cert-deck {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  perspective: 1000px;
+}
+/* Móvil y tableta: fila deslizable que encaja tarjeta a tarjeta */
+@media (max-width: 1199px) {
+  .cert-deck {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin: 1.5rem -1rem 0;
+    padding: 0.5rem 1rem 1.25rem;
+    scrollbar-width: thin;
+  }
+  .cert { scroll-snap-align: center; }
+}
+@media (min-width: 640px) and (max-width: 1199px) { .cert-deck { margin: 1.5rem -1.5rem 0; padding: 0.5rem 1.5rem 1.25rem; } }
+.cert { flex: 0 0 13.5rem; }
+@media (min-width: 1200px) { .cert { flex: 1 1 0; } }
+
+.cert-card {
+  position: relative;
+  height: 100%;
+  min-height: 16.5rem;
+  display: flex; flex-direction: column;
+  padding: 1.1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  isolation: isolate;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease-out, box-shadow 0.3s;
+  will-change: transform;
+}
+.cert.is-tilting .cert-card { transition: transform 0.08s linear, box-shadow 0.3s; }
+
+/* Credencial obtenida: tarjeta sólida con lámina holográfica */
+.cert-verified .cert-card {
+  background:
+    linear-gradient(160deg, rgb(26 40 86 / 0.95), rgb(10 18 44 / 0.95));
+  border: 1px solid rgb(255 255 255 / 0.14);
+  box-shadow: 0 14px 30px rgb(0 0 0 / 0.35), inset 0 1px 0 rgb(255 255 255 / 0.08);
+}
+.cert-verified:hover .cert-card { box-shadow: 0 20px 40px rgb(0 0 0 / 0.45), 0 0 30px rgb(167 139 250 / 0.25); }
+.cert-holo {
+  position: absolute; inset: 0; z-index: -1;
+  pointer-events: none;
+  /* arcoíris iridiscente + líneas finas de sello de seguridad */
+  background:
+    repeating-linear-gradient(115deg, rgb(255 255 255 / 0.05) 0 2px, transparent 2px 7px),
+    linear-gradient(115deg,
+      transparent 20%,
+      rgb(34 211 238 / 0.55) 32%,
+      rgb(167 139 250 / 0.55) 42%,
+      rgb(244 114 182 / 0.45) 52%,
+      rgb(250 204 21 / 0.4) 60%,
+      rgb(52 211 153 / 0.45) 68%,
+      transparent 80%);
+  background-size: 100% 100%, 260% 260%;
+  background-position: 0 0, var(--hx, 30%) var(--hy, 30%);
+  mix-blend-mode: color-dodge;
+  opacity: 0.45;
+  transition: opacity 0.3s;
+}
+.cert-verified:hover .cert-holo { opacity: 0.75; }
+
+/* Credencial en curso: "plano técnico" que se está imprimiendo */
+.cert-progress .cert-card {
+  background:
+    linear-gradient(rgb(34 211 238 / 0.07) 1px, transparent 1px) 0 0 / 100% 14px,
+    linear-gradient(90deg, rgb(34 211 238 / 0.07) 1px, transparent 1px) 0 0 / 14px 100%,
+    rgb(7 14 36 / 0.85);
+  border: 1px dashed rgb(34 211 238 / 0.45);
+}
+.cert-progress .cert-holo { display: none; }
+.cert-progress .cert-body, .cert-progress .cert-seal { opacity: 0.8; }
+.cert-progress .cert-card::after {      /* haz de luz que recorre la tarjeta */
+  content: "";
+  position: absolute; left: 0; right: 0; top: -30%;
+  height: 30%;
+  background: linear-gradient(180deg, transparent, rgb(34 211 238 / 0.18) 70%, rgb(103 232 249 / 0.7) 98%, transparent);
+  animation: scan 2.8s linear infinite;
+  animation-delay: calc(var(--i) * -0.9s);
+  pointer-events: none;
+}
+@keyframes scan { to { top: 100%; } }
+
+.cert-top { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+/* Sello hexagonal con el monograma del emisor */
+.cert-seal {
+  display: grid; place-items: center;
+  width: 2.6rem; height: 2.9rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.02em;
+  color: #0b1023;
+  background: conic-gradient(from var(--seal-angle, 0deg), #67e8f9, #a78bfa, #f9a8d4, #fde68a, #6ee7b7, #67e8f9);
+}
+.cert-progress .cert-seal { color: var(--cyan); background: transparent; outline: 1px dashed rgb(34 211 238 / 0.6); clip-path: none; border-radius: 0.5rem; }
+.cert-status {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 9999px;
+  font-size: 0.72rem; font-weight: 700;
+  white-space: nowrap;
+}
+.cert-verified .cert-status { color: #6ee7b7; background: rgb(52 211 153 / 0.12); border: 1px solid rgb(52 211 153 / 0.45); }
+.cert-progress .cert-status { color: #fcd34d; background: rgb(251 191 36 / 0.1); border: 1px solid rgb(251 191 36 / 0.45); }
+.cert-progress .cert-status i { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: currentColor; animation: blink 1.2s steps(1) infinite; }
+
+.cert-body { margin-top: 1rem; flex: 1; }
+.cert-issuer { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #94a3b8; }
+.cert-name { margin-top: 0.3rem; font-size: 1.05rem; font-weight: 700; line-height: 1.25; color: #fff; }
+.cert-detail { margin-top: 0.35rem; font-size: 0.8rem; color: #c4b5fd; }
+.cert-foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+  margin-top: 1rem; padding-top: 0.6rem;
+  border-top: 1px solid rgb(255 255 255 / 0.1);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.75rem; color: #cbd5e1;
+}
+.cert-serial { color: #64748b; letter-spacing: 0.05em; }
+/* Barra de progreso indeterminada de las credenciales en curso */
+.cert-bar { position: relative; width: 4.5rem; height: 0.3rem; border-radius: 9999px; background: rgb(251 191 36 / 0.15); overflow: hidden; }
+.cert-bar i { position: absolute; inset: 0 auto 0 0; width: 40%; border-radius: inherit; background: #fcd34d; animation: bar 1.6s ease-in-out infinite; }
+@keyframes bar { 0% { left: -40%; } 100% { left: 100%; } }
+
+/* Entrada: en pantallas grandes, la baraja apilada se despliega en abanico */
+@media (min-width: 1200px) {
+  .js .certs.reveal .cert {
+    transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.6s;
+    transition-delay: calc(0.25s + var(--i) * 0.07s);
+  }
+  .js .certs.reveal:not(.is-visible) .cert {
+    transform: translateX(calc((2 - var(--i)) * (100% + 1rem))) rotate(calc((var(--i) - 2) * 5deg)) translateY(calc(var(--i) * -4px));
+  }
+}
+/* Pantallas pequeñas: las tarjetas entran una tras otra desde la derecha */
+@media (max-width: 1199px) {
+  .js .certs.reveal .cert { transition: transform 0.7s ease-out, opacity 0.7s; transition-delay: calc(var(--i) * 0.08s); }
+  .js .certs.reveal:not(.is-visible) .cert { transform: translateX(40px); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .certs.reveal .cert { transform: none !important; opacity: 1 !important; }
+  .cert-progress .cert-card::after, .cert-bar i { animation: none; }
+}

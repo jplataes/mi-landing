@@ -105,6 +105,9 @@
     skill4Title: 'SAP Finance',
     skill4: ['GL', 'AP', 'AR', 'AA', 'TR', 'FSCM', 'REFX', 'Central Finance', 'CO'],
     skill5Title: 'Integrations',
+    certsTitle: 'Certifications',
+    certVerified: 'Verified',
+    certProgress: 'In progress',
     skill5: ['Coupa', 'xSuite', 'Celonis', 'Signavio', 'SAP Archiving'],
     // Proyectos
     eyebrowProjects: '04 · projects',
