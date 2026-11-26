@@ -1,0 +1,132 @@
+/* Estilos propios: solo lo que Tailwind no cubre de forma cómoda */
+
+:root {
+  --navy-950: #050b1f;
+  --cyan: #22d3ee;
+  --violet: #a78bfa;
+}
+
+/* Compensa la cabecera fija al saltar a una sección */
+section { scroll-margin-top: 4rem; }
+
+/* Secciones: espaciado común y separación suave */
+.section { padding: 5rem 0; border-top: 1px solid rgb(255 255 255 / 0.05); }
+@media (min-width: 768px) { .section { padding: 7rem 0; } }
+.section-inner { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
+@media (min-width: 640px) { .section-inner { padding: 0 1.5rem; } }
+
+/* Etiqueta tipo terminal sobre cada título */
+.eyebrow {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.875rem;
+  color: var(--cyan);
+}
+
+/* Título de sección con degradado cian → violeta */
+.section-title {
+  margin-top: 0.5rem;
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  background: linear-gradient(90deg, #fff 0%, var(--cyan) 60%, var(--violet) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Enlaces del menú */
+.nav-link {
+  display: block;
+  padding: 0.5rem 0.25rem;
+  color: #cbd5e1;
+  transition: color 0.2s;
+}
+.nav-link:hover { color: var(--cyan); }
+
+/* Foco visible y coherente en toda la web */
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Enlace "saltar al contenido": oculto hasta recibir el foco */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--cyan);
+  color: var(--navy-950);
+  font-weight: 600;
+  border-radius: 0.375rem;
+}
+.skip-link:focus { top: 1rem; }
+
+/* Movimiento reducido: sin desplazamiento suave ni transiciones */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Botones de llamada a la acción */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.btn-primary {
+  background: linear-gradient(90deg, var(--cyan), var(--violet));
+  color: var(--navy-950);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 24px rgb(34 211 238 / 0.45); }
+.btn-secondary {
+  border: 1px solid rgb(167 139 250 / 0.6);
+  color: #e2e8f0;
+}
+.btn-secondary:hover { background: rgb(167 139 250 / 0.12); transform: translateY(-2px); }
+
+/* Tarjetas de habilidades y proyectos */
+.card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(255 255 255 / 0.08);
+  background: linear-gradient(160deg, rgb(17 29 66 / 0.7), rgb(10 20 48 / 0.7));
+}
+.card-title { font-size: 1.2rem; font-weight: 600; color: #fff; }
+
+/* Etiquetas (chips) dentro de las tarjetas de habilidades */
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.chips li {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #cffafe;
+  background: rgb(34 211 238 / 0.08);
+  border: 1px solid rgb(34 211 238 / 0.25);
+}
+
+/* Selector de idioma ES/EN */
+.lang-switch {
+  display: flex;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 9999px;
+  padding: 2px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+}
+.lang-switch button {
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  color: #94a3b8;
+  transition: color 0.2s, background-color 0.2s;
+}
+.lang-switch button:hover { color: #fff; }
+.lang-switch button[aria-pressed="true"] { background: var(--cyan); color: var(--navy-950); font-weight: 700; }
