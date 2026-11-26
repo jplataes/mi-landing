@@ -39,3 +39,52 @@
     }
   });
 })();
+
+// --- Animaciones de entrada al hacer scroll y contadores animados ---
+(function () {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const items = document.querySelectorAll('.reveal');
+
+  // Cuenta de 0 hasta el valor final con una curva suave
+  function countUp(el) {
+    const target = Number(el.dataset.count);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1600;
+    const start = performance.now();
+    (function tick(now) {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - t, 4);
+      el.textContent = Math.round(target * eased) + (t === 1 ? suffix : '');
+      if (t < 1) requestAnimationFrame(tick);
+    })(start);
+  }
+
+  function show(el) {
+    el.classList.add('is-visible');
+    el.querySelectorAll('[data-count]').forEach(function (num) {
+      // Esperamos el retardo de entrada del elemento antes de contar
+      const delay = parseInt(getComputedStyle(el).getPropertyValue('--delay'), 10) || 0;
+      setTimeout(function () { countUp(num); }, delay + 150);
+    });
+  }
+
+  // Sin animaciones o sin soporte: todo visible y con la cifra final
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+
+  // Los contadores parten de 0 hasta que entran en pantalla
+  document.querySelectorAll('[data-count]').forEach(function (num) { num.textContent = '0'; });
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        show(entry.target);
+        observer.unobserve(entry.target); // solo la primera vez
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '0px 0px -40px 0px' });
+
+  items.forEach(function (el) { observer.observe(el); });
+})();

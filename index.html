@@ -26,6 +26,8 @@
     };
   </script>
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Indica que hay JavaScript: las animaciones de entrada solo se preparan en ese caso -->
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="bg-navy-950 text-slate-200 antialiased">
 
@@ -81,14 +83,35 @@
       </div>
     </section>
 
-    <!-- Sobre mí: la Fase 3 añadirá contadores y la Fase 4 el mapa -->
+    <!-- Sobre mí: texto, contadores animados (Fase 3) y, en la Fase 4, el mapa -->
     <section id="sobre-mi" class="section" aria-labelledby="titulo-sobre-mi">
       <div class="section-inner">
-        <p class="eyebrow" data-i18n="eyebrowAbout">01 · sobre_mí</p>
-        <h2 id="titulo-sobre-mi" class="section-title" data-i18n="titleAbout">Sobre mí</h2>
-        <div class="mt-8 max-w-3xl space-y-5 text-lg leading-relaxed text-slate-300">
-          <p data-i18n="about1">SAP S/4HANA Finance Project Leader con más de 10 años liderando grandes programas de transformación financiera y rollouts internacionales en Europa, África, Asia y Latinoamérica. Convierto la estrategia en hojas de ruta, gestiono alcance, plazos y presupuestos, mido el valor con KPIs y lidero equipos multidisciplinares y offshore como Product Owner.</p>
-          <p><strong class="text-cyan-glow" data-i18n="about2Label">Transformación con IA:</strong> <span data-i18n="about2">actualmente lidero la automatización del procesamiento de facturas de proveedor con IA generativa y machine learning, y creo aplicaciones de IA con Claude Code y OpenAI Codex. Sé priorizar una cartera de casos de uso de IA, llevarlos de la prueba de concepto a producción y gobernarlos de forma responsable para que generen valor medible para el negocio.</span></p>
+        <p class="eyebrow reveal" data-i18n="eyebrowAbout">01 · sobre_mí</p>
+        <h2 id="titulo-sobre-mi" class="section-title reveal" data-i18n="titleAbout">Sobre mí</h2>
+        <div class="mt-10 grid gap-10 lg:grid-cols-5 lg:gap-14">
+          <div class="space-y-5 text-lg leading-relaxed text-slate-300 lg:col-span-3">
+            <p class="reveal" data-i18n="about1">SAP S/4HANA Finance Project Leader con más de 10 años liderando grandes programas de transformación financiera y rollouts internacionales en Europa, África, Asia y Latinoamérica. Convierto la estrategia en hojas de ruta, gestiono alcance, plazos y presupuestos, mido el valor con KPIs y lidero equipos multidisciplinares y offshore como Product Owner.</p>
+            <p class="reveal" style="--delay: 120ms"><strong class="text-cyan-glow" data-i18n="about2Label">Transformación con IA:</strong> <span data-i18n="about2">actualmente lidero la automatización del procesamiento de facturas de proveedor con IA generativa y machine learning, y creo aplicaciones de IA con Claude Code y OpenAI Codex. Sé priorizar una cartera de casos de uso de IA, llevarlos de la prueba de concepto a producción y gobernarlos de forma responsable para que generen valor medible para el negocio.</span></p>
+          </div>
+
+          <!-- Contadores: la cifra animada es decorativa; la final se lee con lector de pantalla -->
+          <ul class="grid gap-4 sm:grid-cols-3 lg:col-span-2 lg:grid-cols-1">
+            <li class="stat reveal">
+              <span class="stat-num" aria-hidden="true" data-count="10" data-suffix="+">10+</span>
+              <span class="sr-only">10+</span>
+              <span class="stat-label" data-i18n="stat1">años liderando transformación financiera</span>
+            </li>
+            <li class="stat reveal" style="--delay: 120ms">
+              <span class="stat-num" aria-hidden="true" data-count="10" data-suffix="+">10+</span>
+              <span class="sr-only">10+</span>
+              <span class="stat-label" data-i18n="stat2">países con rollouts</span>
+            </li>
+            <li class="stat reveal" style="--delay: 240ms">
+              <span class="stat-num" aria-hidden="true" data-count="4">4</span>
+              <span class="sr-only">4</span>
+              <span class="stat-label" data-i18n="stat3">regiones</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

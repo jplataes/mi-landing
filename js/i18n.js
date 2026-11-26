@@ -34,6 +34,9 @@
     about1: 'SAP S/4HANA Finance Project Leader with more than 10 years leading large finance transformation programmes and international rollouts across Europe, Africa, Asia and Latin America. I turn strategy into roadmaps, manage scope, timelines and budgets, measure value with KPIs and lead multidisciplinary and offshore teams as Product Owner.',
     about2Label: 'AI transformation:',
     about2: 'I currently lead the automation of supplier invoice processing with generative AI and machine learning, and I build AI applications with Claude Code and OpenAI Codex. I know how to prioritise a portfolio of AI use cases, take them from proof of concept to production and govern them responsibly so they deliver measurable business value.',
+    stat1: 'years leading finance transformation',
+    stat2: 'countries with rollouts',
+    stat3: 'regions',
     // Habilidades
     eyebrowSkills: '02 · skills',
     titleSkills: 'Skills',
