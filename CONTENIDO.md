@@ -52,6 +52,14 @@ Transformación con IA: hoy lidero los proyectos de IA sobre SAP Finanzas en mi 
 - SAP Finanzas: GL, AP, AR, AA, TR, FSCM, REFX, Central Finance, CO
 - Integraciones: Coupa, xSuite, Celonis, Signavio, SAP Archiving
 
+### Certificaciones
+Título: Certificaciones · Estados: «Verificada» / «En curso». Los nombres van tal como aparecen en el CV (en inglés):
+- SAP Certified Associate · Project Manager (SAP Activate) · 2025 · Verificada
+- SAP Certified · Financial Accounting (S/4HANA Cloud Private Edition) · 2025 · Verificada
+- Coupa Certified · Procure-to-Invoice System Administrator · 2025 · Verificada
+- Microsoft Certified · AI Transformation Leader (Microsoft 365 Copilot & Azure AI) · En curso
+- Google Cloud Certified · Generative AI Leader (AI strategy & responsible AI) · En curso
+
 ### Proyectos
 1. IA en SAP Finanzas: identifico dónde aporta valor la IA en los procesos financieros, preparo el business case y coordino a proveedores y equipos de IT, ciberseguridad y finanzas. Rol: Project Manager.
 2. Parking en piloto automático: un bot sin servidor que se apunta solo a la lista de espera del parking de la oficina cada día laborable y envía avisos por email. Construido con IA (Claude), Cloudflare Workers y Google Apps Script, a coste cero.
@@ -134,6 +142,9 @@ AI transformation: Today I lead the AI projects on SAP Finance at my company. I 
 - AI tools: Claude Code, OpenAI Codex, AI agents and MCP, RAG, n8n, LLM APIs, Microsoft 365 Copilot, Gemini
 - SAP Finance: GL, AP, AR, AA, TR, FSCM, REFX, Central Finance, CO
 - Integrations: Coupa, xSuite, Celonis, Signavio, SAP Archiving
+
+### Certifications
+Title: Certifications · Statuses: "Verified" / "In progress". Same certification names as in the Spanish version.
 
 ### Projects
 1. AI in SAP Finance: I spot where AI adds value in finance processes, build the business case and coordinate vendors and IT, cybersecurity and finance teams. Role: Project Manager.

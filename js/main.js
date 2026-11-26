@@ -321,3 +321,68 @@
 
   schedule();
 })();
+
+// --- Certificaciones: inclinación y brillo holográfico ---
+// Con ratón, el holograma sigue al cursor. En móvil, cambia al deslizar las tarjetas,
+// al hacer scroll y con el giroscopio (si está disponible).
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const certs = Array.from(document.querySelectorAll('.cert'));
+  if (!certs.length) return;
+  const deck = document.querySelector('.cert-deck');
+  const hasMouse = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  function setHolo(cert, x, y) {   // x, y entre 0 y 1
+    const card = cert.querySelector('.cert-card');
+    card.style.setProperty('--hx', (x * 100).toFixed(1) + '%');
+    card.style.setProperty('--hy', (y * 100).toFixed(1) + '%');
+    card.style.setProperty('--seal-angle', (x * 360).toFixed(0) + 'deg');
+  }
+
+  if (hasMouse) {
+    certs.forEach(function (cert) {
+      const card = cert.querySelector('.cert-card');
+      let frame = 0;
+      cert.addEventListener('pointermove', function (e) {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(function () {
+          const r = card.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+          cert.classList.add('is-tilting');
+          card.style.transform = 'rotateX(' + ((0.5 - y) * 16).toFixed(2) + 'deg) rotateY(' + ((x - 0.5) * 16).toFixed(2) + 'deg) translateZ(10px)';
+          setHolo(cert, x, y);
+        });
+      });
+      cert.addEventListener('pointerleave', function () {
+        cancelAnimationFrame(frame);
+        cert.classList.remove('is-tilting');
+        card.style.transform = '';
+      });
+    });
+    return;
+  }
+
+  // Táctil: el holograma depende de la posición de cada tarjeta en pantalla
+  let gyro = null, pending = false;
+  function render() {
+    pending = false;
+    const vw = window.innerWidth, vh = window.innerHeight;
+    certs.forEach(function (cert) {
+      const r = cert.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > vh) return;
+      let x = (r.left + r.width / 2) / vw;
+      let y = (r.top + r.height / 2) / vh;
+      if (gyro) { x += gyro.gamma / 60; y += gyro.beta / 120; }
+      setHolo(cert, Math.max(0, Math.min(1, x)), Math.max(0, Math.min(1, y)));
+    });
+  }
+  function schedule() { if (!pending) { pending = true; requestAnimationFrame(render); } }
+  window.addEventListener('scroll', schedule, { passive: true });
+  if (deck) deck.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('deviceorientation', function (e) {
+    if (e.beta == null || e.gamma == null) return;
+    gyro = { beta: e.beta - 45, gamma: e.gamma };
+    schedule();
+  });
+  schedule();
+})();
