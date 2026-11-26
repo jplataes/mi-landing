@@ -155,6 +155,9 @@
     eyebrowContact: '06 · contact',
     titleContact: 'Contact',
     contactText: 'Find me on LinkedIn and GitHub.',
+    contactLine1: "Finance, SAP, AI… If that's your world too, let's connect.",
+    contactLine2: 'Good ideas usually start with a conversation. Shall we talk?',
+    contactLine3: 'I always pick up something new talking to people in the field. Up for a chat?',
     footer: '© 2026 Javier Plata Escribano · Website built by directing AI (Claude Code)'
   };
 
