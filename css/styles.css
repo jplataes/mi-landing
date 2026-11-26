@@ -234,3 +234,67 @@ section { scroll-margin-top: 4rem; }
   color: transparent;
 }
 .stat-label { color: #cbd5e1; font-size: 0.95rem; }
+
+/* ---------- Mapa de rollouts internacionales ---------- */
+.map-title { font-size: 1.25rem; font-weight: 600; color: #fff; }
+.map-frame {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(255 255 255 / 0.08);
+  background: radial-gradient(ellipse at 50% 40%, rgb(17 29 66 / 0.9), rgb(5 11 31 / 0.6));
+}
+.map-svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+/* Puntos: cada punto es un trazo de longitud 0 con extremo redondo */
+.map-base, .map-dots, .map-glow { fill: none; stroke-linecap: round; }
+.map-base { stroke: rgb(148 163 184 / 0.22); stroke-width: 0.62; }
+.map-dots { stroke: rgb(148 163 184 / 0.22); stroke-width: 0.62; transition: stroke 0.6s; }
+.map-glow { stroke-width: 1.7; opacity: 0; transition: opacity 0.8s; }
+
+/* Color de cada región */
+.map-region[data-region="europe"], .map-legend [data-region="europe"],
+.map-region[data-region="asia"], .map-legend [data-region="asia"] { --region: var(--cyan); }
+.map-region[data-region="africa"], .map-legend [data-region="africa"],
+.map-region[data-region="latam"], .map-legend [data-region="latam"] { --region: var(--violet); }
+
+.map-glow { stroke: var(--region); }
+.map-region.is-on .map-dots { stroke: var(--region); }
+.map-region.is-on .map-glow { opacity: 0.22; }
+
+/* Arco desde Europa hacia la región: se "dibuja" al encenderse */
+.map-arc {
+  fill: none;
+  stroke: var(--region);
+  stroke-width: 0.35;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  opacity: 0.9;
+  transition: stroke-dashoffset 1.1s ease-out;
+}
+.map-region.is-on .map-arc { stroke-dashoffset: 0; }
+
+/* Marcador central de cada región, con un pulso */
+.map-pin { fill: #fff; opacity: 0; transition: opacity 0.4s 0.6s; }
+.map-ping { fill: none; stroke: var(--region); stroke-width: 0.3; opacity: 0; transform-box: fill-box; transform-origin: center; }
+.map-region.is-on .map-pin { opacity: 1; }
+.map-region.is-on .map-ping { animation: ping 2.2s 0.8s ease-out infinite; }
+@keyframes ping {
+  from { opacity: 0.9; transform: scale(0.6); }
+  to { opacity: 0; transform: scale(3.2); }
+}
+.map-hub { fill: #fff; }
+
+/* Leyenda: las regiones se iluminan a la vez que en el mapa */
+.map-legend { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; }
+.map-legend li {
+  display: flex; align-items: center; gap: 0.5rem;
+  color: #94a3b8;
+  transition: color 0.6s;
+}
+.legend-dot {
+  width: 0.6rem; height: 0.6rem; border-radius: 50%;
+  background: rgb(148 163 184 / 0.35);
+  transition: background-color 0.6s, box-shadow 0.6s;
+}
+.map-legend li.is-on { color: #fff; }
+.map-legend li.is-on .legend-dot { background: var(--region); box-shadow: 0 0 10px var(--region); }

@@ -88,3 +88,45 @@
 
   items.forEach(function (el) { observer.observe(el); });
 })();
+
+// --- Mapa: las regiones se encienden una a una según avanza el scroll ---
+(function () {
+  const map = document.querySelector('.world-map');
+  if (!map) return;
+  const order = ['europe', 'africa', 'asia', 'latam'];
+  const parts = order.map(function (r) {
+    return map.querySelectorAll('[data-region="' + r + '"]'); // región del mapa + leyenda
+  });
+
+  function setOn(count) {
+    parts.forEach(function (els, i) {
+      els.forEach(function (el) { el.classList.toggle('is-on', i < count); });
+    });
+  }
+
+  // Movimiento reducido: todas encendidas, sin depender del scroll
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    setOn(order.length);
+    return;
+  }
+
+  let ticking = false;
+  function update() {
+    ticking = false;
+    const rect = map.getBoundingClientRect();
+    const vh = window.innerHeight;
+    // Cada región se enciende cuando el mapa sube un 12 % más de pantalla
+    let count = 0;
+    for (let i = 0; i < order.length; i++) {
+      if (rect.top < vh * (0.8 - 0.12 * i)) count = i + 1;
+    }
+    // Si el mapa entero ya cabe y se ha pasado, todas encendidas
+    if (rect.bottom < vh * 0.6) count = order.length;
+    setOn(count);
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();

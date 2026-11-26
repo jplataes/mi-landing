@@ -37,6 +37,11 @@
     stat1: 'years leading finance transformation',
     stat2: 'countries with rollouts',
     stat3: 'regions',
+    mapTitle: 'International rollouts',
+    regionEurope: 'Europe',
+    regionAfrica: 'Africa',
+    regionAsia: 'Asia',
+    regionLatam: 'Latin America',
     // Habilidades
     eyebrowSkills: '02 · skills',
     titleSkills: 'Skills',
