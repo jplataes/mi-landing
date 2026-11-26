@@ -3,7 +3,7 @@
 Guía de proyecto para Claude Code. Define el objetivo, los requisitos y la forma de trabajar en este repositorio.
 
 ## Objetivo
-Landing page personal de Javier Plata Escribano, desarrollada como Proyecto 1 del Máster en Soluciones de IA para Empresas (AI Maker).
+Landing page personal de Javier Plata Escribano.
 Sitio de una sola página con una experiencia visual moderna, interactiva y memorable, que presente su perfil en Transformación Digital e IA.
 Todos los textos proceden de CONTENIDO.md, que es la fuente única de los textos en español e inglés.
 
@@ -19,7 +19,7 @@ Todos los textos proceden de CONTENIDO.md, que es la fuente única de los textos
 - Humano, cercano y natural, sin ser coloquial. Escrito como lo diría Javier, en primera persona cuando encaje.
 - Nada de frases que suenen a traducción ni de jerga vacía ("sinergias", "soluciones innovadoras de vanguardia"...).
 - Los textos pueden reescribirse para mejorar el tono, pero sin inventar datos: solo se usa información que Javier haya dado.
-- Textos duraderos: nada que caduque con el tiempo («ahora estoy terminando…», «proyecto 1 del máster»). La web solo se actualiza ante cambios importantes (p. ej., cambio de empresa).
+- Textos duraderos: nada que caduque con el tiempo («ahora estoy terminando…», «este año empiezo…»). La web solo se actualiza ante cambios importantes (p. ej., cambio de empresa).
 - Todo texto nuevo o reescrito se redacta en español e inglés, se enseña a Javier para que lo apruebe y se guarda en CONTENIDO.md.
 - El inglés dice lo mismo que el español, con la naturalidad de un texto escrito en inglés, no traducido palabra a palabra.
 

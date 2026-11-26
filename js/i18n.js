@@ -36,9 +36,9 @@
     about1: 'with 10+ years at the helm of large finance transformation programmes and rollouts across Europe, Africa, Asia and Latin America. I work where business meets IT: I turn strategy into roadmaps, keep scope, timelines and budget in check, measure value with KPIs and lead cross-functional and offshore teams as Product Owner.',
     about2Label: 'AI transformation:',
     about2: "Today I lead the AI projects on SAP Finance at my company and, on my own, I build AI apps with Claude Code and OpenAI Codex. I'm into AI that actually gets used: picking the right use cases, governing them responsibly and making their value show in the business.",
-    stat1: 'years leading finance transformation',
-    stat2: 'countries in my projects',
-    stat3: 'regions',
+    stat1: 'Years leading finance transformation',
+    stat2: 'Countries in my projects',
+    stat3: 'Regions',
     // Mapa
     mapTitle: "Where I've worked",
     mapHint: 'Hover over or tap a dot to see what I did in each country.',
