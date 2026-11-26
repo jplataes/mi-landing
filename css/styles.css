@@ -611,3 +611,110 @@ section { scroll-margin-top: 4rem; }
   box-shadow: 0 0 16px rgb(34 211 238 / 0.15);
 }
 .motion-btn[hidden] { display: none; }
+
+/* ---------- Gemelo IA ---------- */
+.twin {
+  max-width: 46rem;
+  border-radius: 1.1rem;
+  border: 1px solid rgb(34 211 238 / 0.25);
+  background: linear-gradient(170deg, rgb(13 24 56 / 0.92), rgb(7 14 36 / 0.92));
+  box-shadow: 0 0 40px rgb(34 211 238 / 0.08), 0 20px 50px rgb(0 0 0 / 0.35);
+  overflow: hidden;
+}
+.twin-bar {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid rgb(255 255 255 / 0.08);
+  background: rgb(255 255 255 / 0.03);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem; color: #94a3b8;
+}
+.twin-dots { display: flex; gap: 0.35rem; }
+.twin-dots i { width: 0.65rem; height: 0.65rem; border-radius: 50%; background: #334155; }
+.twin-dots i:first-child { background: rgb(248 113 113 / 0.7); }
+.twin-dots i:nth-child(2) { background: rgb(251 191 36 / 0.7); }
+.twin-dots i:nth-child(3) { background: rgb(52 211 153 / 0.7); }
+.twin-bar-title { flex: 1; }
+.twin-status { display: inline-flex; align-items: center; gap: 0.35rem; color: #6ee7b7; }
+.twin-status i { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: #34d399; box-shadow: 0 0 8px #34d399; animation: blink 2s steps(1) infinite; }
+
+/* Conversación: se desplaza dentro de la ventana */
+.twin-log {
+  position: relative; /* referencia para colocar el scroll */
+  display: flex; flex-direction: column; gap: 0.9rem;
+  max-height: 26rem;
+  min-height: 9rem;
+  overflow-y: auto;
+  padding: 1.25rem 1rem;
+  scroll-behavior: smooth;
+}
+.msg { display: flex; gap: 0.6rem; align-items: flex-end; animation: card-in 0.25s ease-out; }
+.msg-user { justify-content: flex-end; }
+.bubble {
+  max-width: min(36rem, 85%);
+  padding: 0.7rem 0.95rem;
+  border-radius: 1rem;
+  line-height: 1.55;
+  font-size: 0.97rem;
+}
+.msg-bot .bubble {
+  color: #e2e8f0;
+  background: rgb(17 29 66 / 0.9);
+  border: 1px solid rgb(34 211 238 / 0.22);
+  border-bottom-left-radius: 0.3rem;
+}
+.msg-user .bubble {
+  color: #0b1023;
+  font-weight: 600;
+  background: linear-gradient(135deg, #67e8f9, #a78bfa);
+  border-bottom-right-radius: 0.3rem;
+}
+.twin-note { margin-top: 0.35rem; font-size: 0.8rem; color: #94a3b8; }
+.twin-link { display: inline-block; margin-top: 0.5rem; font-size: 0.9rem; font-weight: 600; color: var(--cyan); }
+.twin-link:hover { color: #fff; }
+
+/* Avatar del gemelo: un orbe con degradado que "respira" */
+.twin-avatar {
+  flex: none;
+  width: 2rem; height: 2rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff 0%, var(--cyan) 30%, var(--violet) 75%, #4c1d95 100%);
+  box-shadow: 0 0 14px rgb(34 211 238 / 0.5);
+  animation: orb 3s ease-in-out infinite;
+}
+@keyframes orb { 50% { box-shadow: 0 0 22px rgb(167 139 250 / 0.7); transform: scale(1.06); } }
+
+/* Indicador "escribiendo…" */
+.typing { display: inline-flex; gap: 0.3rem; padding: 0.25rem 0; }
+.typing i { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--cyan); animation: typing 1s infinite ease-in-out; }
+.typing i:nth-child(2) { animation-delay: 0.15s; }
+.typing i:nth-child(3) { animation-delay: 0.3s; }
+@keyframes typing { 0%, 60%, 100% { opacity: 0.3; transform: none; } 30% { opacity: 1; transform: translateY(-3px); } }
+
+/* Preguntas: botones tipo chip */
+.twin-questions {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  padding: 1rem;
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+  background: rgb(255 255 255 / 0.02);
+}
+.twin-q, .twin-restart {
+  padding: 0.45rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  color: #e2e8f0;
+  border: 1px solid rgb(34 211 238 / 0.35);
+  background: rgb(34 211 238 / 0.06);
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.twin-q:hover:not([aria-disabled="true"]), .twin-restart:hover {
+  background: rgb(34 211 238 / 0.16);
+  border-color: rgb(34 211 238 / 0.7);
+  box-shadow: 0 0 14px rgb(34 211 238 / 0.25);
+}
+.twin-q[aria-disabled="true"] { opacity: 0.45; cursor: wait; }
+.twin-q[hidden], .twin-restart[hidden] { display: none; }
+.twin-restart { border-color: rgb(167 139 250 / 0.5); background: rgb(167 139 250 / 0.08); }
+.twin-noscript { padding: 1rem; color: #94a3b8; }
+@media (max-width: 380px) { .twin-q, .twin-restart { font-size: 0.82rem; padding: 0.4rem 0.75rem; } }

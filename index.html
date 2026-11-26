@@ -418,11 +418,42 @@
       </div>
     </section>
 
-    <!-- Gemelo IA: Fase 7 -->
+    <!-- Gemelo IA: conversación guiada con preguntas predefinidas (sin backend, ver js/twin.js) -->
     <section id="gemelo" class="section" aria-labelledby="titulo-gemelo">
       <div class="section-inner">
-        <p class="eyebrow" data-i18n="eyebrowTwin">05 · gemelo_ia</p>
-        <h2 id="titulo-gemelo" class="section-title" data-i18n="titleTwin">Pregúntale a mi gemelo IA</h2>
+        <p class="eyebrow reveal" data-i18n="eyebrowTwin">05 · gemelo_ia</p>
+        <h2 id="titulo-gemelo" class="section-title reveal" data-i18n="titleTwin">Pregúntale a mi gemelo IA</h2>
+
+        <div class="twin reveal mt-10">
+          <!-- Barra superior tipo terminal -->
+          <div class="twin-bar" aria-hidden="true">
+            <span class="twin-dots"><i></i><i></i><i></i></span>
+            <span class="twin-bar-title">gemelo_ia — javier</span>
+            <span class="twin-status"><i></i> online</span>
+          </div>
+
+          <!-- Conversación: el lector de pantalla anuncia cada respuesta completa -->
+          <div class="twin-log" role="log" aria-live="polite" aria-labelledby="titulo-gemelo">
+            <div class="msg msg-bot">
+              <span class="twin-avatar" aria-hidden="true"></span>
+              <div class="bubble">
+                <p data-i18n="twinHello">Hola, soy el gemelo IA de Javier. Elige una pregunta.</p>
+                <p class="twin-note" data-i18n="twinNote">Respuestas predefinidas, sin IA en tiempo real.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preguntas disponibles -->
+          <div class="twin-questions" role="group" aria-label="Preguntas" data-i18n-attr="aria-label:twinQuestionsLabel">
+            <button type="button" class="twin-q" data-q="who" data-i18n="twinQ_who">¿Quién eres?</button>
+            <button type="button" class="twin-q" data-q="ai" data-i18n="twinQ_ai">¿Qué haces con IA?</button>
+            <button type="button" class="twin-q" data-q="where" data-i18n="twinQ_where">¿Dónde has trabajado?</button>
+            <button type="button" class="twin-q" data-q="skills" data-i18n="twinQ_skills">¿Cuáles son tus habilidades?</button>
+            <button type="button" class="twin-q" data-q="web" data-i18n="twinQ_web">¿Cómo se hizo esta web?</button>
+            <button type="button" class="twin-restart" hidden data-i18n="twinRestart">Empezar de nuevo</button>
+          </div>
+          <noscript><p class="twin-noscript">Activa JavaScript para conversar con mi gemelo IA.</p></noscript>
+        </div>
       </div>
     </section>
 
@@ -448,6 +479,7 @@
 
   <script src="js/i18n.js" defer></script>
   <script src="js/hero.js" defer></script>
+  <script src="js/twin.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
