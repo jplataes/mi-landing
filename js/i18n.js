@@ -129,6 +129,15 @@
     // Gemelo IA
     eyebrowTwin: '05 · ai_twin',
     titleTwin: 'Ask my AI twin',
+    twinHello: "Hi, I'm Javier's AI twin. Pick a question.",
+    twinNote: 'Predefined answers, no live AI.',
+    twinQuestionsLabel: 'Questions',
+    twinQ_who: 'Who are you?',
+    twinQ_ai: 'What do you do with AI?',
+    twinQ_where: 'Where have you worked?',
+    twinQ_skills: 'What are your skills?',
+    twinQ_web: 'How was this website built?',
+    twinRestart: 'Start over',
     // Contacto y pie
     eyebrowContact: '06 · contact',
     titleContact: 'Contact',

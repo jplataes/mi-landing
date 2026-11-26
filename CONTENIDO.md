@@ -66,6 +66,17 @@ Tarjetas (lectura rápida; el texto completo de arriba va en «Ver más»):
 
 Etiquetas de interfaz: «Mi rol», «Ver más», «✦ Activa el efecto 3D al mover el móvil» (botón solo en iPhone), «Ver el código en GitHub» (enlace de «Esta web» a https://github.com/jplataes/mi-landing).
 
+### Gemelo IA
+- Saludo: Hola, soy el gemelo IA de Javier. Elige una pregunta.
+- Aviso: Respuestas predefinidas, sin IA en tiempo real.
+- ¿Quién eres? → Soy Javier Plata Escribano. Llevo más de 10 años liderando programas de transformación financiera con SAP S/4HANA y rollouts internacionales en Europa, África, Asia y Latinoamérica. Ahora mi foco está en llevar la IA a las finanzas. (→ Ir a Sobre mí)
+- ¿Qué haces con IA? → Lidero como Project Manager la automatización del procesamiento de facturas de proveedor con IA generativa y machine learning. Y también creo mis propias aplicaciones de IA, como un bot que se apunta solo al parking de la oficina o un cockpit que ayuda a finanzas a conciliar partidas en SAP. (→ Ir a Proyectos)
+- ¿Dónde has trabajado? → Ahora estoy en el Holcim EMEA Digital Center como consultor SAP FICO senior. Antes pasé por Deloitte Consulting y por Mercedes-Benz Group Services Madrid, y empecé en Iberdrola. He trabajado en proyectos en España, Reino Unido, Suecia, Argelia, China, México y Chile. (→ Ir a Trayectoria)
+- ¿Cuáles son tus habilidades? → Combino tres mundos: la gestión de proyectos (programas, SAP Activate, Agile/Scrum, Product Owner), las finanzas en SAP (de GL y AP a Central Finance) y la IA, tanto en estrategia y gobierno como en herramientas: Claude Code, agentes, RAG… (→ Ir a Habilidades)
+- ¿Cómo se hizo esta web? → Dirigiendo a la IA. La construí con Claude Code, usando HTML, Tailwind CSS, Git y GitHub Pages, por fases y revisando cada paso. Y sí, te lo confieso: yo tampoco soy una IA de verdad, mis respuestas están escritas de antemano. (→ Ver el código en GitHub)
+- Botón final: Empezar de nuevo
+- Sin JavaScript: Activa JavaScript para conversar con mi gemelo IA.
+
 ### Contacto
 - Frases de cierre (rotan con efecto «descifrado», empezando por una al azar):
   1. Finanzas, SAP, IA… Si también es tu mundo, conectemos.
@@ -137,6 +148,16 @@ Cards (quick read; the full text above goes under "See more"):
 | This website | Under construction | A website built by directing AI, from the first line of code to going live. | Directing the AI | Claude Code · HTML · Tailwind CSS · GitHub Pages |
 
 Interface labels: "My role", "See more", "✦ Turn on the 3D motion effect" (iPhone-only button), "View the code on GitHub".
+
+### AI twin
+- Greeting: Hi, I'm Javier's AI twin. Pick a question.
+- Notice: Predefined answers, no live AI.
+- Who are you? → I'm Javier Plata Escribano. I've spent more than 10 years leading SAP S/4HANA finance transformation programmes and international rollouts across Europe, Africa, Asia and Latin America. These days my focus is bringing AI into finance. (→ Go to About me)
+- What do you do with AI? → I lead, as Project Manager, the automation of supplier invoice processing with generative AI and machine learning. I also build my own AI apps, like a bot that books the office parking by itself or a cockpit that helps finance teams reconcile items in SAP. (→ Go to Projects)
+- Where have you worked? → I'm currently at the Holcim EMEA Digital Center as a senior SAP FICO consultant. Before that I was at Deloitte Consulting and Mercedes-Benz Group Services Madrid, and I started out at Iberdrola. I've worked on projects in Spain, the UK, Sweden, Algeria, China, Mexico and Chile. (→ Go to Experience)
+- What are your skills? → I bring three worlds together: project delivery (programmes, SAP Activate, Agile/Scrum, Product Owner), SAP finance (from GL and AP to Central Finance) and AI, both strategy and governance and the tools themselves: Claude Code, agents, RAG… (→ Go to Skills)
+- How was this website built? → By directing AI. I built it with Claude Code, using HTML, Tailwind CSS, Git and GitHub Pages, phase by phase and reviewing every step. And yes, I'll admit it: I'm not a real AI either, my answers are written in advance. (→ View the code on GitHub)
+- Final button: Start over
 
 ### Contact
 - Closing lines (rotating with a "decode" effect, starting with a random one):
