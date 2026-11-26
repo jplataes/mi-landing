@@ -195,6 +195,13 @@ Interface labels: "My role", "See more", "✦ Turn on the 3D motion effect" and,
 - LinkedIn: https://www.linkedin.com/in/javierplata/
 - GitHub: https://github.com/jplataes
 
+## Vista previa al compartir / Share preview
+Una sola URL para los dos idiomas, así que la vista previa es bilingüe:
+- Título (ES): Javier Plata Escribano · Transformación Digital e IA · (EN): Javier Plata Escribano · Digital & AI Transformation
+- Descripción (fija, bilingüe): Transformación de negocio, ahora con IA. · Business transformation, now with AI. — SAP S/4HANA Finance Project Leader.
+- Imagen (`images/og-image.jpg`, 1200×630): red neuronal del Hero y, centrados (para que sobrevivan al recorte cuadrado de WhatsApp), nombre en dos líneas, rol en dos líneas y la frase en español e inglés.
+- Texto alternativo de la imagen (ES): Javier Plata Escribano · Transformación de negocio, ahora con IA · (EN): Javier Plata Escribano · Business transformation, now with AI
+
 ## Textos de interfaz / Interface texts
 
 Textos aprobados para menú, títulos, etiquetas y accesibilidad (ES → EN).

@@ -13,7 +13,7 @@ Todos los textos proceden de CONTENIDO.md, que es la fuente única de los textos
 3. Diseño responsive, mobile-first, para móvil, tablet y escritorio.
 4. Secciones: Hero, Sobre mí, Trayectoria, Formación (con certificaciones), Proyectos, Pregúntale a mi gemelo IA y Contacto.
 5. Publicación en GitHub Pages: sitio estático con index.html en la raíz.
-6. Portabilidad: la web podrá moverse a un dominio propio (tipo javierplata.es). Usar siempre rutas relativas y no escribir el dominio ni la ruta /mi-landing/ en el código.
+6. Portabilidad: la web podrá moverse a un dominio propio (tipo javierplata.es). Usar siempre rutas relativas y no escribir el dominio ni la ruta /mi-landing/ en el código. Única excepción: las etiquetas de vista previa al compartir (Open Graph, Twitter y canonical), que exigen URL absolutas; qué cambiar al migrar está en PLAN.md.
 
 ## Tono de los textos
 - Humano, cercano y natural, sin ser coloquial. Escrito como lo diría Javier, en primera persona cuando encaje.

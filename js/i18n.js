@@ -10,6 +10,8 @@
   const en = {
     // Página
     pageTitle: 'Javier Plata Escribano · Digital & AI Transformation',
+    ogTitle: 'Javier Plata Escribano · Digital & AI Transformation',
+    ogImageAlt: 'Javier Plata Escribano · Business transformation, now with AI',
     pageDesc: 'Javier Plata Escribano: Digital & AI Transformation | SAP S/4HANA Finance Project Leader. Business transformation, now with AI.',
     // Navegación y accesibilidad
     skip: 'Skip to content',
