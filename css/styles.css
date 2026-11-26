@@ -598,3 +598,16 @@ section { scroll-margin-top: 4rem; }
   font-weight: 600; color: var(--violet);
 }
 .project-link:hover { color: #fff; }
+
+/* Botón para activar el giroscopio en iPhone (solo aparece allí) */
+.motion-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.9rem; font-weight: 600;
+  color: var(--cyan);
+  border: 1px solid rgb(34 211 238 / 0.45);
+  background: rgb(34 211 238 / 0.08);
+  box-shadow: 0 0 16px rgb(34 211 238 / 0.15);
+}
+.motion-btn[hidden] { display: none; }

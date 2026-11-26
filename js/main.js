@@ -274,11 +274,23 @@
 
   window.addEventListener('scroll', schedule, { passive: true });
 
-  // Giroscopio: solo se usa si el navegador envía datos sin pedir permiso
-  // (Android sí; iPhone no los envía sin permiso, así que allí se queda el efecto de scroll)
+  // Giroscopio: se usa en cuanto el navegador envía datos.
+  // Android los envía sin pedir nada. iPhone exige permiso: mostramos un botón discreto
+  // y solo si el visitante lo pulsa aparece el aviso del sistema.
+  const motionBtn = document.querySelector('.motion-btn');
   if ('DeviceOrientationEvent' in window) {
+    if (motionBtn && typeof DeviceOrientationEvent.requestPermission === 'function') {
+      // Esperamos un momento: si ya llegan datos (Android), el botón no hace falta
+      setTimeout(function () { if (!gyro) motionBtn.hidden = false; }, 1200);
+      motionBtn.addEventListener('click', function () {
+        DeviceOrientationEvent.requestPermission()
+          .catch(function () { /* rechazado o no disponible: seguimos con el efecto de scroll */ })
+          .finally(function () { motionBtn.hidden = true; });
+      });
+    }
     window.addEventListener('deviceorientation', function (e) {
       if (e.beta == null || e.gamma == null) return;
+      if (motionBtn) motionBtn.hidden = true;
       if (baseBeta === null) baseBeta = e.beta;
       baseBeta += (e.beta - baseBeta) * 0.01;   // se adapta despacio a cómo sujetas el móvil
       gyro = { beta: e.beta, gamma: e.gamma };

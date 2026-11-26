@@ -64,7 +64,7 @@ Tarjetas (lectura rápida; el texto completo de arriba va en «Ver más»):
 | Cockpit de conciliación para finanzas | Prototipo | Un asistente de IA que ayuda a finanzas a liquidar partidas abiertas en SAP. | Idea y desarrollo con IA | Gemini · SAP · App web |
 | Esta web | En construcción | Una web hecha dirigiendo a la IA, de la primera línea de código a la publicación. | Dirigiendo a la IA | Claude Code · HTML · Tailwind CSS · GitHub Pages |
 
-Etiquetas de interfaz: «Mi rol», «Ver más», «Ver el código en GitHub» (enlace de «Esta web» a https://github.com/jplataes/mi-landing).
+Etiquetas de interfaz: «Mi rol», «Ver más», «✦ Activa el efecto 3D al mover el móvil» (botón solo en iPhone), «Ver el código en GitHub» (enlace de «Esta web» a https://github.com/jplataes/mi-landing).
 
 ### Contacto
 - Frases de cierre (rotan con efecto «descifrado», empezando por una al azar):
@@ -136,7 +136,7 @@ Cards (quick read; the full text above goes under "See more"):
 | Reconciliation cockpit for finance | Prototype | An AI assistant that helps finance teams clear open items in SAP. | Idea and build, with AI | Gemini · SAP · Web app |
 | This website | Under construction | A website built by directing AI, from the first line of code to going live. | Directing the AI | Claude Code · HTML · Tailwind CSS · GitHub Pages |
 
-Interface labels: "My role", "See more", "View the code on GitHub".
+Interface labels: "My role", "See more", "✦ Turn on the 3D motion effect" (iPhone-only button), "View the code on GitHub".
 
 ### Contact
 - Closing lines (rotating with a "decode" effect, starting with a random one):

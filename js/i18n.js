@@ -124,6 +124,7 @@
     roleBuiltAI: 'Idea and build, with AI',
     roleDirectingAI: 'Directing the AI',
     seeMore: 'See more',
+    motionBtn: 'Turn on the 3D motion effect',
     projectRepo: 'View the code on GitHub',
     // Gemelo IA
     eyebrowTwin: '05 · ai_twin',
