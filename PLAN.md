@@ -39,3 +39,18 @@ Todo el código usa rutas relativas, salvo las etiquetas de vista previa al comp
 3. En GitHub Pages: *Settings → Pages → Custom domain*, y configurar el DNS del dominio según la guía de GitHub.
 4. Comprobar la vista previa con el LinkedIn Post Inspector (las redes guardan la vista previa antigua en caché; el inspector la refresca).
 
+
+### Al migrar al dominio propio: el inglés pasa a ser el idioma principal
+
+Mientras la web esté en GitHub Pages, el **español es el idioma por defecto** y el inglés el secundario. Al pasar a un dominio propio (p. ej. javierplata.es), se invierte: **inglés por defecto** y español como segundo idioma. Cambios necesarios:
+
+1. **Textos del HTML** (`index.html`): hoy el HTML lleva los textos en español y `js/i18n.js` guarda el inglés. Hay que invertirlo: el HTML pasa a llevar el inglés (así lo leen los buscadores, las redes sociales y quien navegue sin JavaScript) y `js/i18n.js` pasa a guardar el español. Incluye `<html lang="en">`, `<title>`, `meta description`, el aviso `<noscript>` del gemelo y las frases de Contacto.
+2. **Lógica de idioma** (`js/i18n.js`): idioma inicial `en`; al cargar, cambiar a español solo si el visitante lo eligió en una visita anterior (`saved === 'es'`). Revisar también los valores por defecto `'es'` de `js/twin.js` (función `lang()`) y las etiquetas de respaldo de `js/main.js` (p. ej. «Abrir menú»).
+3. **Selector de idioma:** invertir el orden a **EN / ES**, con EN marcado como activo al cargar (`aria-pressed`).
+4. **Vista previa al compartir:**
+   - `og:title`, `twitter:title` y `og:image:alt` en inglés por defecto.
+   - `og:description` y `twitter:description` con el inglés primero («Business transformation, now with AI. · Transformación de negocio, ahora con IA.»).
+   - `og:locale` = `en_GB` y `og:locale:alternate` = `es_ES`.
+   - **Regenerar `images/og-image.jpg`** con el inglés como texto principal (rol y frase en inglés arriba, español debajo), manteniendo la composición centrada para el recorte cuadrado de WhatsApp.
+5. **Documentación:** en `CLAUDE.md` (apartado «Idiomas») cambiar «español por defecto» por «inglés por defecto»; en `CONTENIDO.md`, poner la sección en inglés primero.
+6. **Comprobar:** visita nueva sin preferencia guardada → la web abre en inglés; pulsar ES → cambia y se recuerda; sin JavaScript → todo en inglés; validador W3C sin errores; vista previa en el LinkedIn Post Inspector en inglés.
