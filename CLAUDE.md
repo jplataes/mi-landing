@@ -46,6 +46,8 @@ El cambio de idioma es inmediato, sin recargar la página, actualiza el atributo
 - El contacto se ofrece únicamente a través de LinkedIn y GitHub.
 - La sección Proyectos se describe de forma genérica, sin nombres de clientes ni información interna.
 - La Trayectoria y el mapa pueden nombrar empresas y clientes porque Javier los publica en su perfil de LinkedIn; nunca se añade información que no esté ahí.
+- Automatización de facturas con IA: Javier es el Project Manager (business case y coordinación del proveedor y de los equipos de IT, ciberseguridad y finanzas). El desarrollo lo hace un proveedor externo; ningún texto debe atribuirle el desarrollo.
+- Javier trabaja por cuenta ajena: los textos invitan a conversar de profesional a profesional, nunca ofrecen servicios ni suenan a venta.
 
 ## Forma de trabajo
 - Javier dirige el desarrollo. Antes de cada cambio, explica en español claro qué se va a hacer y por qué.

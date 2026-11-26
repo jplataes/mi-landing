@@ -337,27 +337,80 @@
       </div>
     </section>
 
-    <!-- Proyectos: la Fase 6 añadirá el efecto 3D -->
+    <!-- Proyectos: tarjetas que se leen de un vistazo, con efecto 3D y reflejo que sigue al cursor -->
     <section id="proyectos" class="section" aria-labelledby="titulo-proyectos">
       <div class="section-inner">
-        <p class="eyebrow" data-i18n="eyebrowProjects">04 · proyectos</p>
-        <h2 id="titulo-proyectos" class="section-title" data-i18n="titleProjects">Proyectos</h2>
-        <div class="mt-10 grid gap-6 md:grid-cols-2">
-          <article class="card">
-            <h3 class="card-title" data-i18n="project1Title">Automatización de facturas con IA</h3>
-            <p class="mt-3 leading-relaxed text-slate-300" data-i18n="project1">Proyecto que sustituye el OCR tradicional por una solución en la nube basada en LLM y predicciones con machine learning, para contabilizar automáticamente las facturas de proveedor en SAP en toda EMEA. Rol: Project Manager; elaboré el business case y coordino al proveedor y a los equipos de IT, ciberseguridad y finanzas.</p>
+        <p class="eyebrow reveal" data-i18n="eyebrowProjects">04 · proyectos</p>
+        <h2 id="titulo-proyectos" class="section-title reveal" data-i18n="titleProjects">Proyectos</h2>
+        <div class="projects-grid mt-10">
+          <article class="project-card reveal" style="--delay: 0ms">
+            <div class="project-inner">
+              <span class="project-glare" aria-hidden="true"></span>
+              <div class="project-top">
+                <span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M10 12h5M10 16h3"/><path d="M4 7.5l.6 1.4L6 9.5l-1.4.6L4 11.5l-.6-1.4L2 9.5l1.4-.6z"/></svg></span>
+                <span class="badge badge-progress" data-i18n="statusProgress">En curso</span>
+              </div>
+              <h3 class="card-title mt-4" data-i18n="project1Title">Automatización de facturas con IA</h3>
+              <p class="project-impact" data-i18n="project1Impact">El salto del OCR tradicional a la IA para contabilizar facturas de proveedor en toda EMEA.</p>
+              <p class="project-role"><span class="project-role-label" data-i18n="roleLabel">Mi rol</span> <span data-i18n="roleProject1">Project Manager</span></p>
+              <ul class="tags" data-i18n-list="project1Tags"><li>LLM</li><li>Machine learning</li><li>SAP</li><li>Nube</li></ul>
+              <details class="project-more">
+                <summary><span data-i18n="seeMore">Ver más</span></summary>
+                <p data-i18n="project1">Proyecto que sustituye el OCR tradicional por una solución en la nube basada en LLM y predicciones con machine learning, para contabilizar automáticamente las facturas de proveedor en SAP en toda EMEA. Rol: Project Manager; elaboré el business case y coordino al proveedor y a los equipos de IT, ciberseguridad y finanzas.</p>
+              </details>
+            </div>
           </article>
-          <article class="card">
-            <h3 class="card-title" data-i18n="project2Title">Bot de reserva de parking</h3>
-            <p class="mt-3 leading-relaxed text-slate-300" data-i18n="project2">Un bot sin servidor que se apunta solo a la lista de espera del parking de la oficina cada día laborable y envía avisos por email. Construido con IA (Claude), Cloudflare Workers y Google Apps Script, a coste cero.</p>
+          <article class="project-card reveal" style="--delay: 90ms">
+            <div class="project-inner">
+              <span class="project-glare" aria-hidden="true"></span>
+              <div class="project-top">
+                <span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M10 17V8h3a2.5 2.5 0 0 1 0 5h-3"/></svg></span>
+                <span class="badge badge-live" data-i18n="statusLive">En uso</span>
+              </div>
+              <h3 class="card-title mt-4" data-i18n="project2Title">Bot de reserva de parking</h3>
+              <p class="project-impact" data-i18n="project2Impact">Se apunta solo a la lista del parking cada día laborable. Coste: cero.</p>
+              <p class="project-role"><span class="project-role-label" data-i18n="roleLabel">Mi rol</span> <span data-i18n="roleBuiltAI">Idea y desarrollo con IA</span></p>
+              <ul class="tags" data-i18n-list="project2Tags"><li>Claude</li><li>Cloudflare Workers</li><li>Google Apps Script</li></ul>
+              <details class="project-more">
+                <summary><span data-i18n="seeMore">Ver más</span></summary>
+                <p data-i18n="project2">Un bot sin servidor que se apunta solo a la lista de espera del parking de la oficina cada día laborable y envía avisos por email. Construido con IA (Claude), Cloudflare Workers y Google Apps Script, a coste cero.</p>
+              </details>
+            </div>
           </article>
-          <article class="card">
-            <h3 class="card-title" data-i18n="project3Title">Cockpit de conciliación para finanzas</h3>
-            <p class="mt-3 leading-relaxed text-slate-300" data-i18n="project3">Un asistente de IA y una pequeña app web que leen datos de SAP y ayudan a los equipos de finanzas a liquidar partidas abiertas de entrada de mercancía/entrada de factura, con análisis guiado y acciones sugeridas. Construido con Gemini.</p>
+          <article class="project-card reveal" style="--delay: 180ms">
+            <div class="project-inner">
+              <span class="project-glare" aria-hidden="true"></span>
+              <div class="project-top">
+                <span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17l4-5"/><circle cx="12" cy="17" r="1.2" fill="currentColor"/><path d="M4 20h16"/></svg></span>
+                <span class="badge badge-proto" data-i18n="statusPrototype">Prototipo</span>
+              </div>
+              <h3 class="card-title mt-4" data-i18n="project3Title">Cockpit de conciliación para finanzas</h3>
+              <p class="project-impact" data-i18n="project3Impact">Un asistente de IA que ayuda a finanzas a liquidar partidas abiertas en SAP.</p>
+              <p class="project-role"><span class="project-role-label" data-i18n="roleLabel">Mi rol</span> <span data-i18n="roleBuiltAI">Idea y desarrollo con IA</span></p>
+              <ul class="tags" data-i18n-list="project3Tags"><li>Gemini</li><li>SAP</li><li>App web</li></ul>
+              <details class="project-more">
+                <summary><span data-i18n="seeMore">Ver más</span></summary>
+                <p data-i18n="project3">Un asistente de IA y una pequeña app web que leen datos de SAP y ayudan a los equipos de finanzas a liquidar partidas abiertas de entrada de mercancía/entrada de factura, con análisis guiado y acciones sugeridas. Construido con Gemini.</p>
+              </details>
+            </div>
           </article>
-          <article class="card">
-            <h3 class="card-title" data-i18n="project4Title">Esta web</h3>
-            <p class="mt-3 leading-relaxed text-slate-300" data-i18n="project4">Construida dirigiendo a la IA (Claude Code) con HTML, Tailwind CSS, Git y GitHub Pages.</p>
+          <article class="project-card reveal" style="--delay: 270ms">
+            <div class="project-inner">
+              <span class="project-glare" aria-hidden="true"></span>
+              <div class="project-top">
+                <span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18"/><path d="M10 12l-2 2 2 2M14 12l2 2-2 2"/></svg></span>
+                <span class="badge badge-build" data-i18n="statusBuilding">En construcción</span>
+              </div>
+              <h3 class="card-title mt-4" data-i18n="project4Title">Esta web</h3>
+              <p class="project-impact" data-i18n="project4Impact">Una web hecha dirigiendo a la IA, de la primera línea de código a la publicación.</p>
+              <p class="project-role"><span class="project-role-label" data-i18n="roleLabel">Mi rol</span> <span data-i18n="roleDirectingAI">Dirigiendo a la IA</span></p>
+              <ul class="tags" data-i18n-list="project4Tags"><li>Claude Code</li><li>HTML</li><li>Tailwind CSS</li><li>GitHub Pages</li></ul>
+              <details class="project-more">
+                <summary><span data-i18n="seeMore">Ver más</span></summary>
+                <p data-i18n="project4">Construida dirigiendo a la IA (Claude Code) con HTML, Tailwind CSS, Git y GitHub Pages.</p>
+                <a href="https://github.com/jplataes/mi-landing" class="project-link" rel="noopener"><span data-i18n="projectRepo">Ver el código en GitHub</span> <span aria-hidden="true">→</span></a>
+              </details>
+            </div>
           </article>
         </div>
       </div>

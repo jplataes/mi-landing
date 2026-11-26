@@ -188,3 +188,34 @@
   window.addEventListener('resize', update);
   update();
 })();
+
+// --- Proyectos: efecto 3D y reflejo que siguen al cursor (solo ratón) ---
+(function () {
+  const canTilt = window.matchMedia('(hover: hover) and (pointer: fine)').matches &&
+                  !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!canTilt) return;
+  const MAX = 7; // grados de inclinación máxima
+
+  document.querySelectorAll('.project-card').forEach(function (card) {
+    const inner = card.querySelector('.project-inner');
+    let frame = 0;
+
+    card.addEventListener('pointermove', function (e) {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(function () {
+        const r = inner.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width;   // 0 … 1
+        const y = (e.clientY - r.top) / r.height;   // 0 … 1
+        card.classList.add('is-tilting');
+        inner.style.transform = 'rotateX(' + ((0.5 - y) * MAX * 2).toFixed(2) + 'deg) rotateY(' + ((x - 0.5) * MAX * 2).toFixed(2) + 'deg)';
+        inner.style.setProperty('--gx', (x * 100).toFixed(1) + '%');
+        inner.style.setProperty('--gy', (y * 100).toFixed(1) + '%');
+      });
+    });
+    card.addEventListener('pointerleave', function () {
+      cancelAnimationFrame(frame);
+      card.classList.remove('is-tilting');
+      inner.style.transform = '';
+    });
+  });
+})();

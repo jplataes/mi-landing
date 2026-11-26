@@ -56,7 +56,21 @@ Transformación con IA: actualmente lidero la automatización del procesamiento 
 3. Cockpit de conciliación para finanzas: un asistente de IA y una pequeña app web que leen datos de SAP y ayudan a los equipos de finanzas a liquidar partidas abiertas de entrada de mercancía/entrada de factura, con análisis guiado y acciones sugeridas. Construido con Gemini.
 4. Esta web: construida dirigiendo a la IA (Claude Code) con HTML, Tailwind CSS, Git y GitHub Pages.
 
+Tarjetas (lectura rápida; el texto completo de arriba va en «Ver más»):
+| Proyecto | Estado | Frase de impacto | Mi rol | Etiquetas |
+|---|---|---|---|---|
+| Automatización de facturas con IA | En curso | El salto del OCR tradicional a la IA para contabilizar facturas de proveedor en toda EMEA. | Project Manager | LLM · Machine learning · SAP · Nube |
+| Bot de reserva de parking | En uso | Se apunta solo a la lista del parking cada día laborable. Coste: cero. | Idea y desarrollo con IA | Claude · Cloudflare Workers · Google Apps Script |
+| Cockpit de conciliación para finanzas | Prototipo | Un asistente de IA que ayuda a finanzas a liquidar partidas abiertas en SAP. | Idea y desarrollo con IA | Gemini · SAP · App web |
+| Esta web | En construcción | Una web hecha dirigiendo a la IA, de la primera línea de código a la publicación. | Dirigiendo a la IA | Claude Code · HTML · Tailwind CSS · GitHub Pages |
+
+Etiquetas de interfaz: «Mi rol», «Ver más», «Ver el código en GitHub» (enlace de «Esta web» a https://github.com/jplataes/mi-landing).
+
 ### Contacto
+- Frases de cierre (rotan con efecto «descifrado», empezando por una al azar):
+  1. Finanzas, SAP, IA… Si también es tu mundo, conectemos.
+  2. Las buenas ideas suelen empezar con una conversación. ¿Hablamos?
+  3. Siempre aprendo algo charlando con gente del sector. ¿Te animas?
 - LinkedIn: https://www.linkedin.com/in/javierplata/
 - GitHub: https://github.com/jplataes
 
@@ -114,7 +128,21 @@ AI transformation: I currently lead the automation of supplier invoice processin
 3. Reconciliation cockpit for finance: an AI assistant and a small web app that read SAP data and help finance teams clear open goods-receipt/invoice-receipt items, with guided analysis and suggested actions. Built with Gemini.
 4. This website: built by directing AI (Claude Code) with HTML, Tailwind CSS, Git and GitHub Pages.
 
+Cards (quick read; the full text above goes under "See more"):
+| Project | Status | Impact line | My role | Tags |
+|---|---|---|---|---|
+| AI invoice automation | In progress | Moving from traditional OCR to AI to post supplier invoices across EMEA. | Project Manager | LLM · Machine learning · SAP · Cloud |
+| Parking booking bot | In use | Joins the office parking waitlist by itself every working day. Cost: zero. | Idea and build, with AI | Claude · Cloudflare Workers · Google Apps Script |
+| Reconciliation cockpit for finance | Prototype | An AI assistant that helps finance teams clear open items in SAP. | Idea and build, with AI | Gemini · SAP · Web app |
+| This website | Under construction | A website built by directing AI, from the first line of code to going live. | Directing the AI | Claude Code · HTML · Tailwind CSS · GitHub Pages |
+
+Interface labels: "My role", "See more", "View the code on GitHub".
+
 ### Contact
+- Closing lines (rotating with a "decode" effect, starting with a random one):
+  1. Finance, SAP, AI… If that's your world too, let's connect.
+  2. Good ideas usually start with a conversation. Shall we talk?
+  3. I always pick up something new talking to people in the field. Up for a chat?
 - LinkedIn: https://www.linkedin.com/in/javierplata/
 - GitHub: https://github.com/jplataes
 
