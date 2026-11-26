@@ -130,6 +130,18 @@ Todo está hecho con HTML, CSS y JavaScript propio, sin librerías ni backend.
 
 ---
 
+## Compartir la web
+
+### Vista previa profesional al compartir
+- **Qué es:** al pegar el enlace en LinkedIn, WhatsApp, X, Slack o Teams aparece una tarjeta con imagen de portada (la red neuronal del Hero con nombre, rol y la frase), título y descripción.
+- **Cómo probarlo:**
+  - **LinkedIn:** pega la URL en el [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) o en un borrador de publicación.
+  - **WhatsApp (Android e iPhone):** envía el enlace en un chat (por ejemplo, contigo mismo); la tarjeta aparece antes de enviar.
+  - **Cualquier red:** [opengraph.xyz](https://www.opengraph.xyz/) muestra cómo se verá en cada una.
+- **Valor:** primera impresión cuidada incluso antes de entrar. Como la web tiene una única URL para los dos idiomas, la vista previa es **bilingüe** (frase en español e inglés). La imagen pesa 54 KB para que WhatsApp la muestre sin problemas, y la imagen se generó a partir del propio Hero, así que la marca es coherente.
+
+---
+
 ## Detalles invisibles (pero con mérito)
 
 ### Rendimiento
@@ -158,6 +170,7 @@ Todo está hecho con HTML, CSS y JavaScript propio, sin librerías ni backend.
 - **Mejores prácticas (Lighthouse): 100** y **SEO: 100**.
 - **Portable:** rutas relativas; puede moverse a un dominio propio sin tocar el código.
 - **Favicon en línea:** el logo «JP_» como icono SVG dentro del HTML, sin archivos ni peticiones extra.
+- **Etiquetas Open Graph y Twitter:** vista previa al compartir con título, descripción e imagen; las de título y texto alternativo también cambian con el selector ES/EN.
 - **Datos personales:** solo LinkedIn y GitHub; ningún teléfono, email ni documento personal en la web ni en el repositorio.
 
 ---

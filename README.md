@@ -13,6 +13,7 @@ Landing page personal de Javier Plata Escribano: Transformación Digital e IA | 
 | `index.html` | La página (HTML semántico) |
 | `css/tailwind.css` | Utilidades de Tailwind CSS usadas en la web (generado, ver abajo) |
 | `css/styles.css` | Estilos propios: efectos, animaciones y componentes |
+| `images/og-image.jpg` | Imagen de portada (1200×630) para la vista previa al compartir |
 | `js/i18n.js` | Cambio de idioma ES/EN sin recargar |
 | `js/hero.js` | Red neuronal del Hero y efecto de escritura |
 | `js/main.js` | Menú, animaciones de entrada, contadores, mapa, circuito, tarjetas 3D, certificaciones, fondo vivo |
