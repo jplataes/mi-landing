@@ -212,5 +212,5 @@ Textos aprobados para menú, títulos, etiquetas y accesibilidad (ES → EN).
 | Gemelo: aviso | Respuestas predefinidas, sin IA en tiempo real. | Predefined answers, no live AI. |
 | Gemelo: preguntas | ¿Quién eres? · ¿Qué haces con IA? · ¿Dónde has trabajado? · ¿Cuáles son tus habilidades? · ¿Qué has estudiado? · ¿Cómo se hizo esta web? · ¿Cómo puedo contactarte? | Who are you? · What do you do with AI? · Where have you worked? · What are your skills? · What did you study? · How was this website built? · How can I get in touch? |
 | Contacto | Encuéntrame en LinkedIn y GitHub. | Find me on LinkedIn and GitHub. |
-| Pie (el año se pone solo) | © 2026 Javier Plata Escribano · Web construida dirigiendo a la IA (Claude Code) | © 2026 Javier Plata Escribano · Website built by directing AI (Claude Code) |
+| Pie (el año se pone solo) | © 2026 Javier Plata Escribano | © 2026 Javier Plata Escribano |
 | Accesibilidad | Saltar al contenido · Abrir menú · Cerrar menú · Cambiar idioma | Skip to content · Open menu · Close menu · Change language |

@@ -161,8 +161,7 @@
     contactText: 'Find me on LinkedIn and GitHub.',
     contactLine1: "Finance, SAP, AI… If that's your world too, let's connect.",
     contactLine2: 'Good ideas usually start with a conversation. Shall we talk?',
-    contactLine3: 'I always pick up something new talking to people in the field. Up for a chat?',
-    footer: 'Javier Plata Escribano · Website built by directing AI (Claude Code)'
+    contactLine3: 'I always pick up something new talking to people in the field. Up for a chat?'
   };
 
   // El español se toma del propio HTML al cargar, así no se duplica
