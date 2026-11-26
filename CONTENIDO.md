@@ -37,13 +37,13 @@ Transformación con IA: hoy lidero los proyectos de IA sobre SAP Finanzas en mi 
 - Título: Dónde he trabajado
 - Instrucción: Pasa el ratón o toca un punto para ver qué hice en cada país.
 - Nota: …y soporte y evolución de SAP FICO para usuarios de Europa, Oriente Medio, África y América
-- Tarjetas (empresa · **proyecto**: texto):
-  - España · Deloitte · **Vetpharma y Exeltis**: implantaciones S/4HANA de principio a fin
-  - Reino Unido · Holcim · **Holcim UK**: proyecto FI completo (AP, AR, TR, FSCM y Coupa) · Mercedes-Benz · **Mercedes-Benz UK**: Product Owner de evolutivos financieros, con equipo offshore en India
-  - Suecia · Deloitte · **Exeltis**: rollout S/4HANA · Mercedes-Benz · **Model D**: transformación del modelo de ventas
-  - Argelia · Holcim · **Holcim Argelia**: rollout FI completo (GL, AA, REFX y xSuite)
-  - China · Mercedes-Benz · **Car2Go China**: integración FI/CO completa, hasta el cutover
-  - México y Chile · Deloitte · **Exeltis**: rollout S/4HANA, en paralelo en México, Chile y Suecia
+- Tarjetas (empresa · **proyecto**: Texto):
+  - España · Deloitte · **Vetpharma y Exeltis**: Implantaciones S/4HANA de principio a fin
+  - Reino Unido · Holcim · **Holcim UK**: Proyecto FI completo (AP, AR, TR, FSCM y Coupa) · Mercedes-Benz · **Mercedes-Benz UK**: Product Owner de evolutivos financieros, con equipo offshore en India
+  - Suecia · Deloitte · **Exeltis**: Rollout S/4HANA · Mercedes-Benz · **Model D**: Transformación del modelo de ventas
+  - Argelia · Holcim · **Holcim Argelia**: Rollout FI completo (GL, AA, REFX y xSuite)
+  - China · Mercedes-Benz · **Car2Go China**: Integración FI/CO completa, hasta el cutover
+  - México y Chile · Deloitte · **Exeltis**: Rollout S/4HANA, en paralelo en México, Chile y Suecia
 
 ### Habilidades
 (Sección retirada de la web: su resumen vive en la respuesta del gemelo IA «¿Cuáles son tus habilidades?».)
@@ -136,12 +136,12 @@ AI transformation: Today I lead the AI projects on SAP Finance at my company and
 - Title: Where I've worked
 - Hint: Hover over or tap a dot to see what I did in each country.
 - Note: …plus SAP FICO support and enhancements for users across Europe, the Middle East, Africa and the Americas
-- Cards (company · **project**: text):
-  - Spain · Deloitte · **Vetpharma & Exeltis**: end-to-end S/4HANA implementations
-  - United Kingdom · Holcim · **Holcim UK**: end-to-end FI project (AP, AR, TR, FSCM and Coupa) · Mercedes-Benz · **Mercedes-Benz UK**: Product Owner for finance enhancements, with an offshore team in India
-  - Sweden · Deloitte · **Exeltis**: S/4HANA rollout · Mercedes-Benz · **Model D**: sales model transformation
-  - Algeria · Holcim · **Holcim Algeria**: full FI rollout (GL, AA, REFX and xSuite)
-  - China · Mercedes-Benz · **Car2Go China**: full FI/CO integration, through to cutover
+- Cards (company · **project**: Text):
+  - Spain · Deloitte · **Vetpharma & Exeltis**: End-to-end S/4HANA implementations
+  - United Kingdom · Holcim · **Holcim UK**: End-to-end FI project (AP, AR, TR, FSCM and Coupa) · Mercedes-Benz · **Mercedes-Benz UK**: Product Owner for finance enhancements, with an offshore team in India
+  - Sweden · Deloitte · **Exeltis**: S/4HANA rollout · Mercedes-Benz · **Model D**: Sales model transformation
+  - Algeria · Holcim · **Holcim Algeria**: Full FI rollout (GL, AA, REFX and xSuite)
+  - China · Mercedes-Benz · **Car2Go China**: Full FI/CO integration, through to cutover
   - Mexico and Chile · Deloitte · **Exeltis**: S/4HANA rollout, run in parallel across Mexico, Chile and Sweden
 
 ### Skills
