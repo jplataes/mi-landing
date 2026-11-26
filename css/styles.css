@@ -518,6 +518,11 @@ section { scroll-margin-top: 4rem; }
   transition: opacity 0.3s;
 }
 .project-card:hover .project-glare { opacity: 1; }
+/* Móvil: reflejo visible mientras la tarjeta está en pantalla, y respuesta ágil al giroscopio */
+.project-card.is-live .project-glare { opacity: 0.8; }
+.project-card.is-gyro .project-inner { transition: transform 0.15s linear; }
+.project-card.is-pressed .project-inner { transition: transform 0.15s ease-out; }
+.project-card.is-pressed .project-glare { opacity: 1; }
 
 .project-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .project-icon {
