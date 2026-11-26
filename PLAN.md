@@ -14,7 +14,7 @@ Cada fase termina con una Pull Request hacia `main`; Javier la fusiona y revisa 
 | 3 | Sobre mí: animaciones de entrada y contadores (10+ años, 10+ países, 4 regiones) | Hecha |
 | 4 | Mapa de proyectos internacionales al hacer scroll | Hecha |
 | 4b | Checkpoint: reglas de tono, nueva frase del Hero, sección Trayectoria (línea de tiempo) y mapa por países con tarjetas (empresa y qué hice en cada país) | Hecha |
-| 5 | Habilidades: bloques visuales con animación de entrada. **Ninguna etiqueta se parte en dos líneas.** | Pendiente |
+| 5 | Habilidades: bloques visuales con animación de entrada. **Ninguna etiqueta se parte en dos líneas.** | Hecha |
 | 6 | Proyectos: tarjetas que se lean en 3 segundos, con icono, frase corta de impacto, rol, etiquetas de tecnología e insignia de estado; el texto completo en un «ver más». «Esta web» enlaza a su repositorio de GitHub. Efecto 3D y reflejo que sigue al cursor. | Pendiente |
 | 7 | «Pregúntale a mi gemelo IA»: conversación guiada sin backend (incluye «¿Cómo se hizo esta web?») | Pendiente |
 | 8 | Contacto: una frase de cierre con gancho encima de los botones de LinkedIn y GitHub (con iconos), y pie de página | Pendiente |

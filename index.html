@@ -282,38 +282,53 @@
       </div>
     </section>
 
-    <!-- Habilidades: la Fase 5 añadirá las animaciones -->
+    <!-- Habilidades: tarjetas con icono y etiquetas que nunca se parten en dos líneas -->
     <section id="habilidades" class="section" aria-labelledby="titulo-habilidades">
       <div class="section-inner">
-        <p class="eyebrow" data-i18n="eyebrowSkills">03 · habilidades</p>
-        <h2 id="titulo-habilidades" class="section-title" data-i18n="titleSkills">Habilidades</h2>
-        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="card">
-            <h3 class="card-title" data-i18n="skill1Title">Gestión de proyectos</h3>
+        <p class="eyebrow reveal" data-i18n="eyebrowSkills">03 · habilidades</p>
+        <h2 id="titulo-habilidades" class="section-title reveal" data-i18n="titleSkills">Habilidades</h2>
+        <div class="skills-grid mt-10">
+          <article class="card skill-card reveal accent-violet" style="--delay: 0ms">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h6"/><circle cx="18" cy="16" r="3"/><path d="m20.2 18.2 1.8 1.8"/></svg></span>
+              <h3 class="card-title" data-i18n="skill1Title">Gestión de proyectos</h3>
+            </div>
             <ul class="chips" data-i18n-list="skill1">
               <li>gestión de programas y portfolio</li><li>SAP Activate</li><li>Agile/Scrum</li><li>Product Owner</li><li>KPIs y valor</li>
             </ul>
           </article>
-          <article class="card">
-            <h3 class="card-title" data-i18n="skill2Title">Estrategia de IA</h3>
+          <article class="card skill-card reveal accent-cyan" style="--delay: 90ms">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
+              <h3 class="card-title" data-i18n="skill2Title">Estrategia de IA</h3>
+            </div>
             <ul class="chips" data-i18n-list="skill2">
-              <li>hoja de ruta y priorización de casos de uso</li><li>KPIs de valor</li><li>gobierno de IA e IA responsable</li><li>EU AI Act</li>
+              <li>hoja de ruta</li><li>priorización de casos de uso</li><li>KPIs de valor</li><li>gobierno de IA e IA responsable</li><li>EU AI Act</li>
             </ul>
           </article>
-          <article class="card">
-            <h3 class="card-title" data-i18n="skill3Title">Herramientas de IA</h3>
+          <article class="card skill-card reveal accent-cyan" style="--delay: 180ms">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
+              <h3 class="card-title" data-i18n="skill3Title">Herramientas de IA</h3>
+            </div>
             <ul class="chips" data-i18n-list="skill3">
               <li>Claude Code</li><li>OpenAI Codex</li><li>agentes de IA y MCP</li><li>RAG</li><li>n8n</li><li>APIs de LLM</li><li>Microsoft 365 Copilot</li><li>Gemini</li>
             </ul>
           </article>
-          <article class="card">
-            <h3 class="card-title" data-i18n="skill4Title">SAP Finanzas</h3>
+          <article class="card skill-card reveal accent-violet" style="--delay: 270ms">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+              <h3 class="card-title" data-i18n="skill4Title">SAP Finanzas</h3>
+            </div>
             <ul class="chips" data-i18n-list="skill4">
               <li>GL</li><li>AP</li><li>AR</li><li>AA</li><li>TR</li><li>FSCM</li><li>REFX</li><li>Central Finance</li><li>CO</li>
             </ul>
           </article>
-          <article class="card">
-            <h3 class="card-title" data-i18n="skill5Title">Integraciones</h3>
+          <article class="card skill-card reveal accent-violet" style="--delay: 360ms">
+            <div class="skill-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7H7a5 5 0 0 0 0 10h2M15 7h2a5 5 0 0 1 0 10h-2M8 12h8"/></svg></span>
+              <h3 class="card-title" data-i18n="skill5Title">Integraciones</h3>
+            </div>
             <ul class="chips" data-i18n-list="skill5">
               <li>Coupa</li><li>xSuite</li><li>Celonis</li><li>Signavio</li><li>SAP Archiving</li>
             </ul>
