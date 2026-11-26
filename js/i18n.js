@@ -42,7 +42,7 @@
     // Mapa
     mapTitle: "Where I've worked",
     mapHint: 'Hover over or tap a dot to see what I did in each country.',
-    mapNote: '…plus SAP Finance support and enhancements for users across Europe, the Middle East, Africa and the Americas',
+    mapNote: '…plus SAP FICO support and enhancements for users across Europe, the Middle East, Africa and the Americas',
     countryES: 'Spain',
     countryGB: 'United Kingdom',
     countrySE: 'Sweden',
@@ -73,7 +73,6 @@
     job_holcim_role: 'Senior SAP FICO Consultant',
     job_holcim_items: [
       'Leading AI projects in SAP FICO (generative AI and machine learning)',
-      'In-house FICO lead for the evolution of SAP finance systems',
       'Full FI project for Holcim UK',
       'FI rollout for Holcim Algeria',
       'FICO workstream of the global SAP archiving programme (10+ countries)',

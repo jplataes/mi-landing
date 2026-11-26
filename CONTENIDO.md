@@ -20,7 +20,6 @@ Transformación con IA: hoy lidero los proyectos de IA sobre SAP Finanzas en mi 
 ### Trayectoria
 1. Holcim EMEA Digital Center · feb 2021 – actualidad · Consultor SAP FICO Senior
    - Liderazgo de los proyectos de IA en SAP FICO (IA generativa y machine learning)
-   - Responsable FICO interno de la evolución de SAP Finanzas
    - Proyecto FI completo de Holcim UK
    - Rollout FI de Holcim Argelia
    - Área FICO del programa global de archivado SAP (10+ países)
@@ -37,7 +36,7 @@ Transformación con IA: hoy lidero los proyectos de IA sobre SAP Finanzas en mi 
 ### Mapa: dónde he trabajado
 - Título: Dónde he trabajado
 - Instrucción: Pasa el ratón o toca un punto para ver qué hice en cada país.
-- Nota: …y soporte y evolución de SAP Finanzas para usuarios de Europa, Oriente Medio, África y América
+- Nota: …y soporte y evolución de SAP FICO para usuarios de Europa, Oriente Medio, África y América
 - Tarjetas (empresa · **proyecto**: texto):
   - España · Deloitte · **Vetpharma y Exeltis**: implantaciones S/4HANA de principio a fin
   - Reino Unido · Holcim · **Holcim UK**: proyecto FI completo (AP, AR, TR, FSCM y Coupa) · Mercedes-Benz · **Mercedes-Benz UK**: Product Owner de evolutivos financieros, con equipo offshore en India
@@ -104,7 +103,6 @@ AI transformation: Today I lead the AI projects on SAP Finance at my company. I 
 ### Experience
 1. Holcim EMEA Digital Center · Feb 2021 – present · Senior SAP FICO Consultant
    - Leading AI projects in SAP FICO (generative AI and machine learning)
-   - In-house FICO lead for the evolution of SAP finance systems
    - Full FI project for Holcim UK
    - FI rollout for Holcim Algeria
    - FICO workstream of the global SAP archiving programme (10+ countries)
@@ -121,7 +119,7 @@ AI transformation: Today I lead the AI projects on SAP Finance at my company. I 
 ### Map: where I've worked
 - Title: Where I've worked
 - Hint: Hover over or tap a dot to see what I did in each country.
-- Note: …plus SAP Finance support and enhancements for users across Europe, the Middle East, Africa and the Americas
+- Note: …plus SAP FICO support and enhancements for users across Europe, the Middle East, Africa and the Americas
 - Cards (company · **project**: text):
   - Spain · Deloitte · **Vetpharma & Exeltis**: end-to-end S/4HANA implementations
   - United Kingdom · Holcim · **Holcim UK**: end-to-end FI project (AP, AR, TR, FSCM and Coupa) · Mercedes-Benz · **Mercedes-Benz UK**: Product Owner for finance enhancements, with an offshore team in India
