@@ -33,7 +33,7 @@ El cambio de idioma es inmediato, sin recargar la página, actualiza el atributo
 - "Pregúntale a mi gemelo IA": conversación guiada con preguntas predefinidas, sin backend.
 - Mapa de puntos que ilumina al hacer scroll los países donde ha trabajado Javier (España, Reino Unido, Suecia, Argelia, China, México y Chile). Cada país tiene un punto que, al pasar el ratón, tocarlo o enfocarlo con el teclado, muestra una tarjeta con la empresa y lo que hizo allí. El resto del mundo, en gris suave pero visible.
 - Trayectoria: línea de tiempo visual y compacta con la experiencia profesional.
-- Tarjetas de proyecto con efecto 3D y reflejo que sigue al cursor.
+- Tarjetas de proyecto con efecto 3D y reflejo que sigue al cursor. En móvil: giroscopio (en iPhone, tras pulsar un botón discreto que pide el permiso del sistema); si no, inclinación y brillo al hacer scroll; al tocar, la tarjeta se hunde y el reflejo aparece bajo el dedo.
 - Animaciones de entrada al hacer scroll y contadores animados.
 
 ## Estándares de calidad
@@ -46,6 +46,8 @@ El cambio de idioma es inmediato, sin recargar la página, actualiza el atributo
 - El contacto se ofrece únicamente a través de LinkedIn y GitHub.
 - La sección Proyectos se describe de forma genérica, sin nombres de clientes ni información interna.
 - La Trayectoria y el mapa pueden nombrar empresas y clientes porque Javier los publica en su perfil de LinkedIn; nunca se añade información que no esté ahí.
+- Automatización de facturas con IA: Javier es el Project Manager (business case y coordinación del proveedor y de los equipos de IT, ciberseguridad y finanzas). El desarrollo lo hace un proveedor externo; ningún texto debe atribuirle el desarrollo.
+- Javier trabaja por cuenta ajena: los textos invitan a conversar de profesional a profesional, nunca ofrecen servicios ni suenan a venta.
 
 ## Forma de trabajo
 - Javier dirige el desarrollo. Antes de cada cambio, explica en español claro qué se va a hacer y por qué.

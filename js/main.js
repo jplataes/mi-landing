@@ -188,3 +188,136 @@
   window.addEventListener('resize', update);
   update();
 })();
+
+// --- Proyectos: efecto 3D y reflejo de luz ---
+// · Con ratón: la tarjeta se inclina hacia el cursor y el reflejo lo sigue.
+// · En móvil: giroscopio (si el navegador lo da sin pedir permiso) o, si no,
+//   una inclinación suave y un brillo que recorre la tarjeta al hacer scroll.
+//   Al tocar, la tarjeta se hunde un poco y el reflejo aparece bajo el dedo.
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const cards = Array.from(document.querySelectorAll('.project-card'));
+  if (!cards.length) return;
+  const hasMouse = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  // Aplica inclinación (grados) y posición del reflejo (%) a una tarjeta
+  function apply(card, rx, ry, gx, gy) {
+    const inner = card.querySelector('.project-inner');
+    inner.style.transform = 'rotateX(' + rx.toFixed(2) + 'deg) rotateY(' + ry.toFixed(2) + 'deg)';
+    inner.style.setProperty('--gx', gx.toFixed(1) + '%');
+    inner.style.setProperty('--gy', gy.toFixed(1) + '%');
+  }
+  const clamp = function (v, min, max) { return Math.max(min, Math.min(max, v)); };
+
+  // ---------- Ratón ----------
+  if (hasMouse) {
+    const MAX = 7;
+    cards.forEach(function (card) {
+      const inner = card.querySelector('.project-inner');
+      let frame = 0;
+      card.addEventListener('pointermove', function (e) {
+        if (e.pointerType !== 'mouse') return;
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(function () {
+          const r = inner.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+          card.classList.add('is-tilting');
+          apply(card, (0.5 - y) * MAX * 2, (x - 0.5) * MAX * 2, x * 100, y * 100);
+        });
+      });
+      card.addEventListener('pointerleave', function () {
+        cancelAnimationFrame(frame);
+        card.classList.remove('is-tilting');
+        inner.style.transform = '';
+      });
+    });
+    return;
+  }
+
+  // ---------- Móvil / táctil ----------
+  const visible = new Set();
+  const io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) visible.add(en.target); else visible.delete(en.target);
+      en.target.classList.toggle('is-live', en.isIntersecting);
+    });
+    schedule();
+  });
+  cards.forEach(function (c) { io.observe(c); });
+
+  let gyro = null;      // { beta, gamma } cuando hay giroscopio
+  let baseBeta = null;  // inclinación natural con la que se sujeta el móvil
+  let pending = false;
+
+  function schedule() {
+    if (!pending) { pending = true; requestAnimationFrame(render); }
+  }
+
+  function render() {
+    pending = false;
+    const vh = window.innerHeight;
+    visible.forEach(function (card) {
+      if (card.classList.contains('is-pressed')) return;
+      if (gyro) {
+        // Giroscopio: izquierda/derecha (gamma) y adelante/atrás (beta) → ±8°
+        const ry = clamp(gyro.gamma / 3, -8, 8);
+        const rx = clamp(-(gyro.beta - baseBeta) / 3, -8, 8);
+        apply(card, rx, ry, 50 + ry * 5, 50 - rx * 5);
+      } else {
+        // Scroll: según dónde esté la tarjeta en la pantalla (-1 abajo … 1 arriba)
+        const r = card.getBoundingClientRect();
+        const p = clamp(1 - (r.top + r.height / 2) / vh * 2, -1, 1);
+        apply(card, p * 5, 0, 50, 50 - p * 60);
+      }
+    });
+  }
+
+  window.addEventListener('scroll', schedule, { passive: true });
+
+  // Giroscopio: se usa en cuanto el navegador envía datos.
+  // Android los envía sin pedir nada. iPhone exige permiso: mostramos un botón discreto
+  // y solo si el visitante lo pulsa aparece el aviso del sistema.
+  const motionBtn = document.querySelector('.motion-btn');
+  if ('DeviceOrientationEvent' in window) {
+    if (motionBtn && typeof DeviceOrientationEvent.requestPermission === 'function') {
+      // Esperamos un momento: si ya llegan datos (Android), el botón no hace falta
+      setTimeout(function () { if (!gyro) motionBtn.hidden = false; }, 1200);
+      motionBtn.addEventListener('click', function () {
+        DeviceOrientationEvent.requestPermission()
+          .catch(function () { /* rechazado o no disponible: seguimos con el efecto de scroll */ })
+          .finally(function () { motionBtn.hidden = true; });
+      });
+    }
+    window.addEventListener('deviceorientation', function (e) {
+      if (e.beta == null || e.gamma == null) return;
+      if (motionBtn) motionBtn.hidden = true;
+      if (baseBeta === null) baseBeta = e.beta;
+      baseBeta += (e.beta - baseBeta) * 0.01;   // se adapta despacio a cómo sujetas el móvil
+      gyro = { beta: e.beta, gamma: e.gamma };
+      cards.forEach(function (c) { c.classList.add('is-gyro'); });
+      schedule();
+    });
+  }
+
+  // Toque: la tarjeta se hunde y el reflejo aparece bajo el dedo
+  cards.forEach(function (card) {
+    const inner = card.querySelector('.project-inner');
+    card.addEventListener('pointerdown', function (e) {
+      if (e.target.closest('a, summary')) return;
+      const r = inner.getBoundingClientRect();
+      card.classList.add('is-pressed');
+      inner.style.setProperty('--gx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+      inner.style.setProperty('--gy', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+      inner.style.transform = 'scale(0.97)';
+    });
+    ['pointerup', 'pointercancel', 'pointerleave'].forEach(function (ev) {
+      card.addEventListener(ev, function () {
+        if (!card.classList.contains('is-pressed')) return;
+        card.classList.remove('is-pressed');
+        schedule();
+      });
+    });
+  });
+
+  schedule();
+})();
