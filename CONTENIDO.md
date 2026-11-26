@@ -11,6 +11,8 @@ Textos oficiales de la web en español (idioma por defecto) e inglés. Es la fue
 - Botón: Hablemos (lleva a Contacto)
 
 ### Sobre mí
+(«SAP S/4HANA Finance Project Leader» y «Transformación con IA:» van destacados al inicio de cada párrafo, como en el CV.)
+
 SAP S/4HANA Finance Project Leader con más de 10 años liderando grandes programas de transformación financiera y rollouts internacionales en Europa, África, Asia y Latinoamérica. Convierto la estrategia en hojas de ruta, gestiono alcance, plazos y presupuestos, mido el valor con KPIs y lidero equipos multidisciplinares y offshore como Product Owner.
 
 Transformación con IA: hoy lidero los proyectos de IA sobre SAP Finanzas en mi compañía. Además, creo mis propias aplicaciones de IA con Claude Code y OpenAI Codex. Sé priorizar una cartera de casos de uso de IA y gobernarlos de forma responsable para que generen valor medible para el negocio.

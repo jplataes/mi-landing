@@ -32,7 +32,8 @@
     // Sobre mí
     eyebrowAbout: '01 · about_me',
     titleAbout: 'About me',
-    about1: 'SAP S/4HANA Finance Project Leader with more than 10 years leading large finance transformation programmes and international rollouts across Europe, Africa, Asia and Latin America. I turn strategy into roadmaps, manage scope, timelines and budgets, measure value with KPIs and lead multidisciplinary and offshore teams as Product Owner.',
+    about1Label: 'SAP S/4HANA Finance Project Leader',
+    about1: 'with more than 10 years leading large finance transformation programmes and international rollouts across Europe, Africa, Asia and Latin America. I turn strategy into roadmaps, manage scope, timelines and budgets, measure value with KPIs and lead multidisciplinary and offshore teams as Product Owner.',
     about2Label: 'AI transformation:',
     about2: 'Today I lead the AI projects on SAP Finance at my company. I also build my own AI apps with Claude Code and OpenAI Codex. I know how to prioritise a portfolio of AI use cases and govern them responsibly so they deliver measurable business value.',
     stat1: 'years leading finance transformation',
