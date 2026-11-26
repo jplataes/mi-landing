@@ -240,7 +240,7 @@ section { scroll-margin-top: 4rem; }
 .map-hint { color: #94a3b8; font-size: 0.95rem; }
 .map-frame {
   position: relative;
-  padding: 1rem 1rem 2.25rem;
+  padding: 1rem;
   border-radius: 1rem;
   border: 1px solid rgb(255 255 255 / 0.08);
   background: radial-gradient(ellipse at 50% 40%, rgb(17 29 66 / 0.9), rgb(5 11 31 / 0.6));
@@ -277,7 +277,8 @@ section { scroll-margin-top: 4rem; }
 @media (min-width: 640px) { .map-panel { display: none; } }
 .map-svg { display: block; width: 100%; height: auto; overflow: visible; }
 .map-note {
-  position: absolute; right: 1rem; bottom: 0.6rem;
+  margin-top: 0.75rem;
+  text-align: right;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.8rem; color: #94a3b8;
 }
@@ -366,6 +367,7 @@ section { scroll-margin-top: 4rem; }
 }
 @keyframes card-in { from { opacity: 0; transform: translateY(4px); } }
 .pin-country { font-weight: 700; color: #fff; margin-bottom: 0.35rem; }
+.pin-card b, .map-panel b { color: #fff; font-weight: 600; }
 .pin-card ul { display: grid; gap: 0.35rem; }
 .pin-card strong { display: block; color: var(--cyan); font-weight: 600; font-size: 0.78rem; }
 

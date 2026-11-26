@@ -20,13 +20,14 @@ Transformación con IA: hoy lidero los proyectos de IA sobre SAP Finanzas en mi 
 ### Trayectoria
 1. Holcim EMEA Digital Center · feb 2021 – actualidad · Consultor SAP FICO Senior
    - Liderazgo de los proyectos de IA en SAP FICO (IA generativa y machine learning)
+   - Responsable FICO interno de la evolución de SAP Finanzas
    - Proyecto FI completo de Holcim UK
    - Rollout FI de Holcim Argelia
    - Área FICO del programa global de archivado SAP (10+ países)
    - Process Mining con Celonis y Signavio
 2. Deloitte Consulting · may 2019 – feb 2021 · Consultor SAP S/4HANA FI
    - Implantaciones de S/4HANA en Vetpharma y Exeltis (España)
-   - Rollouts de Exeltis en México, Chile y Suecia
+   - Rollouts simultáneos de Exeltis en México, Chile y Suecia
 3. Mercedes-Benz Group Services Madrid · jul 2015 – may 2019 · Consultor SAP FICO (antes, Asistente de Project Manager SAP)
    - Product Owner de evolutivos para Mercedes-Benz UK con un equipo offshore en India
    - Integración FI/CO de Car2Go China
@@ -36,14 +37,14 @@ Transformación con IA: hoy lidero los proyectos de IA sobre SAP Finanzas en mi 
 ### Mapa: dónde he trabajado
 - Título: Dónde he trabajado
 - Instrucción: Pasa el ratón o toca un punto para ver qué hice en cada país.
-- Nota: …y archivado SAP en 10+ países
-- España · Deloitte Consulting: Implantaciones de SAP S/4HANA en Vetpharma y Exeltis
-- Reino Unido · Holcim: Proyecto FI completo de Holcim UK · Mercedes-Benz: Product Owner de evolutivos para Mercedes-Benz UK, con un equipo offshore en India
-- Suecia · Deloitte Consulting: Rollout de Exeltis · Mercedes-Benz: Modelo de ventas
-- Argelia · Holcim: Rollout FI de Holcim Argelia
-- China · Mercedes-Benz: Integración FI/CO de Car2Go China
-- México · Deloitte Consulting: Rollout de Exeltis
-- Chile · Deloitte Consulting: Rollout de Exeltis
+- Nota: …y soporte y evolución de SAP Finanzas para usuarios de Europa, Oriente Medio, África y América
+- Tarjetas (empresa · **proyecto**: texto):
+  - España · Deloitte · **Vetpharma y Exeltis**: implantaciones S/4HANA de principio a fin
+  - Reino Unido · Holcim · **Holcim UK**: proyecto FI completo (AP, AR, TR, FSCM y Coupa) · Mercedes-Benz · **Mercedes-Benz UK**: Product Owner de evolutivos financieros, con equipo offshore en India
+  - Suecia · Deloitte · **Exeltis**: rollout S/4HANA · Mercedes-Benz · **Model D**: transformación del modelo de ventas
+  - Argelia · Holcim · **Holcim Argelia**: rollout FI completo (GL, AA, REFX y xSuite)
+  - China · Mercedes-Benz · **Car2Go China**: integración FI/CO completa, hasta el cutover
+  - México y Chile · Deloitte · **Exeltis**: rollout S/4HANA, en paralelo en México, Chile y Suecia
 
 ### Habilidades
 - Gestión de proyectos: gestión de programas y portfolio, SAP Activate, Agile/Scrum, Product Owner, KPIs y valor
@@ -103,30 +104,31 @@ AI transformation: Today I lead the AI projects on SAP Finance at my company. I 
 ### Experience
 1. Holcim EMEA Digital Center · Feb 2021 – present · Senior SAP FICO Consultant
    - Leading AI projects in SAP FICO (generative AI and machine learning)
+   - In-house FICO lead for the evolution of SAP finance systems
    - Full FI project for Holcim UK
    - FI rollout for Holcim Algeria
    - FICO workstream of the global SAP archiving programme (10+ countries)
    - Process mining with Celonis and Signavio
 2. Deloitte Consulting · May 2019 – Feb 2021 · SAP S/4HANA FI Consultant
    - S/4HANA implementations at Vetpharma and Exeltis (Spain)
-   - Exeltis rollouts in Mexico, Chile and Sweden
+   - Simultaneous Exeltis rollouts in Mexico, Chile and Sweden
 3. Mercedes-Benz Group Services Madrid · Jul 2015 – May 2019 · SAP FICO Consultant (previously SAP Project Manager Assistant)
    - Product Owner for Mercedes-Benz UK enhancements, with an offshore team in India
    - FI/CO integration for Car2Go China
    - Sales model in Sweden
-4. Iberdrola · Feb – Jul 2015 · Environmental Legal Assistant
+4. Iberdrola · Feb – Jul 2015 · Legal Environment Assistant
 
 ### Map: where I've worked
 - Title: Where I've worked
 - Hint: Hover over or tap a dot to see what I did in each country.
-- Note: …plus SAP archiving in 10+ countries
-- Spain · Deloitte Consulting: SAP S/4HANA implementations at Vetpharma and Exeltis
-- United Kingdom · Holcim: Full FI project for Holcim UK · Mercedes-Benz: Product Owner for Mercedes-Benz UK enhancements, with an offshore team in India
-- Sweden · Deloitte Consulting: Exeltis rollout · Mercedes-Benz: Sales model
-- Algeria · Holcim: FI rollout for Holcim Algeria
-- China · Mercedes-Benz: FI/CO integration for Car2Go China
-- Mexico · Deloitte Consulting: Exeltis rollout
-- Chile · Deloitte Consulting: Exeltis rollout
+- Note: …plus SAP Finance support and enhancements for users across Europe, the Middle East, Africa and the Americas
+- Cards (company · **project**: text):
+  - Spain · Deloitte · **Vetpharma & Exeltis**: end-to-end S/4HANA implementations
+  - United Kingdom · Holcim · **Holcim UK**: end-to-end FI project (AP, AR, TR, FSCM and Coupa) · Mercedes-Benz · **Mercedes-Benz UK**: Product Owner for finance enhancements, with an offshore team in India
+  - Sweden · Deloitte · **Exeltis**: S/4HANA rollout · Mercedes-Benz · **Model D**: sales model transformation
+  - Algeria · Holcim · **Holcim Algeria**: full FI rollout (GL, AA, REFX and xSuite)
+  - China · Mercedes-Benz · **Car2Go China**: full FI/CO integration, through to cutover
+  - Mexico and Chile · Deloitte · **Exeltis**: S/4HANA rollout, run in parallel across Mexico, Chile and Sweden
 
 ### Skills
 - Project management: programme and portfolio management, SAP Activate, Agile/Scrum, Product Owner, KPIs and value
@@ -180,7 +182,7 @@ Textos aprobados para menú, títulos, etiquetas y accesibilidad (ES → EN).
 | Saludo del Hero | > hola_mundo | > hello_world |
 | Títulos de sección | Sobre mí · Trayectoria · Habilidades · Proyectos · Pregúntale a mi gemelo IA · Contacto | About me · Experience · Skills · Projects · Ask my AI twin · Contact |
 | Contador 1 | 10+ años liderando transformación financiera | 10+ years leading finance transformation |
-| Contador 2 | 10+ países con rollouts | 10+ countries with rollouts |
+| Contador 2 | 10+ países en mis proyectos | 10+ countries in my projects |
 | Contador 3 | 4 regiones | 4 regions |
 | Gemelo: saludo | Hola, soy el gemelo IA de Javier. Elige una pregunta. | Hi, I'm Javier's AI twin. Pick a question. |
 | Gemelo: aviso | Respuestas predefinidas, sin IA en tiempo real. | Predefined answers, no live AI. |
