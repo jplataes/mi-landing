@@ -10,7 +10,7 @@
   const en = {
     // Página
     pageTitle: 'Javier Plata Escribano · Digital & AI Transformation',
-    pageDesc: 'Javier Plata Escribano: Digital & AI Transformation | SAP S/4HANA Finance Project Leader. I turn finance processes into AI solutions that reach production.',
+    pageDesc: 'Javier Plata Escribano: Digital & AI Transformation | SAP S/4HANA Finance Project Leader. Business transformation, now with AI.',
     // Navegación y accesibilidad
     skip: 'Skip to content',
     navLabel: 'Main navigation',
@@ -19,6 +19,7 @@
     menuOpen: 'Open menu',
     menuClose: 'Close menu',
     navAbout: 'About',
+    navExperience: 'Experience',
     navSkills: 'Skills',
     navProjects: 'Projects',
     navTwin: 'AI twin',
@@ -26,7 +27,7 @@
     // Hero
     heroHello: '> hello_world',
     heroRole: 'Digital & AI Transformation | SAP S/4HANA Finance Project Leader',
-    heroTagline: 'I turn finance processes into AI solutions that reach production.',
+    heroTagline: 'Business transformation, now with AI.',
     heroCta: "Let's talk",
     // Sobre mí
     eyebrowAbout: '01 · about_me',
@@ -37,13 +38,53 @@
     stat1: 'years leading finance transformation',
     stat2: 'countries with rollouts',
     stat3: 'regions',
-    mapTitle: 'International rollouts',
-    regionEurope: 'Europe',
-    regionAfrica: 'Africa',
-    regionAsia: 'Asia',
-    regionLatam: 'Latin America',
+    // Mapa
+    mapTitle: "Where I've worked",
+    mapHint: 'Hover over or tap a dot to see what I did in each country.',
+    mapNote: '…plus SAP archiving in 10+ countries',
+    countryES: 'Spain',
+    countryGB: 'United Kingdom',
+    countrySE: 'Sweden',
+    countryDZ: 'Algeria',
+    countryCN: 'China',
+    countryMX: 'Mexico',
+    countryCL: 'Chile',
+    pinDeloitteES: 'SAP S/4HANA implementations at Vetpharma and Exeltis',
+    pinHolcimUK: 'Full FI project for Holcim UK',
+    pinMercedesUK: 'Product Owner for Mercedes-Benz UK enhancements, with an offshore team in India',
+    pinExeltis: 'Exeltis rollout',
+    pinMercedesSE: 'Sales model',
+    pinHolcimDZ: 'FI rollout for Holcim Algeria',
+    pinMercedesCN: 'FI/CO integration for Car2Go China',
+    // Trayectoria
+    eyebrowExperience: '02 · experience',
+    titleExperience: 'Experience',
+    job_holcim_dates: 'Feb 2021 – present',
+    job_holcim_role: 'Senior SAP FICO Consultant',
+    job_holcim_items: [
+      'Project Manager for AI-powered invoice automation',
+      'Full FI project for Holcim UK',
+      'FI rollout for Holcim Algeria',
+      'FICO workstream of the global SAP archiving programme (10+ countries)',
+      'Process mining with Celonis and Signavio'
+    ],
+    job_deloitte_dates: 'May 2019 – Feb 2021',
+    job_deloitte_role: 'SAP S/4HANA FI Consultant',
+    job_deloitte_items: [
+      'S/4HANA implementations at Vetpharma and Exeltis (Spain)',
+      'Exeltis rollouts in Mexico, Chile and Sweden'
+    ],
+    job_mercedes_dates: 'Jul 2015 – May 2019',
+    job_mercedes_role: 'SAP FICO Consultant (previously SAP Project Manager Assistant)',
+    job_mercedes_items: [
+      'Product Owner for Mercedes-Benz UK enhancements, with an offshore team in India',
+      'FI/CO integration for Car2Go China',
+      'Sales model in Sweden'
+    ],
+    job_iberdrola_dates: 'Feb – Jul 2015',
+    job_iberdrola_role: 'Environmental Legal Assistant',
     // Habilidades
-    eyebrowSkills: '02 · skills',
+    eyebrowSkills: '03 · skills',
     titleSkills: 'Skills',
     skill1Title: 'Project management',
     skill1: ['programme and portfolio management', 'SAP Activate', 'Agile/Scrum', 'Product Owner', 'KPIs and value'],
@@ -56,7 +97,7 @@
     skill5Title: 'Integrations',
     skill5: ['Coupa', 'xSuite', 'Celonis', 'Signavio', 'SAP Archiving'],
     // Proyectos
-    eyebrowProjects: '03 · projects',
+    eyebrowProjects: '04 · projects',
     titleProjects: 'Projects',
     project1Title: 'AI invoice automation',
     project1: 'A project that replaces traditional OCR with a cloud solution based on LLMs and machine-learning predictions to post supplier invoices automatically in SAP across EMEA. Role: Project Manager; I built the business case and coordinate the vendor and the IT, cybersecurity and finance teams.',
@@ -67,10 +108,10 @@
     project4Title: 'This website',
     project4: 'Built by directing AI (Claude Code) with HTML, Tailwind CSS, Git and GitHub Pages.',
     // Gemelo IA
-    eyebrowTwin: '04 · ai_twin',
+    eyebrowTwin: '05 · ai_twin',
     titleTwin: 'Ask my AI twin',
     // Contacto y pie
-    eyebrowContact: '05 · contact',
+    eyebrowContact: '06 · contact',
     titleContact: 'Contact',
     contactText: 'Find me on LinkedIn and GitHub.',
     footer: '© 2026 Javier Plata Escribano · Website built by directing AI (Claude Code)'

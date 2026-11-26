@@ -89,13 +89,13 @@
   items.forEach(function (el) { observer.observe(el); });
 })();
 
-// --- Mapa: las regiones se encienden una a una según avanza el scroll ---
+// --- Mapa: los países se encienden uno a uno según avanza el scroll ---
 (function () {
   const map = document.querySelector('.world-map');
   if (!map) return;
-  const order = ['europe', 'africa', 'asia', 'latam'];
-  const parts = order.map(function (r) {
-    return map.querySelectorAll('[data-region="' + r + '"]'); // región del mapa + leyenda
+  const order = ['es', 'gb', 'se', 'dz', 'cn', 'mx', 'cl'];
+  const parts = order.map(function (c) {
+    return map.querySelectorAll('[data-country="' + c + '"]'); // país en el mapa + su punto
   });
 
   function setOn(count) {
@@ -104,7 +104,66 @@
     });
   }
 
-  // Movimiento reducido: todas encendidas, sin depender del scroll
+  // --- Tarjetas de cada país ---
+  const pins = map.querySelectorAll('.map-pin');
+
+  // Coloca la tarjeta para que no se salga de la pantalla
+  // (o del mapa, cuando en móvil el mapa se desliza en horizontal)
+  const scroller = map.querySelector('.map-scroll');
+  function bounds() {
+    const scrolls = scroller && scroller.scrollWidth > scroller.clientWidth;
+    const b = scrolls ? scroller.getBoundingClientRect() : { left: 0, right: window.innerWidth, bottom: window.innerHeight };
+    return { left: Math.max(b.left, 0), right: Math.min(b.right, window.innerWidth), bottom: Math.min(b.bottom, window.innerHeight) };
+  }
+  function place(pin) {
+    pin.classList.remove('left', 'up');
+    const card = pin.querySelector('.pin-card');
+    const r = card.getBoundingClientRect();
+    const b = bounds();
+    if (r.right > b.right - 8) pin.classList.add('left');
+    if (r.bottom > b.bottom - 8) pin.classList.add('up');
+  }
+
+  // En móvil, el mapa deslizable arranca centrado en Europa
+  if (scroller && scroller.scrollWidth > scroller.clientWidth) {
+    scroller.scrollLeft = scroller.scrollWidth * 0.42 - scroller.clientWidth / 2;
+  }
+  // Panel bajo el mapa (solo móvil): copia la tarjeta del país abierto
+  const panel = map.querySelector('.map-panel');
+  function fillPanel() {
+    const open = map.querySelector('.map-pin.is-open .pin-card');
+    if (panel) panel.innerHTML = open ? open.innerHTML : '';
+  }
+  document.addEventListener('langchange', fillPanel);
+
+  function closeAll(except) {
+    pins.forEach(function (p) { if (p !== except) p.classList.remove('is-open'); });
+    fillPanel();
+  }
+  pins.forEach(function (pin) {
+    pin.addEventListener('pointerenter', function () { place(pin); });
+    pin.addEventListener('focusin', function () { place(pin); });
+    // Tocar o hacer clic abre/cierra (en móvil el botón no siempre recibe el foco)
+    pin.querySelector('.pin-btn').addEventListener('click', function () {
+      const open = !pin.classList.contains('is-open');
+      closeAll(pin);
+      pin.classList.toggle('is-open', open);
+      if (open) place(pin);
+      fillPanel();
+    });
+  });
+  // Tocar fuera cierra la tarjeta abierta
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.map-pin')) closeAll();
+  });
+  // Escape cierra la tarjeta y quita el foco del punto
+  map.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    closeAll();
+    if (document.activeElement.classList.contains('pin-btn')) document.activeElement.blur();
+  });
+
+  // Movimiento reducido: todos encendidos, sin depender del scroll
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     setOn(order.length);
     return;
@@ -115,13 +174,12 @@
     ticking = false;
     const rect = map.getBoundingClientRect();
     const vh = window.innerHeight;
-    // Cada región se enciende cuando el mapa sube un 12 % más de pantalla
+    // Cada país se enciende cuando el mapa sube un 7 % más de pantalla
     let count = 0;
     for (let i = 0; i < order.length; i++) {
-      if (rect.top < vh * (0.8 - 0.12 * i)) count = i + 1;
+      if (rect.top < vh * (0.8 - 0.07 * i)) count = i + 1;
     }
-    // Si el mapa entero ya cabe y se ha pasado, todas encendidas
-    if (rect.bottom < vh * 0.6) count = order.length;
+    if (rect.bottom < vh * 0.7) count = order.length;
     setOn(count);
   }
   window.addEventListener('scroll', function () {
