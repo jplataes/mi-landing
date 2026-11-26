@@ -7,24 +7,11 @@
   <meta name="description" content="Javier Plata Escribano: Transformación Digital e IA | SAP S/4HANA Finance Project Leader. Transformación de negocio, ahora con IA.">
   <meta name="theme-color" content="#050b1f">
 
-  <!-- Tailwind CSS por CDN (sin build) y paleta propia del sitio -->
-  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { 950: '#050b1f', 900: '#0a1430', 800: '#111d42', 700: '#1b2a5a' },
-            cyan: { glow: '#22d3ee' },
-            violet: { glow: '#a78bfa' }
-          },
-          fontFamily: {
-            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace']
-          }
-        }
-      }
-    };
-  </script>
+  <!-- Icono de la pestaña (SVG en línea: sin archivos extra ni peticiones) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23050b1f'/%3E%3Ctext%20x='7'%20y='41'%20font-family='ui-monospace,Menlo,Consolas,monospace'%20font-size='27'%20font-weight='700'%20fill='%2322d3ee'%3EJP%3C/text%3E%3Crect%20x='43'%20y='40'%20width='13'%20height='4'%20rx='1'%20fill='%23a78bfa'/%3E%3C/svg%3E">
+  <!-- Tailwind CSS: generado una sola vez con las clases que usa la web (ver README.md).
+       En desarrollo se usó el CDN de Tailwind; este archivo da el mismo resultado y es mucho más ligero. -->
+  <link rel="stylesheet" href="css/tailwind.css">
   <link rel="stylesheet" href="css/styles.css">
   <!-- Indica que hay JavaScript: las animaciones de entrada solo se preparan en ese caso -->
   <script>document.documentElement.classList.add('js');</script>
@@ -41,8 +28,8 @@
   <!-- Cabecera fija con la navegación principal -->
   <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy-950/80 backdrop-blur">
     <nav class="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3 sm:px-6" aria-label="Navegación principal" data-i18n-attr="aria-label:navLabel">
-      <a href="#inicio" class="mr-auto font-mono text-lg font-bold text-cyan-glow" aria-label="Javier Plata Escribano, ir al inicio" data-i18n-attr="aria-label:homeLabel">
-        JP<span class="text-violet-glow">_</span>
+      <a href="#inicio" class="mr-auto font-mono text-lg font-bold text-cyan-glow">
+        JP<span class="text-violet-glow">_</span><span class="sr-only" data-i18n="homeLabel">, Javier Plata Escribano, ir al inicio</span>
       </a>
 
       <!-- Enlaces de sección (en móvil, desplegables) -->
@@ -58,8 +45,8 @@
 
       <!-- Selector de idioma ES/EN -->
       <div class="lang-switch" role="group" aria-label="Cambiar idioma" data-i18n-attr="aria-label:langLabel">
-        <button type="button" data-lang="es" aria-pressed="true" lang="es" aria-label="Español">ES</button>
-        <button type="button" data-lang="en" aria-pressed="false" lang="en" aria-label="English">EN</button>
+        <button type="button" data-lang="es" aria-pressed="true" lang="es">ES<span class="sr-only"> (Español)</span></button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en">EN<span class="sr-only"> (English)</span></button>
       </div>
 
       <!-- Botón de menú (solo móvil) -->
@@ -293,7 +280,7 @@
         <h2 id="titulo-formacion" class="section-title reveal" data-i18n="titleEducation">Formación</h2>
 
         <div class="circuit-wrap mt-12">
-          <!-- Pista del circuito: la señal avanza con el scroll (--p de 0 a 1) -->
+          <!-- Pista del circuito: la señal avanza con el scroll (variable p, de 0 a 1) -->
           <div class="circuit-track" aria-hidden="true"><span class="circuit-fill"></span><span class="circuit-signal"></span></div>
           <ol class="circuit">
             <li class="station" style="--i: 0">

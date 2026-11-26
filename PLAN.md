@@ -22,4 +22,4 @@ Cada fase termina con una Pull Request hacia `main`; Javier la fusiona y revisa 
 | 9 | Fondo vivo para toda la página: continúa la atmósfera del Hero de forma sutil (brillos cian y violeta, rejilla tecnológica tenue, separadores luminosos entre secciones). Brillos de ambiente que se mueven despacio y con el scroll, rejilla tenue y separadores luminosos que se encienden al entrar cada sección. | Hecha |
 | 9b | Formación en lugar de Habilidades: trazado de circuito que se enciende al hacer scroll, idiomas y certificaciones; gemelo con «¿Qué has estudiado?» y «¿Cómo puedo contactarte?»; «Esta web» como Publicada; año del pie automático | Hecha |
 | 10 | Pulido de tono: revisar todos los textos de la web en ES y EN para que suenen naturales | Hecha |
-| 11 | Calidad y publicación: accesibilidad, movimiento reducido, validación W3C y PageSpeed ≥ 90 | Pendiente |
+| 11 | Calidad y publicación: accesibilidad, movimiento reducido, validación W3C y PageSpeed ≥ 90 | Hecha: Lighthouse móvil 96–98 y escritorio 100 (accesibilidad, buenas prácticas y SEO 100), Tailwind generado, favicon, etiquetas accesibles, teclado completo, movimiento reducido y DETALLES.md |

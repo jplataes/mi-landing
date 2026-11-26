@@ -124,9 +124,25 @@
     if (r.bottom > b.bottom - 8) pin.classList.add('up');
   }
 
-  // En móvil, el mapa deslizable arranca centrado en Europa
-  if (scroller && scroller.scrollWidth > scroller.clientWidth) {
-    scroller.scrollLeft = scroller.scrollWidth * 0.42 - scroller.clientWidth / 2;
+  // En móvil, el mapa deslizable se centra en España (de donde nacen los arcos).
+  // Se recalcula al cargar, al aparecer el mapa en pantalla y al girar el móvil,
+  // porque en iPhone el tamaño definitivo no siempre está listo al principio.
+  const spain = map.querySelector('.map-pin[data-country="es"]');
+  let userScrolled = false;
+  function centerOnSpain() {
+    if (!scroller || !spain || userScrolled || scroller.scrollWidth <= scroller.clientWidth) return;
+    const s = scroller.getBoundingClientRect(), p = spain.getBoundingClientRect();
+    scroller.scrollLeft += (p.left - s.left) - scroller.clientWidth / 2;
+  }
+  if (scroller) {
+    centerOnSpain();
+    window.addEventListener('load', centerOnSpain);
+    window.addEventListener('resize', function () { userScrolled = false; centerOnSpain(); });
+    // Si el visitante desliza el mapa, respetamos su posición
+    scroller.addEventListener('touchstart', function () { userScrolled = true; }, { passive: true });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (en) { if (en[0].isIntersecting) centerOnSpain(); }).observe(scroller);
+    }
   }
   // Panel bajo el mapa (solo móvil): copia la tarjeta del país abierto
   const panel = map.querySelector('.map-panel');
