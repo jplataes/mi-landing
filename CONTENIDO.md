@@ -205,9 +205,9 @@ Textos aprobados para menú, títulos, etiquetas y accesibilidad (ES → EN).
 | Etiquetas de sección | 01 · sobre_mí · 02 · trayectoria · 03 · formación · 04 · proyectos · 05 · gemelo_ia · 06 · contacto | 01 · about_me · 02 · experience · 03 · education · 04 · projects · 05 · ai_twin · 06 · contact |
 | Saludo del Hero | > hola_mundo | > hello_world |
 | Títulos de sección | Sobre mí · Trayectoria · Formación · Proyectos · Pregúntale a mi gemelo IA · Contacto | About me · Experience · Education · Projects · Ask my AI twin · Contact |
-| Contador 1 | 10+ años liderando transformación financiera | 10+ years leading finance transformation |
-| Contador 2 | 10+ países en mis proyectos | 10+ countries in my projects |
-| Contador 3 | 4 regiones | 4 regions |
+| Contador 1 | 10+ · Años liderando transformación financiera | 10+ · Years leading finance transformation |
+| Contador 2 | 10+ · Países en mis proyectos | 10+ · Countries in my projects |
+| Contador 3 | 4 · Regiones | 4 · Regions |
 | Gemelo: saludo | Hola, soy el gemelo IA de Javier. Elige una pregunta. | Hi, I'm Javier's AI twin. Pick a question. |
 | Gemelo: aviso | Respuestas predefinidas, sin IA en tiempo real. | Predefined answers, no live AI. |
 | Gemelo: preguntas | ¿Quién eres? · ¿Qué haces con IA? · ¿Dónde has trabajado? · ¿Cuáles son tus habilidades? · ¿Qué has estudiado? · ¿Cómo se hizo esta web? · ¿Cómo puedo contactarte? | Who are you? · What do you do with AI? · Where have you worked? · What are your skills? · What did you study? · How was this website built? · How can I get in touch? |
