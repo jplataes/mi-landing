@@ -1048,3 +1048,4 @@ body { background: transparent; }
 @media (prefers-reduced-motion: reduce) {
   .station-last.is-on .station-node { animation: none; }
 }
+@media (max-width: 400px) { .motion-btn { font-size: 0.8rem; padding: 0.45rem 0.8rem; } }

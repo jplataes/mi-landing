@@ -34,7 +34,7 @@ El cambio de idioma es inmediato, sin recargar la página, actualiza el atributo
 - "Pregúntale a mi gemelo IA": conversación guiada con preguntas predefinidas, sin backend.
 - Mapa de puntos que ilumina al hacer scroll los países donde ha trabajado Javier (España, Reino Unido, Suecia, Argelia, China, México y Chile). Cada país tiene un punto que, al pasar el ratón, tocarlo o enfocarlo con el teclado, muestra una tarjeta con la empresa y lo que hizo allí. El resto del mundo, en gris suave pero visible.
 - Trayectoria: línea de tiempo visual y compacta con la experiencia profesional.
-- Tarjetas de proyecto con efecto 3D y reflejo que sigue al cursor. En móvil: giroscopio (en iPhone, tras pulsar un botón discreto que pide el permiso del sistema); si no, inclinación y brillo al hacer scroll; al tocar, la tarjeta se hunde y el reflejo aparece bajo el dedo.
+- Tarjetas de proyecto con efecto 3D y reflejo que sigue al cursor. En móvil: giroscopio (en iPhone, tras pulsar un botón discreto que pide el permiso del sistema; hay uno en Certificaciones y otro en Proyectos, comparten permiso y desaparecen juntos); si no, inclinación y brillo al hacer scroll; al tocar, la tarjeta se hunde y el reflejo aparece bajo el dedo.
 - Animaciones de entrada al hacer scroll y contadores animados.
 
 ## Estándares de calidad

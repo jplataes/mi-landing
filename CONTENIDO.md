@@ -80,7 +80,7 @@ Tarjetas (lectura rápida; el texto completo de arriba va en «Ver más»):
 | Copiloto GR/IR | Prototipo | Analiza las partidas abiertas en SAP y sugiere cómo liquidarlas. | Idea y desarrollo con IA | Gemini · SAP · App web |
 | Esta web | Publicada | Una web hecha dirigiendo a la IA, de la primera línea de código a la publicación. | Dirigiendo a la IA | Claude Code · HTML · Tailwind CSS · GitHub Pages |
 
-Etiquetas de interfaz: «Mi rol», «Ver más», «✦ Activa el efecto 3D al mover el móvil» (botón solo en iPhone), «Ver el código en GitHub» (enlace de «Esta web» a https://github.com/jplataes/mi-landing).
+Etiquetas de interfaz: «Mi rol», «Ver más», «✦ Activa el efecto 3D al mover el móvil» y, en Certificaciones, «✦ Activa el holograma al mover el móvil» (botones solo en iPhone; comparten permiso y desaparecen juntos), «Ver el código en GitHub» (enlace de «Esta web» a https://github.com/jplataes/mi-landing).
 
 ### Gemelo IA
 - Saludo: Hola, soy el gemelo IA de Javier. Elige una pregunta.
@@ -173,7 +173,7 @@ Cards (quick read; the full text above goes under "See more"):
 | GR/IR Copilot | Prototype | Analyses open items in SAP and suggests how to clear them. | Idea and build, with AI | Gemini · SAP · Web app |
 | This website | Live | A website built by directing AI, from the first line of code to going live. | Directing the AI | Claude Code · HTML · Tailwind CSS · GitHub Pages |
 
-Interface labels: "My role", "See more", "✦ Turn on the 3D motion effect" (iPhone-only button), "View the code on GitHub".
+Interface labels: "My role", "See more", "✦ Turn on the 3D motion effect" and, in Certifications, "✦ Turn on the hologram motion effect" (iPhone-only buttons; shared permission, both disappear together), "View the code on GitHub".
 
 ### AI twin
 - Greeting: Hi, I'm Javier's AI twin. Pick a question.

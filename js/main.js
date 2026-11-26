@@ -277,20 +277,25 @@
   // Giroscopio: se usa en cuanto el navegador envía datos.
   // Android los envía sin pedir nada. iPhone exige permiso: mostramos un botón discreto
   // y solo si el visitante lo pulsa aparece el aviso del sistema.
-  const motionBtn = document.querySelector('.motion-btn');
+  // Hay un botón en Certificaciones y otro en Proyectos: el permiso es único,
+  // así que al pulsar cualquiera de los dos desaparecen ambos.
+  const motionBtns = Array.from(document.querySelectorAll('.motion-btn'));
+  const hideBtns = function () { motionBtns.forEach(function (b) { b.hidden = true; }); };
   if ('DeviceOrientationEvent' in window) {
-    if (motionBtn && typeof DeviceOrientationEvent.requestPermission === 'function') {
-      // Esperamos un momento: si ya llegan datos (Android), el botón no hace falta
-      setTimeout(function () { if (!gyro) motionBtn.hidden = false; }, 1200);
-      motionBtn.addEventListener('click', function () {
-        DeviceOrientationEvent.requestPermission()
-          .catch(function () { /* rechazado o no disponible: seguimos con el efecto de scroll */ })
-          .finally(function () { motionBtn.hidden = true; });
+    if (motionBtns.length && typeof DeviceOrientationEvent.requestPermission === 'function') {
+      // Esperamos un momento: si ya llegan datos (Android), los botones no hacen falta
+      setTimeout(function () { if (!gyro) motionBtns.forEach(function (b) { b.hidden = false; }); }, 1200);
+      motionBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          DeviceOrientationEvent.requestPermission()
+            .catch(function () { /* rechazado o no disponible: seguimos con el efecto de scroll */ })
+            .finally(hideBtns);
+        });
       });
     }
     window.addEventListener('deviceorientation', function (e) {
       if (e.beta == null || e.gamma == null) return;
-      if (motionBtn) motionBtn.hidden = true;
+      hideBtns();
       if (baseBeta === null) baseBeta = e.beta;
       baseBeta += (e.beta - baseBeta) * 0.01;   // se adapta despacio a cómo sujetas el móvil
       gyro = { beta: e.beta, gamma: e.gamma };
