@@ -1,19 +1,47 @@
 # Contenido del sitio
 
-Textos oficiales de la web en español (idioma por defecto) e inglés. Deben usarse literalmente.
+Textos oficiales de la web en español (idioma por defecto) e inglés. Es la fuente única de los textos: todo texto nuevo o reescrito se aprueba y se guarda aquí en los dos idiomas.
 
 ## Español
 
 ### Hero
 - Nombre: Javier Plata Escribano
 - Rol: Transformación Digital e IA | SAP S/4HANA Finance Project Leader
-- Frase: Convierto procesos financieros en soluciones de IA que llegan a producción.
+- Frase: Transformación de negocio, ahora con IA.
 - Botón: Hablemos (lleva a Contacto)
 
 ### Sobre mí
 SAP S/4HANA Finance Project Leader con más de 10 años liderando grandes programas de transformación financiera y rollouts internacionales en Europa, África, Asia y Latinoamérica. Convierto la estrategia en hojas de ruta, gestiono alcance, plazos y presupuestos, mido el valor con KPIs y lidero equipos multidisciplinares y offshore como Product Owner.
 
 Transformación con IA: actualmente lidero la automatización del procesamiento de facturas de proveedor con IA generativa y machine learning, y creo aplicaciones de IA con Claude Code y OpenAI Codex. Sé priorizar una cartera de casos de uso de IA, llevarlos de la prueba de concepto a producción y gobernarlos de forma responsable para que generen valor medible para el negocio.
+
+### Trayectoria
+1. Holcim EMEA Digital Center · feb 2021 – actualidad · Consultor SAP FICO Senior
+   - Project Manager de la automatización de facturas con IA
+   - Proyecto FI completo de Holcim UK
+   - Rollout FI de Holcim Argelia
+   - Área FICO del programa global de archivado SAP (10+ países)
+   - Process Mining con Celonis y Signavio
+2. Deloitte Consulting · may 2019 – feb 2021 · Consultor SAP S/4HANA FI
+   - Implantaciones de S/4HANA en Vetpharma y Exeltis (España)
+   - Rollouts de Exeltis en México, Chile y Suecia
+3. Mercedes-Benz Group Services Madrid · jul 2015 – may 2019 · Consultor SAP FICO (antes, Asistente de Project Manager SAP)
+   - Product Owner de evolutivos para Mercedes-Benz UK con un equipo offshore en India
+   - Integración FI/CO de Car2Go China
+   - Modelo de ventas en Suecia
+4. Iberdrola · feb – jul 2015 · Asistente Legal de Medio Ambiente
+
+### Mapa: dónde he trabajado
+- Título: Dónde he trabajado
+- Instrucción: Pasa el ratón o toca un punto para ver qué hice en cada país.
+- Nota: …y archivado SAP en 10+ países
+- España · Deloitte Consulting: Implantaciones de SAP S/4HANA en Vetpharma y Exeltis
+- Reino Unido · Holcim: Proyecto FI completo de Holcim UK · Mercedes-Benz: Product Owner de evolutivos para Mercedes-Benz UK, con un equipo offshore en India
+- Suecia · Deloitte Consulting: Rollout de Exeltis · Mercedes-Benz: Modelo de ventas
+- Argelia · Holcim: Rollout FI de Holcim Argelia
+- China · Mercedes-Benz: Integración FI/CO de Car2Go China
+- México · Deloitte Consulting: Rollout de Exeltis
+- Chile · Deloitte Consulting: Rollout de Exeltis
 
 ### Habilidades
 - Gestión de proyectos: gestión de programas y portfolio, SAP Activate, Agile/Scrum, Product Owner, KPIs y valor
@@ -37,13 +65,41 @@ Transformación con IA: actualmente lidero la automatización del procesamiento 
 ### Hero
 - Name: Javier Plata Escribano
 - Role: Digital & AI Transformation | SAP S/4HANA Finance Project Leader
-- Tagline: I turn finance processes into AI solutions that reach production.
+- Tagline: Business transformation, now with AI.
 - Button: Let's talk (goes to Contact)
 
 ### About me
 SAP S/4HANA Finance Project Leader with more than 10 years leading large finance transformation programmes and international rollouts across Europe, Africa, Asia and Latin America. I turn strategy into roadmaps, manage scope, timelines and budgets, measure value with KPIs and lead multidisciplinary and offshore teams as Product Owner.
 
 AI transformation: I currently lead the automation of supplier invoice processing with generative AI and machine learning, and I build AI applications with Claude Code and OpenAI Codex. I know how to prioritise a portfolio of AI use cases, take them from proof of concept to production and govern them responsibly so they deliver measurable business value.
+
+### Experience
+1. Holcim EMEA Digital Center · Feb 2021 – present · Senior SAP FICO Consultant
+   - Project Manager for AI-powered invoice automation
+   - Full FI project for Holcim UK
+   - FI rollout for Holcim Algeria
+   - FICO workstream of the global SAP archiving programme (10+ countries)
+   - Process mining with Celonis and Signavio
+2. Deloitte Consulting · May 2019 – Feb 2021 · SAP S/4HANA FI Consultant
+   - S/4HANA implementations at Vetpharma and Exeltis (Spain)
+   - Exeltis rollouts in Mexico, Chile and Sweden
+3. Mercedes-Benz Group Services Madrid · Jul 2015 – May 2019 · SAP FICO Consultant (previously SAP Project Manager Assistant)
+   - Product Owner for Mercedes-Benz UK enhancements, with an offshore team in India
+   - FI/CO integration for Car2Go China
+   - Sales model in Sweden
+4. Iberdrola · Feb – Jul 2015 · Environmental Legal Assistant
+
+### Map: where I've worked
+- Title: Where I've worked
+- Hint: Hover over or tap a dot to see what I did in each country.
+- Note: …plus SAP archiving in 10+ countries
+- Spain · Deloitte Consulting: SAP S/4HANA implementations at Vetpharma and Exeltis
+- United Kingdom · Holcim: Full FI project for Holcim UK · Mercedes-Benz: Product Owner for Mercedes-Benz UK enhancements, with an offshore team in India
+- Sweden · Deloitte Consulting: Exeltis rollout · Mercedes-Benz: Sales model
+- Algeria · Holcim: FI rollout for Holcim Algeria
+- China · Mercedes-Benz: FI/CO integration for Car2Go China
+- Mexico · Deloitte Consulting: Exeltis rollout
+- Chile · Deloitte Consulting: Exeltis rollout
 
 ### Skills
 - Project management: programme and portfolio management, SAP Activate, Agile/Scrum, Product Owner, KPIs and value
@@ -68,14 +124,13 @@ Textos aprobados para menú, títulos, etiquetas y accesibilidad (ES → EN).
 
 | Elemento | Español | English |
 |---|---|---|
-| Menú | Sobre mí · Habilidades · Proyectos · Gemelo IA · Contacto | About · Skills · Projects · AI twin · Contact |
-| Etiquetas de sección | 01 · sobre_mí · 02 · habilidades · 03 · proyectos · 04 · gemelo_ia · 05 · contacto | 01 · about_me · 02 · skills · 03 · projects · 04 · ai_twin · 05 · contact |
+| Menú | Sobre mí · Trayectoria · Habilidades · Proyectos · Gemelo IA · Contacto | About · Experience · Skills · Projects · AI twin · Contact |
+| Etiquetas de sección | 01 · sobre_mí · 02 · trayectoria · 03 · habilidades · 04 · proyectos · 05 · gemelo_ia · 06 · contacto | 01 · about_me · 02 · experience · 03 · skills · 04 · projects · 05 · ai_twin · 06 · contact |
 | Saludo del Hero | > hola_mundo | > hello_world |
-| Títulos de sección | Sobre mí · Habilidades · Proyectos · Pregúntale a mi gemelo IA · Contacto | About me · Skills · Projects · Ask my AI twin · Contact |
+| Títulos de sección | Sobre mí · Trayectoria · Habilidades · Proyectos · Pregúntale a mi gemelo IA · Contacto | About me · Experience · Skills · Projects · Ask my AI twin · Contact |
 | Contador 1 | 10+ años liderando transformación financiera | 10+ years leading finance transformation |
 | Contador 2 | 10+ países con rollouts | 10+ countries with rollouts |
 | Contador 3 | 4 regiones | 4 regions |
-| Mapa | Rollouts internacionales: Europa · África · Asia · Latinoamérica | International rollouts: Europe · Africa · Asia · Latin America |
 | Gemelo: saludo | Hola, soy el gemelo IA de Javier. Elige una pregunta. | Hi, I'm Javier's AI twin. Pick a question. |
 | Gemelo: aviso | Respuestas predefinidas, sin IA en tiempo real. | Predefined answers, no live AI. |
 | Gemelo: preguntas | ¿Quién eres? · ¿Qué haces con IA? · ¿Dónde has trabajado? · ¿Cuáles son tus habilidades? · ¿Cómo se hizo esta web? | Who are you? · What do you do with AI? · Where have you worked? · What are your skills? · How was this website built? |
