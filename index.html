@@ -29,7 +29,11 @@
   <!-- Indica que hay JavaScript: las animaciones de entrada solo se preparan en ese caso -->
   <script>document.documentElement.classList.add('js');</script>
 </head>
-<body class="bg-navy-950 text-slate-200 antialiased">
+<body class="text-slate-200 antialiased">
+
+  <!-- Fondo vivo: brillos de ambiente y rejilla tecnológica tenue, detrás de todo el contenido -->
+  <div class="ambient" aria-hidden="true"><span class="glow glow-1"></span><span class="glow glow-2"></span><span class="glow glow-3"></span></div>
+  <div class="tech-grid" aria-hidden="true"></div>
 
   <!-- Enlace para saltar directamente al contenido con el teclado -->
   <a href="#main" class="skip-link" data-i18n="skip">Saltar al contenido</a>
@@ -564,7 +568,7 @@
     </section>
   </main>
 
-  <footer class="border-t border-white/10 py-8">
+  <footer class="site-footer py-8">
     <p class="mx-auto max-w-6xl px-4 text-center text-sm text-slate-400 sm:px-6" data-i18n="footer">
       © 2026 Javier Plata Escribano · Web construida dirigiendo a la IA (Claude Code)
     </p>

@@ -386,3 +386,34 @@
   });
   schedule();
 })();
+
+// --- Fondo vivo: separadores que se encienden y brillos que acompañan al scroll ---
+(function () {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const lines = document.querySelectorAll('.section, .site-footer');
+
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    lines.forEach(function (el) { el.classList.add('is-lit'); });
+    return;
+  }
+  // Cada separador se enciende una vez, cuando su sección entra en pantalla
+  const io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('is-lit'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -15% 0px' });
+  lines.forEach(function (el) { io.observe(el); });
+
+  // Los brillos se desplazan un poco con el scroll (0 arriba … 1 al final de la página)
+  const root = document.documentElement;
+  let pending = false;
+  window.addEventListener('scroll', function () {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () {
+      pending = false;
+      const max = root.scrollHeight - window.innerHeight || 1;
+      root.style.setProperty('--scroll', (window.scrollY / max).toFixed(3));
+    });
+  }, { passive: true });
+})();

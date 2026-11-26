@@ -10,7 +10,7 @@
 section { scroll-margin-top: 4rem; }
 
 /* Secciones: espaciado común y separación suave */
-.section { padding: 5rem 0; border-top: 1px solid rgb(255 255 255 / 0.05); }
+.section { position: relative; padding: 5rem 0; }
 @media (min-width: 768px) { .section { padding: 7rem 0; } }
 .section-inner { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
 @media (min-width: 640px) { .section-inner { padding: 0 1.5rem; } }
@@ -903,3 +903,59 @@ section { scroll-margin-top: 4rem; }
 .contact-btn:hover { transform: translateY(-3px); }
 .contact-btn-li:hover { box-shadow: 0 0 36px rgb(34 211 238 / 0.6); }
 .contact-btn-gh:hover { background: rgb(167 139 250 / 0.25); box-shadow: 0 0 36px rgb(167 139 250 / 0.5); }
+
+
+/* ---------- Fondo vivo (toda la página) ---------- */
+/* El color de fondo va en <html>; las capas fijas quedan detrás del contenido */
+html { background: var(--navy-950); }
+body { background: transparent; }
+
+.ambient, .tech-grid {
+  position: fixed; inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.ambient { bottom: -80px; overflow: hidden; transform: translateY(calc(var(--scroll, 0) * -60px)); } /* más alta: al subir no deja ver su borde */
+
+/* Brillos difusos: degradados radiales (sin filtros de desenfoque, más ligeros) */
+.glow {
+  position: absolute;
+  width: 60vmax; height: 60vmax;
+  border-radius: 50%;
+  will-change: transform;
+}
+.glow-1 { left: -15vmax; top: 10vh; background: radial-gradient(circle, rgb(34 211 238 / 0.10), transparent 60%); animation: drift-1 46s ease-in-out infinite alternate; }
+.glow-2 { right: -20vmax; top: 35vh; background: radial-gradient(circle, rgb(124 58 237 / 0.13), transparent 60%); animation: drift-2 58s ease-in-out infinite alternate; }
+.glow-3 { left: 25vw; bottom: -30vmax; background: radial-gradient(circle, rgb(14 165 233 / 0.08), transparent 60%); animation: drift-3 64s ease-in-out infinite alternate; }
+@keyframes drift-1 { to { transform: translate(18vw, 22vh) scale(1.15); } }
+@keyframes drift-2 { to { transform: translate(-22vw, -18vh) scale(0.9); } }
+@keyframes drift-3 { to { transform: translate(-15vw, -25vh) scale(1.2); } }
+
+/* Rejilla tecnológica: muy tenue y desvanecida hacia los bordes */
+.tech-grid {
+  background:
+    linear-gradient(rgb(148 163 184 / 0.045) 1px, transparent 1px) 0 0 / 56px 56px,
+    linear-gradient(90deg, rgb(148 163 184 / 0.045) 1px, transparent 1px) 0 0 / 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 45%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 75% 65% at 50% 45%, #000 30%, transparent 100%);
+}
+
+/* Separadores luminosos: un haz cian → violeta que se enciende al entrar cada sección */
+.section::before, .site-footer::before {
+  content: "";
+  position: absolute; left: 0; right: 0; top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(34 211 238 / 0.7) 30%, rgb(167 139 250 / 0.7) 70%, transparent);
+  box-shadow: 0 0 12px rgb(34 211 238 / 0.45);
+  transform: scaleX(0.15);
+  opacity: 0.35;
+  transition: transform 1.4s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 1.4s;
+}
+.section.is-lit::before, .site-footer.is-lit::before { transform: scaleX(1); opacity: 1; }
+.site-footer { position: relative; }
+
+@media (prefers-reduced-motion: reduce) {
+  .glow { animation: none; }
+  .ambient { transform: none; }
+  .section::before, .site-footer::before { transform: none; opacity: 1; transition: none; }
+}
