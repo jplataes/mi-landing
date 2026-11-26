@@ -46,11 +46,17 @@ Transformación con IA: hoy lidero los proyectos de IA sobre SAP Finanzas en mi 
   - México y Chile · Deloitte · **Exeltis**: rollout S/4HANA, en paralelo en México, Chile y Suecia
 
 ### Habilidades
-- Gestión de proyectos: gestión de programas y portfolio, SAP Activate, Agile/Scrum, Product Owner, KPIs y valor
-- Estrategia de IA: hoja de ruta, priorización de casos de uso, KPIs de valor, gobierno de IA e IA responsable, EU AI Act
-- Herramientas de IA: Claude Code, OpenAI Codex, agentes de IA y MCP, RAG, n8n, APIs de LLM, Microsoft 365 Copilot, Gemini
-- SAP Finanzas: GL, AP, AR, AA, TR, FSCM, REFX, Central Finance, CO
-- Integraciones: Coupa, xSuite, Celonis, Signavio, SAP Archiving
+(Sección retirada de la web: su resumen vive en la respuesta del gemelo IA «¿Cuáles son tus habilidades?».)
+
+### Formación
+(Línea de tiempo en forma de circuito; sin etiquetas temporales como «en curso», para que el texto no caduque.)
+1. 2009–2015 · Doble grado en ADE y Derecho · Universidad de Extremadura
+2. 2011–2012 · Erasmus · Philipps-Universität Marburg (Alemania)
+3. 2014–2015 · Máster en Seguros y Gestión de Riesgos · Universidad de Extremadura
+4. 2019–2020 · MBA · ThePowerMBA
+5. 2026–2027 · Máster en Soluciones de IA para Empresas (AI Maker) · ThePower Tech School
+- Idiomas: Español (nativo) · Inglés (C1) · Alemán (A2)
+
 
 ### Certificaciones
 Título: Certificaciones · Estados: «Verificada» / «En curso». Los nombres van tal como aparecen en el CV (en inglés):
@@ -72,7 +78,7 @@ Tarjetas (lectura rápida; el texto completo de arriba va en «Ver más»):
 | IA en SAP Finanzas | En curso | Lidero la llegada de la IA a los procesos financieros en SAP. | Project Manager | IA generativa · Machine learning · SAP FICO |
 | Parking en piloto automático | En uso | Se apunta por mí a la lista del parking cada día. Coste: cero. | Idea y desarrollo con IA | Claude · Cloudflare Workers · Google Apps Script |
 | Copiloto GR/IR | Prototipo | Analiza las partidas abiertas en SAP y sugiere cómo liquidarlas. | Idea y desarrollo con IA | Gemini · SAP · App web |
-| Esta web | En construcción | Una web hecha dirigiendo a la IA, de la primera línea de código a la publicación. | Dirigiendo a la IA | Claude Code · HTML · Tailwind CSS · GitHub Pages |
+| Esta web | Publicada | Una web hecha dirigiendo a la IA, de la primera línea de código a la publicación. | Dirigiendo a la IA | Claude Code · HTML · Tailwind CSS · GitHub Pages |
 
 Etiquetas de interfaz: «Mi rol», «Ver más», «✦ Activa el efecto 3D al mover el móvil» (botón solo en iPhone), «Ver el código en GitHub» (enlace de «Esta web» a https://github.com/jplataes/mi-landing).
 
@@ -82,8 +88,10 @@ Etiquetas de interfaz: «Mi rol», «Ver más», «✦ Activa el efecto 3D al mo
 - ¿Quién eres? → Soy Javier Plata Escribano. Llevo más de 10 años liderando programas de transformación financiera con SAP S/4HANA y rollouts internacionales en Europa, África, Asia y Latinoamérica. Hoy mi foco es la transformación de negocio con IA. (→ Ir a Sobre mí)
 - ¿Qué haces con IA? → En mi día a día lidero proyectos de IA sobre SAP Finanzas. Y por mi cuenta creo mis propias apps de IA, como un bot que se apunta solo al parking o un copiloto para las partidas GR/IR. (→ Ir a Proyectos)
 - ¿Dónde has trabajado? → Ahora estoy en el Holcim EMEA Digital Center como consultor SAP FICO senior. Antes pasé por Deloitte Consulting y por Mercedes-Benz Group Services Madrid, y empecé en Iberdrola. He trabajado en proyectos en España, Reino Unido, Suecia, Argelia, China, México y Chile. (→ Ir a Trayectoria)
-- ¿Cuáles son tus habilidades? → Combino tres mundos: la gestión de proyectos (programas, SAP Activate, Agile/Scrum, Product Owner), las finanzas en SAP (de GL y AP a Central Finance) y la IA, tanto en estrategia y gobierno como en herramientas: Claude Code, agentes, RAG… (→ Ir a Habilidades)
+- ¿Cuáles son tus habilidades? → Combino tres mundos: la gestión de proyectos (programas, SAP Activate, Agile/Scrum, Product Owner), las finanzas en SAP (de GL y AP a Central Finance) y la IA, tanto en estrategia y gobierno como en herramientas: Claude Code, agentes, RAG… (→ Ir a Trayectoria)
+- ¿Qué has estudiado? → Estudié un doble grado en ADE y Derecho, con un Erasmus en Alemania, y después un máster en Seguros y Gestión de Riesgos y un MBA. Lo más reciente: un máster en Soluciones de IA para Empresas… y esta web nació como uno de sus proyectos 😉 (→ Ir a Formación)
 - ¿Cómo se hizo esta web? → Dirigiendo a la IA. La construí con Claude Code, usando HTML, Tailwind CSS, Git y GitHub Pages, por fases y revisando cada paso. Y sí, te lo confieso: yo tampoco soy una IA de verdad, mis respuestas están escritas de antemano 😉 (→ Ver el código en GitHub)
+- ¿Cómo puedo contactarte? → Por LinkedIn o GitHub, en la sección de Contacto. Me encanta charlar con gente que trabaja en finanzas, SAP o IA, así que escríbeme cuando quieras. (→ Ir a Contacto)
 - Botón final: Empezar de nuevo
 - Sin JavaScript: Activa JavaScript para conversar con mi gemelo IA.
 
@@ -137,11 +145,16 @@ AI transformation: Today I lead the AI projects on SAP Finance at my company. I 
   - Mexico and Chile · Deloitte · **Exeltis**: S/4HANA rollout, run in parallel across Mexico, Chile and Sweden
 
 ### Skills
-- Project management: programme and portfolio management, SAP Activate, Agile/Scrum, Product Owner, KPIs and value
-- AI strategy: roadmap, use-case prioritisation, value KPIs, AI governance and responsible AI, EU AI Act
-- AI tools: Claude Code, OpenAI Codex, AI agents and MCP, RAG, n8n, LLM APIs, Microsoft 365 Copilot, Gemini
-- SAP Finance: GL, AP, AR, AA, TR, FSCM, REFX, Central Finance, CO
-- Integrations: Coupa, xSuite, Celonis, Signavio, SAP Archiving
+(Section removed from the site: its summary lives in the AI twin answer "What are your skills?".)
+
+### Education
+1. 2009–2015 · Double degree in Business Administration and Law · University of Extremadura
+2. 2011–2012 · Erasmus exchange · Philipps-Universität Marburg (Germany)
+3. 2014–2015 · Master's in Insurance and Risk Management · University of Extremadura
+4. 2019–2020 · MBA · ThePowerMBA
+5. 2026–2027 · Master's in AI Solutions for Business (AI Maker) · ThePower Tech School
+- Languages: Spanish (native) · English (C1) · German (A2)
+
 
 ### Certifications
 Title: Certifications · Statuses: "Verified" / "In progress". Same certification names as in the Spanish version.
@@ -158,7 +171,7 @@ Cards (quick read; the full text above goes under "See more"):
 | AI in SAP Finance | In progress | Leading the move to AI in SAP finance processes. | Project Manager | Generative AI · Machine learning · SAP FICO |
 | Parking on autopilot | In use | Joins the parking waitlist for me every day. Cost: zero. | Idea and build, with AI | Claude · Cloudflare Workers · Google Apps Script |
 | GR/IR Copilot | Prototype | Analyses open items in SAP and suggests how to clear them. | Idea and build, with AI | Gemini · SAP · Web app |
-| This website | Under construction | A website built by directing AI, from the first line of code to going live. | Directing the AI | Claude Code · HTML · Tailwind CSS · GitHub Pages |
+| This website | Live | A website built by directing AI, from the first line of code to going live. | Directing the AI | Claude Code · HTML · Tailwind CSS · GitHub Pages |
 
 Interface labels: "My role", "See more", "✦ Turn on the 3D motion effect" (iPhone-only button), "View the code on GitHub".
 
@@ -168,8 +181,10 @@ Interface labels: "My role", "See more", "✦ Turn on the 3D motion effect" (iPh
 - Who are you? → I'm Javier Plata Escribano. I've spent more than 10 years leading SAP S/4HANA finance transformation programmes and international rollouts across Europe, Africa, Asia and Latin America. These days my focus is business transformation with AI. (→ Go to About me)
 - What do you do with AI? → Day to day, I lead AI projects on SAP Finance. And on my own I build AI apps, like a bot that joins the parking waitlist by itself or a copilot for GR/IR items. (→ Go to Projects)
 - Where have you worked? → I'm currently at the Holcim EMEA Digital Center as a senior SAP FICO consultant. Before that I was at Deloitte Consulting and Mercedes-Benz Group Services Madrid, and I started out at Iberdrola. I've worked on projects in Spain, the UK, Sweden, Algeria, China, Mexico and Chile. (→ Go to Experience)
-- What are your skills? → I bring three worlds together: project delivery (programmes, SAP Activate, Agile/Scrum, Product Owner), SAP finance (from GL and AP to Central Finance) and AI, both strategy and governance and the tools themselves: Claude Code, agents, RAG… (→ Go to Skills)
+- What are your skills? → I bring three worlds together: project delivery (programmes, SAP Activate, Agile/Scrum, Product Owner), SAP finance (from GL and AP to Central Finance) and AI, both strategy and governance and the tools themselves: Claude Code, agents, RAG… (→ Go to Experience)
+- What did you study? → I did a double degree in Business Administration and Law, with an Erasmus year in Germany, followed by a master's in Insurance and Risk Management and an MBA. Most recently, a master's in AI Solutions for Business… and this website started life as one of its projects 😉 (→ Go to Education)
 - How was this website built? → By directing AI. I built it with Claude Code, using HTML, Tailwind CSS, Git and GitHub Pages, phase by phase and reviewing every step. And yes, I'll admit it: I'm not a real AI either, my answers are written in advance 😉 (→ View the code on GitHub)
+- How can I get in touch? → On LinkedIn or GitHub, in the Contact section. I love chatting with people working in finance, SAP or AI, so drop me a line whenever you like. (→ Go to Contact)
 - Final button: Start over
 
 ### Contact
@@ -186,16 +201,16 @@ Textos aprobados para menú, títulos, etiquetas y accesibilidad (ES → EN).
 
 | Elemento | Español | English |
 |---|---|---|
-| Menú | Sobre mí · Trayectoria · Habilidades · Proyectos · Gemelo IA · Contacto | About · Experience · Skills · Projects · AI twin · Contact |
-| Etiquetas de sección | 01 · sobre_mí · 02 · trayectoria · 03 · habilidades · 04 · proyectos · 05 · gemelo_ia · 06 · contacto | 01 · about_me · 02 · experience · 03 · skills · 04 · projects · 05 · ai_twin · 06 · contact |
+| Menú | Sobre mí · Trayectoria · Formación · Proyectos · Gemelo IA · Contacto | About · Experience · Education · Projects · AI twin · Contact |
+| Etiquetas de sección | 01 · sobre_mí · 02 · trayectoria · 03 · formación · 04 · proyectos · 05 · gemelo_ia · 06 · contacto | 01 · about_me · 02 · experience · 03 · education · 04 · projects · 05 · ai_twin · 06 · contact |
 | Saludo del Hero | > hola_mundo | > hello_world |
-| Títulos de sección | Sobre mí · Trayectoria · Habilidades · Proyectos · Pregúntale a mi gemelo IA · Contacto | About me · Experience · Skills · Projects · Ask my AI twin · Contact |
+| Títulos de sección | Sobre mí · Trayectoria · Formación · Proyectos · Pregúntale a mi gemelo IA · Contacto | About me · Experience · Education · Projects · Ask my AI twin · Contact |
 | Contador 1 | 10+ años liderando transformación financiera | 10+ years leading finance transformation |
 | Contador 2 | 10+ países en mis proyectos | 10+ countries in my projects |
 | Contador 3 | 4 regiones | 4 regions |
 | Gemelo: saludo | Hola, soy el gemelo IA de Javier. Elige una pregunta. | Hi, I'm Javier's AI twin. Pick a question. |
 | Gemelo: aviso | Respuestas predefinidas, sin IA en tiempo real. | Predefined answers, no live AI. |
-| Gemelo: preguntas | ¿Quién eres? · ¿Qué haces con IA? · ¿Dónde has trabajado? · ¿Cuáles son tus habilidades? · ¿Cómo se hizo esta web? | Who are you? · What do you do with AI? · Where have you worked? · What are your skills? · How was this website built? |
+| Gemelo: preguntas | ¿Quién eres? · ¿Qué haces con IA? · ¿Dónde has trabajado? · ¿Cuáles son tus habilidades? · ¿Qué has estudiado? · ¿Cómo se hizo esta web? · ¿Cómo puedo contactarte? | Who are you? · What do you do with AI? · Where have you worked? · What are your skills? · What did you study? · How was this website built? · How can I get in touch? |
 | Contacto | Encuéntrame en LinkedIn y GitHub. | Find me on LinkedIn and GitHub. |
-| Pie | © 2026 Javier Plata Escribano · Web construida dirigiendo a la IA (Claude Code) | © 2026 Javier Plata Escribano · Website built by directing AI (Claude Code) |
+| Pie (el año se pone solo) | © 2026 Javier Plata Escribano | © 2026 Javier Plata Escribano |
 | Accesibilidad | Saltar al contenido · Abrir menú · Cerrar menú · Cambiar idioma | Skip to content · Open menu · Close menu · Change language |

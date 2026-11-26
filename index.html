@@ -50,7 +50,7 @@
           class="absolute inset-x-0 top-full hidden flex-col gap-1 border-b border-white/10 bg-navy-950/95 px-4 py-4 md:static md:flex md:flex-row md:gap-5 lg:gap-6 md:border-0 md:bg-transparent md:p-0">
         <li><a href="#sobre-mi" class="nav-link" data-i18n="navAbout">Sobre mí</a></li>
         <li><a href="#trayectoria" class="nav-link" data-i18n="navExperience">Trayectoria</a></li>
-        <li><a href="#habilidades" class="nav-link" data-i18n="navSkills">Habilidades</a></li>
+        <li><a href="#formacion" class="nav-link" data-i18n="navEducation">Formación</a></li>
         <li><a href="#proyectos" class="nav-link" data-i18n="navProjects">Proyectos</a></li>
         <li><a href="#gemelo" class="nav-link" data-i18n="navTwin">Gemelo IA</a></li>
         <li><a href="#contacto" class="nav-link" data-i18n="navContact">Contacto</a></li>
@@ -286,58 +286,59 @@
       </div>
     </section>
 
-    <!-- Habilidades: tarjetas con icono y etiquetas que nunca se parten en dos líneas -->
-    <section id="habilidades" class="section" aria-labelledby="titulo-habilidades">
+    <!-- Formación: un "trazado de circuito" que se enciende al hacer scroll, y certificaciones -->
+    <section id="formacion" class="section" aria-labelledby="titulo-formacion">
       <div class="section-inner">
-        <p class="eyebrow reveal" data-i18n="eyebrowSkills">03 · habilidades</p>
-        <h2 id="titulo-habilidades" class="section-title reveal" data-i18n="titleSkills">Habilidades</h2>
-        <div class="skills-grid mt-10">
-          <article class="card skill-card reveal accent-violet" style="--delay: 0ms">
-            <div class="skill-head">
-              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h6"/><circle cx="18" cy="16" r="3"/><path d="m20.2 18.2 1.8 1.8"/></svg></span>
-              <h3 class="card-title" data-i18n="skill1Title">Gestión de proyectos</h3>
-            </div>
-            <ul class="chips" data-i18n-list="skill1">
-              <li>gestión de programas y portfolio</li><li>SAP Activate</li><li>Agile/Scrum</li><li>Product Owner</li><li>KPIs y valor</li>
-            </ul>
-          </article>
-          <article class="card skill-card reveal accent-cyan" style="--delay: 90ms">
-            <div class="skill-head">
-              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
-              <h3 class="card-title" data-i18n="skill2Title">Estrategia de IA</h3>
-            </div>
-            <ul class="chips" data-i18n-list="skill2">
-              <li>hoja de ruta</li><li>priorización de casos de uso</li><li>KPIs de valor</li><li>gobierno de IA e IA responsable</li><li>EU AI Act</li>
-            </ul>
-          </article>
-          <article class="card skill-card reveal accent-cyan" style="--delay: 180ms">
-            <div class="skill-head">
-              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
-              <h3 class="card-title" data-i18n="skill3Title">Herramientas de IA</h3>
-            </div>
-            <ul class="chips" data-i18n-list="skill3">
-              <li>Claude Code</li><li>OpenAI Codex</li><li>agentes de IA y MCP</li><li>RAG</li><li>n8n</li><li>APIs de LLM</li><li>Microsoft 365 Copilot</li><li>Gemini</li>
-            </ul>
-          </article>
-          <article class="card skill-card reveal accent-violet" style="--delay: 270ms">
-            <div class="skill-head">
-              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
-              <h3 class="card-title" data-i18n="skill4Title">SAP Finanzas</h3>
-            </div>
-            <ul class="chips" data-i18n-list="skill4">
-              <li>GL</li><li>AP</li><li>AR</li><li>AA</li><li>TR</li><li>FSCM</li><li>REFX</li><li>Central Finance</li><li>CO</li>
-            </ul>
-          </article>
-          <article class="card skill-card reveal accent-violet" style="--delay: 360ms">
-            <div class="skill-head">
-              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7H7a5 5 0 0 0 0 10h2M15 7h2a5 5 0 0 1 0 10h-2M8 12h8"/></svg></span>
-              <h3 class="card-title" data-i18n="skill5Title">Integraciones</h3>
-            </div>
-            <ul class="chips" data-i18n-list="skill5">
-              <li>Coupa</li><li>xSuite</li><li>Celonis</li><li>Signavio</li><li>SAP Archiving</li>
-            </ul>
-          </article>
+        <p class="eyebrow reveal" data-i18n="eyebrowEducation">03 · formación</p>
+        <h2 id="titulo-formacion" class="section-title reveal" data-i18n="titleEducation">Formación</h2>
+
+        <div class="circuit-wrap mt-12">
+          <!-- Pista del circuito: la señal avanza con el scroll (--p de 0 a 1) -->
+          <div class="circuit-track" aria-hidden="true"><span class="circuit-fill"></span><span class="circuit-signal"></span></div>
+          <ol class="circuit">
+            <li class="station" style="--i: 0">
+              <span class="station-node" aria-hidden="true"></span>
+              <div class="station-card">
+                <p class="station-years">2009–2015</p>
+                <h3 class="station-title" data-i18n="eduDegree">Doble grado en ADE y Derecho</h3>
+                <p class="station-place" data-i18n="eduUex">Universidad de Extremadura</p>
+              </div>
+            </li>
+            <li class="station" style="--i: 1">
+              <span class="station-node" aria-hidden="true"></span>
+              <div class="station-card">
+                <p class="station-years">2011–2012</p>
+                <h3 class="station-title" data-i18n="eduErasmus">Erasmus</h3>
+                <p class="station-place" data-i18n="eduMarburg">Philipps-Universität Marburg (Alemania)</p>
+              </div>
+            </li>
+            <li class="station" style="--i: 2">
+              <span class="station-node" aria-hidden="true"></span>
+              <div class="station-card">
+                <p class="station-years">2014–2015</p>
+                <h3 class="station-title" data-i18n="eduMaster">Máster en Seguros y Gestión de Riesgos</h3>
+                <p class="station-place" data-i18n="eduUex">Universidad de Extremadura</p>
+              </div>
+            </li>
+            <li class="station" style="--i: 3">
+              <span class="station-node" aria-hidden="true"></span>
+              <div class="station-card">
+                <p class="station-years">2019–2020</p>
+                <h3 class="station-title" data-i18n="eduMba">MBA</h3>
+                <p class="station-place" data-i18n="eduThePowerMba">ThePowerMBA</p>
+              </div>
+            </li>
+            <li class="station station-last" style="--i: 4">
+              <span class="station-node" aria-hidden="true"></span>
+              <div class="station-card">
+                <p class="station-years">2026–2027</p>
+                <h3 class="station-title" data-i18n="eduAi">Máster en Soluciones de IA para Empresas (AI Maker)</h3>
+                <p class="station-place" data-i18n="eduThePowerTech">ThePower Tech School</p>
+              </div>
+            </li>
+          </ol>
         </div>
+        <p class="languages reveal mt-10"><span class="languages-label" data-i18n="langsLabel">Idiomas</span> <span data-i18n="langsList">Español (nativo) · Inglés (C1) · Alemán (A2)</span></p>
 
         <!-- Certificaciones: credenciales holográficas (las "en curso" se ven a medio fabricar) -->
         <div class="certs reveal mt-16">
@@ -486,7 +487,7 @@
               <span class="project-glare" aria-hidden="true"></span>
               <div class="project-top">
                 <span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18"/><path d="M10 12l-2 2 2 2M14 12l2 2-2 2"/></svg></span>
-                <span class="badge badge-build" data-i18n="statusBuilding">En construcción</span>
+                <span class="badge badge-live" data-i18n="statusPublished">Publicada</span>
               </div>
               <h3 class="card-title mt-4" data-i18n="project4Title">Esta web</h3>
               <p class="project-impact" data-i18n="project4Impact">Una web hecha dirigiendo a la IA, de la primera línea de código a la publicación.</p>
@@ -534,7 +535,9 @@
             <button type="button" class="twin-q" data-q="ai" data-i18n="twinQ_ai">¿Qué haces con IA?</button>
             <button type="button" class="twin-q" data-q="where" data-i18n="twinQ_where">¿Dónde has trabajado?</button>
             <button type="button" class="twin-q" data-q="skills" data-i18n="twinQ_skills">¿Cuáles son tus habilidades?</button>
+            <button type="button" class="twin-q" data-q="study" data-i18n="twinQ_study">¿Qué has estudiado?</button>
             <button type="button" class="twin-q" data-q="web" data-i18n="twinQ_web">¿Cómo se hizo esta web?</button>
+            <button type="button" class="twin-q" data-q="contact" data-i18n="twinQ_contact">¿Cómo puedo contactarte?</button>
             <button type="button" class="twin-restart" hidden data-i18n="twinRestart">Empezar de nuevo</button>
           </div>
           <noscript><p class="twin-noscript">Activa JavaScript para conversar con mi gemelo IA.</p></noscript>
@@ -569,8 +572,8 @@
   </main>
 
   <footer class="site-footer py-8">
-    <p class="mx-auto max-w-6xl px-4 text-center text-sm text-slate-400 sm:px-6" data-i18n="footer">
-      © 2026 Javier Plata Escribano · Web construida dirigiendo a la IA (Claude Code)
+    <p class="mx-auto max-w-6xl px-4 text-center text-sm text-slate-400 sm:px-6">
+      © <span id="year">2026</span> Javier Plata Escribano
     </p>
   </footer>
 
