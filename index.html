@@ -67,14 +67,17 @@
   </header>
 
   <main id="main">
-    <!-- Hero: la Fase 2 añadirá la red neuronal y el efecto de escritura -->
-    <section id="inicio" class="flex min-h-screen items-center pt-16" aria-labelledby="titulo-inicio">
-      <div class="mx-auto w-full max-w-6xl px-4 sm:px-6">
-        <p class="font-mono text-sm text-cyan-glow" data-i18n="heroHello">&gt; hola_mundo</p>
-        <h1 id="titulo-inicio" class="mt-3 text-4xl font-bold text-white sm:text-6xl">Javier Plata Escribano</h1>
-        <p class="mt-4 font-mono text-base text-violet-glow sm:text-lg" data-i18n="heroRole">Transformación Digital e IA | SAP S/4HANA Finance Project Leader</p>
+    <!-- Hero: red neuronal animada (canvas) y titular con efecto de escritura -->
+    <section id="inicio" class="hero relative flex min-h-screen items-center overflow-hidden pt-16" aria-labelledby="titulo-inicio">
+      <canvas id="hero-canvas" class="absolute inset-0 h-full w-full" aria-hidden="true"></canvas>
+      <!-- Velo degradado para que el texto se lea bien sobre la red -->
+      <div class="hero-veil pointer-events-none absolute inset-0" aria-hidden="true"></div>
+      <div class="relative mx-auto w-full max-w-6xl px-4 sm:px-6">
+        <p class="font-mono text-sm text-cyan-glow" data-i18n="heroHello" data-type>&gt; hola_mundo</p>
+        <h1 id="titulo-inicio" class="hero-title mt-3 text-4xl font-bold text-white sm:text-6xl lg:text-7xl">Javier Plata Escribano</h1>
+        <p class="mt-4 font-mono text-base text-violet-glow sm:text-lg" data-i18n="heroRole" data-type>Transformación Digital e IA | SAP S/4HANA Finance Project Leader</p>
         <p class="mt-6 max-w-2xl text-xl text-slate-300 sm:text-2xl" data-i18n="heroTagline">Convierto procesos financieros en soluciones de IA que llegan a producción.</p>
-        <a href="#contacto" class="btn-primary mt-10" data-i18n="heroCta">Hablemos</a>
+        <a href="#contacto" class="btn-primary hero-cta mt-10" data-i18n="heroCta">Hablemos</a>
       </div>
     </section>
 
@@ -185,6 +188,7 @@
   </footer>
 
   <script src="js/i18n.js" defer></script>
+  <script src="js/hero.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
