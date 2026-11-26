@@ -1,42 +1,44 @@
-# CLAUDE.md · Instrucciones permanentes para este proyecto
+# CLAUDE.md
 
-## Qué es este proyecto
-Landing page personal de Javier Plata Escribano (Proyecto 1 del máster AI Maker).
-Objetivo: una web de una sola página, espectacular e innovadora, que cause efecto "wow" en quien la abra.
-Los textos están en CONTENIDO.md. Úsalos tal cual; no inventes datos, cifras ni experiencia.
+Guía de proyecto para Claude Code. Define el objetivo, los requisitos y la forma de trabajar en este repositorio.
 
-## Requisitos obligatorios (los evalúa el máster)
-1. HTML semántico: header, nav, main, section, article, footer; un solo h1; jerarquía de títulos correcta; alt en imágenes.
-2. Tailwind CSS cargado por CDN (sin instalaciones ni build).
-3. Responsive: perfecta en móvil, tablet y escritorio (diseña primero para móvil).
-4. Secciones mínimas: Hero, Sobre mí, Habilidades, Proyectos (4 tarjetas), Contacto.
-5. Se publicará con GitHub Pages: todo debe funcionar como archivos estáticos (index.html en la raíz).
+## Objetivo
+Landing page personal de Javier Plata Escribano, desarrollada como Proyecto 1 del Máster en Soluciones de IA para Empresas (AI Maker).
+Sitio de una sola página con una experiencia visual moderna, interactiva y memorable, que presente su perfil en Transformación Digital e IA.
+Todos los textos proceden de CONTENIDO.md y se usan sin modificar su contenido.
 
-## Idioma
-Bilingüe. Español por defecto, con un botón ES/EN visible en la navegación que cambia todos los textos sin recargar la página.
-Actualiza el atributo lang del html al cambiar de idioma y recuerda la elección en localStorage.
+## Requisitos funcionales
+1. HTML semántico: header, nav, main, section, article y footer; un único h1, jerarquía de encabezados coherente y texto alternativo en imágenes.
+2. Estilos con Tailwind CSS cargado por CDN, sin dependencias ni proceso de build.
+3. Diseño responsive, mobile-first, para móvil, tablet y escritorio.
+4. Secciones: Hero, Sobre mí, Habilidades, Proyectos y Contacto.
+5. Publicación en GitHub Pages: sitio estático con index.html en la raíz.
 
-## Diseño (efecto WOW)
-- Modo oscuro: fondo azul marino profundo con acentos de neón (cian y violeta).
-- Hero con una red neuronal animada en canvas que reacciona al ratón y al dedo en móvil.
-- Titular que se escribe solo, estilo terminal de IA.
-- "Pregúntale a mi gemelo IA": chat con preguntas preparadas y respuestas que se escriben solas (sin backend ni API).
-- Mapa del mundo que ilumina las regiones de los rollouts (Europa, África, Asia, Latinoamérica) al hacer scroll.
-- Tarjetas de proyecto con inclinación 3D y un brillo que sigue al cursor.
-- Animaciones de aparición al hacer scroll y contadores animados.
+## Idiomas
+Sitio bilingüe: español por defecto e inglés mediante un selector ES/EN en la navegación.
+El cambio de idioma es inmediato, sin recargar la página, actualiza el atributo lang y se conserva entre visitas.
 
-## Calidad (no negociable)
-- Accesible: buen contraste, navegable con teclado, foco visible, botones con texto o aria-label.
-- Respeta prefers-reduced-motion: si el usuario lo pide, desactiva o reduce las animaciones.
-- Rápida: objetivo 90 o más en PageSpeed/Lighthouse. Nada de librerías pesadas; JavaScript propio y ligero.
-- HTML que pase el validador del W3C sin errores.
+## Dirección visual
+- Estética oscura: azul marino profundo con acentos luminosos en cian y violeta.
+- Hero con una red neuronal animada (canvas) que responde al cursor y al tacto.
+- Titular con efecto de escritura, inspirado en una terminal de IA.
+- "Pregúntale a mi gemelo IA": conversación guiada con preguntas predefinidas, sin backend.
+- Mapa que destaca las regiones de los proyectos internacionales (Europa, África, Asia y Latinoamérica) al hacer scroll.
+- Tarjetas de proyecto con efecto 3D y reflejo que sigue al cursor.
+- Animaciones de entrada al hacer scroll y contadores animados.
 
-## Privacidad
-- Nada de email ni teléfono en la web. Contacto solo por LinkedIn y GitHub.
-- Ningún nombre de empresa ni dato interno en los proyectos 2 y 3.
+## Estándares de calidad
+- Accesibilidad: contraste suficiente, navegación completa por teclado, foco visible y controles etiquetados.
+- Movimiento reducido: respetar prefers-reduced-motion desactivando o suavizando las animaciones.
+- Rendimiento: puntuación de 90 o superior en PageSpeed Insights; JavaScript propio y ligero, sin librerías pesadas.
+- Validación: HTML sin errores en el validador del W3C.
 
-## Forma de trabajar
-- Javier dirige el desarrollo: explícale en español sencillo lo que vas a hacer y por qué, antes de hacerlo.
-- Trabaja en tareas pequeñas, una sección cada vez, y enséñale el resultado.
-- Antes de un cambio grande, propón un plan y espera su visto bueno.
-- Archivos: index.html en la raíz; si hace falta, css/ y js/. Comenta el código de forma breve.
+## Contacto y confidencialidad
+- El contacto se ofrece únicamente a través de LinkedIn y GitHub.
+- Los proyectos se describen de forma genérica, sin nombres de clientes ni información interna.
+
+## Forma de trabajo
+- Javier dirige el desarrollo. Antes de cada cambio, explica en español claro qué se va a hacer y por qué.
+- Avanzar por iteraciones pequeñas, una sección cada vez, mostrando el resultado.
+- Para cambios de alcance amplio, proponer primero un plan y esperar su aprobación.
+- Estructura: index.html en la raíz y, si es necesario, carpetas css/ y js/. Código con comentarios breves y claros.
