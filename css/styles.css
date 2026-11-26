@@ -869,3 +869,37 @@ section { scroll-margin-top: 4rem; }
   .js .certs.reveal .cert { transform: none !important; opacity: 1 !important; }
   .cert-progress .cert-card::after, .cert-bar i { animation: none; }
 }
+
+/* ---------- Contacto ---------- */
+.contact { background: radial-gradient(ellipse 60% 55% at 50% 70%, rgb(124 58 237 / 0.12), transparent 70%); }
+.contact-box { max-width: 52rem; }
+/* Frase "descifrada": todas las frases en la misma celda para reservar el hueco */
+.decode {
+  display: grid;
+  font-size: clamp(1.5rem, 3.6vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+}
+.decode > * { grid-area: 1 / 1; }
+.decode-ghost { visibility: hidden; }
+.decode-live {
+  background: linear-gradient(90deg, #fff 0%, #a5f3fc 45%, #c4b5fd 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  font-variant-ligatures: none;
+}
+.contact-text { color: #94a3b8; font-size: 1.05rem; }
+.contact-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.contact-btn {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 700; font-size: 1.05rem;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.contact-btn svg { width: 1.25rem; height: 1.25rem; }
+.contact-btn-li { color: var(--navy-950); background: linear-gradient(90deg, var(--cyan), #67e8f9); box-shadow: 0 0 24px rgb(34 211 238 / 0.35); }
+.contact-btn-gh { color: #fff; background: rgb(167 139 250 / 0.12); border: 1px solid rgb(167 139 250 / 0.6); box-shadow: 0 0 24px rgb(167 139 250 / 0.25); }
+.contact-btn:hover { transform: translateY(-3px); }
+.contact-btn-li:hover { box-shadow: 0 0 36px rgb(34 211 238 / 0.6); }
+.contact-btn-gh:hover { background: rgb(167 139 250 / 0.25); box-shadow: 0 0 36px rgb(167 139 250 / 0.5); }
