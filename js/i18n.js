@@ -140,6 +140,7 @@
     roleDirectingAI: 'Directing the AI',
     seeMore: 'See more',
     motionBtn: 'Turn on the 3D motion effect',
+    motionBtnHolo: 'Turn on the hologram motion effect',
     projectRepo: 'View the code on GitHub',
     // Gemelo IA
     eyebrowTwin: '05 · ai_twin',
