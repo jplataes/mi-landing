@@ -14,7 +14,7 @@
     // Navegación y accesibilidad
     skip: 'Skip to content',
     navLabel: 'Main navigation',
-    homeLabel: 'Javier Plata Escribano, go to top',
+    homeLabel: ', Javier Plata Escribano, go to top',
     langLabel: 'Change language',
     menuOpen: 'Open menu',
     menuClose: 'Close menu',

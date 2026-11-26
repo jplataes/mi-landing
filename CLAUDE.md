@@ -9,7 +9,7 @@ Todos los textos proceden de CONTENIDO.md, que es la fuente única de los textos
 
 ## Requisitos funcionales
 1. HTML semántico: header, nav, main, section, article y footer; un único h1, jerarquía de encabezados coherente y texto alternativo en imágenes.
-2. Estilos con Tailwind CSS cargado por CDN, sin dependencias ni proceso de build.
+2. Estilos con Tailwind CSS, sin dependencias ni proceso de build al publicar. Se empezó con el CDN; por rendimiento, la web publicada usa css/tailwind.css, generado una sola vez con las clases usadas (ver README.md para regenerarlo si se añaden clases nuevas).
 3. Diseño responsive, mobile-first, para móvil, tablet y escritorio.
 4. Secciones: Hero, Sobre mí, Trayectoria, Formación (con certificaciones), Proyectos, Pregúntale a mi gemelo IA y Contacto.
 5. Publicación en GitHub Pages: sitio estático con index.html en la raíz.
